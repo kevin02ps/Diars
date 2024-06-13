@@ -1,0 +1,8 @@
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\ProyectoDiars.pdb
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\ProyectoDiars.dll.config
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\comerr64.dll
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\gssapi64.dll
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\k5sprt64.dll
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\krb5_64.dll
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\krbcc64.dll
+C:\Users\KEVIN\Desktop\Nueva carpeta (2)\ProyectoDiars.exe

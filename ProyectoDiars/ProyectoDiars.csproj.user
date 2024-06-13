@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\KEVIN\source\repos\ProyectoDiars\ProyectoDiars\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Comprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Operaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

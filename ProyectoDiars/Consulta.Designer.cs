@@ -28,99 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnConsultarPedidos = new System.Windows.Forms.Button();
-            this.groupBoxConsultaPedidos = new System.Windows.Forms.GroupBox();
-            this.btnBuscarCP = new System.Windows.Forms.Button();
-            this.dataGridViewDetallePedidoC = new System.Windows.Forms.DataGridView();
-            this.dataGridViewPedidoC = new System.Windows.Forms.DataGridView();
-            this.txtIdPedidoC = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBoxConsultaPedidos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetallePedidoC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidoC)).BeginInit();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consulta));
+            btnConsultarPedidos = new Button();
+            groupBoxConsultaPedidos = new GroupBox();
+            btnBuscarCP = new Button();
+            dataGridViewDetallePedidoC = new DataGridView();
+            dataGridViewPedidoC = new DataGridView();
+            txtIdPedidoC = new TextBox();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            groupBoxConsultaPedidos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDetallePedidoC).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPedidoC).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // btnConsultarPedidos
             // 
-            this.btnConsultarPedidos.Location = new System.Drawing.Point(119, 12);
-            this.btnConsultarPedidos.Name = "btnConsultarPedidos";
-            this.btnConsultarPedidos.Size = new System.Drawing.Size(124, 23);
-            this.btnConsultarPedidos.TabIndex = 0;
-            this.btnConsultarPedidos.Text = "Consultar Pedidos";
-            this.btnConsultarPedidos.UseVisualStyleBackColor = true;
-            this.btnConsultarPedidos.Click += new System.EventHandler(this.btnConsultarPedidos_Click);
+            btnConsultarPedidos.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnConsultarPedidos.Image = (Image)resources.GetObject("btnConsultarPedidos.Image");
+            btnConsultarPedidos.ImageAlign = ContentAlignment.MiddleRight;
+            btnConsultarPedidos.Location = new Point(54, 12);
+            btnConsultarPedidos.Margin = new Padding(4, 3, 4, 3);
+            btnConsultarPedidos.Name = "btnConsultarPedidos";
+            btnConsultarPedidos.Size = new Size(175, 29);
+            btnConsultarPedidos.TabIndex = 0;
+            btnConsultarPedidos.Text = "Consultar Pedidos";
+            btnConsultarPedidos.UseVisualStyleBackColor = true;
+            btnConsultarPedidos.Click += btnConsultarPedidos_Click;
             // 
             // groupBoxConsultaPedidos
             // 
-            this.groupBoxConsultaPedidos.Controls.Add(this.btnBuscarCP);
-            this.groupBoxConsultaPedidos.Controls.Add(this.dataGridViewDetallePedidoC);
-            this.groupBoxConsultaPedidos.Controls.Add(this.dataGridViewPedidoC);
-            this.groupBoxConsultaPedidos.Controls.Add(this.txtIdPedidoC);
-            this.groupBoxConsultaPedidos.Controls.Add(this.label1);
-            this.groupBoxConsultaPedidos.Location = new System.Drawing.Point(12, 41);
-            this.groupBoxConsultaPedidos.Name = "groupBoxConsultaPedidos";
-            this.groupBoxConsultaPedidos.Size = new System.Drawing.Size(860, 408);
-            this.groupBoxConsultaPedidos.TabIndex = 1;
-            this.groupBoxConsultaPedidos.TabStop = false;
+            groupBoxConsultaPedidos.Controls.Add(btnBuscarCP);
+            groupBoxConsultaPedidos.Controls.Add(dataGridViewDetallePedidoC);
+            groupBoxConsultaPedidos.Controls.Add(dataGridViewPedidoC);
+            groupBoxConsultaPedidos.Controls.Add(txtIdPedidoC);
+            groupBoxConsultaPedidos.Controls.Add(label1);
+            groupBoxConsultaPedidos.Location = new Point(14, 47);
+            groupBoxConsultaPedidos.Margin = new Padding(4, 3, 4, 3);
+            groupBoxConsultaPedidos.Name = "groupBoxConsultaPedidos";
+            groupBoxConsultaPedidos.Padding = new Padding(4, 3, 4, 3);
+            groupBoxConsultaPedidos.Size = new Size(1003, 471);
+            groupBoxConsultaPedidos.TabIndex = 1;
+            groupBoxConsultaPedidos.TabStop = false;
             // 
             // btnBuscarCP
             // 
-            this.btnBuscarCP.Location = new System.Drawing.Point(69, 88);
-            this.btnBuscarCP.Name = "btnBuscarCP";
-            this.btnBuscarCP.Size = new System.Drawing.Size(83, 27);
-            this.btnBuscarCP.TabIndex = 4;
-            this.btnBuscarCP.Text = "Buscar";
-            this.btnBuscarCP.UseVisualStyleBackColor = true;
-            this.btnBuscarCP.Click += new System.EventHandler(this.btnBuscarCP_Click);
+            btnBuscarCP.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnBuscarCP.Image = (Image)resources.GetObject("btnBuscarCP.Image");
+            btnBuscarCP.ImageAlign = ContentAlignment.MiddleRight;
+            btnBuscarCP.Location = new Point(80, 102);
+            btnBuscarCP.Margin = new Padding(4, 3, 4, 3);
+            btnBuscarCP.Name = "btnBuscarCP";
+            btnBuscarCP.Size = new Size(134, 40);
+            btnBuscarCP.TabIndex = 4;
+            btnBuscarCP.Text = "Buscar";
+            btnBuscarCP.UseVisualStyleBackColor = true;
+            btnBuscarCP.Click += btnBuscarCP_Click;
             // 
             // dataGridViewDetallePedidoC
             // 
-            this.dataGridViewDetallePedidoC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDetallePedidoC.Location = new System.Drawing.Point(34, 181);
-            this.dataGridViewDetallePedidoC.Name = "dataGridViewDetallePedidoC";
-            this.dataGridViewDetallePedidoC.Size = new System.Drawing.Size(805, 200);
-            this.dataGridViewDetallePedidoC.TabIndex = 3;
+            dataGridViewDetallePedidoC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewDetallePedidoC.Location = new Point(40, 209);
+            dataGridViewDetallePedidoC.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewDetallePedidoC.Name = "dataGridViewDetallePedidoC";
+            dataGridViewDetallePedidoC.Size = new Size(939, 231);
+            dataGridViewDetallePedidoC.TabIndex = 3;
             // 
             // dataGridViewPedidoC
             // 
-            this.dataGridViewPedidoC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPedidoC.Location = new System.Drawing.Point(265, 31);
-            this.dataGridViewPedidoC.Name = "dataGridViewPedidoC";
-            this.dataGridViewPedidoC.Size = new System.Drawing.Size(574, 128);
-            this.dataGridViewPedidoC.TabIndex = 2;
+            dataGridViewPedidoC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewPedidoC.Location = new Point(309, 36);
+            dataGridViewPedidoC.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewPedidoC.Name = "dataGridViewPedidoC";
+            dataGridViewPedidoC.Size = new Size(670, 148);
+            dataGridViewPedidoC.TabIndex = 2;
             // 
             // txtIdPedidoC
             // 
-            this.txtIdPedidoC.Location = new System.Drawing.Point(107, 44);
-            this.txtIdPedidoC.Name = "txtIdPedidoC";
-            this.txtIdPedidoC.Size = new System.Drawing.Size(100, 20);
-            this.txtIdPedidoC.TabIndex = 1;
+            txtIdPedidoC.Location = new Point(125, 51);
+            txtIdPedidoC.Margin = new Padding(4, 3, 4, 3);
+            txtIdPedidoC.Name = "txtIdPedidoC";
+            txtIdPedidoC.Size = new Size(116, 23);
+            txtIdPedidoC.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Id Pedido";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.Location = new Point(29, 54);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(59, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Id Pedido";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(597, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(173, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // Consulta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 461);
-            this.Controls.Add(this.groupBoxConsultaPedidos);
-            this.Controls.Add(this.btnConsultarPedidos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Consulta";
-            this.Text = "Agregar_Pedido";
-            this.groupBoxConsultaPedidos.ResumeLayout(false);
-            this.groupBoxConsultaPedidos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetallePedidoC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidoC)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLightLight;
+            ClientSize = new Size(1031, 532);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBoxConsultaPedidos);
+            Controls.Add(btnConsultarPedidos);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Consulta";
+            Text = "Agregar_Pedido";
+            groupBoxConsultaPedidos.ResumeLayout(false);
+            groupBoxConsultaPedidos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewDetallePedidoC).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewPedidoC).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -132,5 +163,6 @@
         private System.Windows.Forms.DataGridView dataGridViewDetallePedidoC;
         private System.Windows.Forms.DataGridView dataGridViewPedidoC;
         private System.Windows.Forms.TextBox txtIdPedidoC;
+        private PictureBox pictureBox1;
     }
 }

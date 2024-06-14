@@ -30,5 +30,10 @@ namespace InversionesHermanos
         {
             UbiComprobante = txtUbiComprobantes.Text;
         }
+
+        private void Configuracion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

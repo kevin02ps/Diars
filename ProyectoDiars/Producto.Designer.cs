@@ -28,390 +28,481 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnEliminarProducto = new System.Windows.Forms.Button();
-            this.btnModificarProducto = new System.Windows.Forms.Button();
-            this.btnAgregarProducto = new System.Windows.Forms.Button();
-            this.groupBoxModificar = new System.Windows.Forms.GroupBox();
-            this.btnBuscarM = new System.Windows.Forms.Button();
-            this.groupBoxdatosM = new System.Windows.Forms.GroupBox();
-            this.txtPrecioM = new System.Windows.Forms.TextBox();
-            this.txtNombreM = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtCantStockM = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDescripcionM = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtIDM = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.groupBoxAgregarProducto = new System.Windows.Forms.GroupBox();
-            this.btnAceptarA = new System.Windows.Forms.Button();
-            this.txtCantStockA = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtPrecioA = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDescripcionA = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNombreA = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBoxEliminar = new System.Windows.Forms.GroupBox();
-            this.txtIDE = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnEliminarE = new System.Windows.Forms.Button();
-            this.txtIdProveedorA = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBoxModificar.SuspendLayout();
-            this.groupBoxdatosM.SuspendLayout();
-            this.groupBoxAgregarProducto.SuspendLayout();
-            this.groupBoxEliminar.SuspendLayout();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Producto));
+            dataGridView1 = new DataGridView();
+            btnEliminarProducto = new Button();
+            btnModificarProducto = new Button();
+            btnAgregarProducto = new Button();
+            groupBoxModificar = new GroupBox();
+            btnBuscarM = new Button();
+            groupBoxdatosM = new GroupBox();
+            txtPrecioM = new TextBox();
+            txtNombreM = new TextBox();
+            label9 = new Label();
+            txtCantStockM = new TextBox();
+            label6 = new Label();
+            label8 = new Label();
+            txtDescripcionM = new TextBox();
+            label7 = new Label();
+            txtIDM = new TextBox();
+            label11 = new Label();
+            btnModificar = new Button();
+            groupBoxAgregarProducto = new GroupBox();
+            txtIdProveedorA = new TextBox();
+            label2 = new Label();
+            btnAceptarA = new Button();
+            txtCantStockA = new TextBox();
+            label5 = new Label();
+            txtPrecioA = new TextBox();
+            label4 = new Label();
+            txtDescripcionA = new TextBox();
+            label3 = new Label();
+            txtNombreA = new TextBox();
+            label1 = new Label();
+            groupBoxEliminar = new GroupBox();
+            txtIDE = new TextBox();
+            label17 = new Label();
+            btnEliminarE = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBoxModificar.SuspendLayout();
+            groupBoxdatosM.SuspendLayout();
+            groupBoxAgregarProducto.SuspendLayout();
+            groupBoxEliminar.SuspendLayout();
+            SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(387, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(501, 450);
-            this.dataGridView1.TabIndex = 0;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = Color.SteelBlue;
+            dataGridView1.Location = new Point(451, 29);
+            dataGridView1.Margin = new Padding(4, 3, 4, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(44, 66, 91);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.Size = new Size(584, 519);
+            dataGridView1.TabIndex = 0;
             // 
             // btnEliminarProducto
             // 
-            this.btnEliminarProducto.Location = new System.Drawing.Point(267, 25);
-            this.btnEliminarProducto.Name = "btnEliminarProducto";
-            this.btnEliminarProducto.Size = new System.Drawing.Size(95, 31);
-            this.btnEliminarProducto.TabIndex = 18;
-            this.btnEliminarProducto.Text = "Eliminar";
-            this.btnEliminarProducto.UseVisualStyleBackColor = true;
-            this.btnEliminarProducto.Click += new System.EventHandler(this.btnEliminarProducto_Click);
+            btnEliminarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnEliminarProducto.Image = (Image)resources.GetObject("btnEliminarProducto.Image");
+            btnEliminarProducto.ImageAlign = ContentAlignment.MiddleRight;
+            btnEliminarProducto.Location = new Point(294, 12);
+            btnEliminarProducto.Margin = new Padding(4, 3, 4, 3);
+            btnEliminarProducto.Name = "btnEliminarProducto";
+            btnEliminarProducto.Size = new Size(129, 53);
+            btnEliminarProducto.TabIndex = 18;
+            btnEliminarProducto.Text = "Eliminar";
+            btnEliminarProducto.UseVisualStyleBackColor = true;
+            btnEliminarProducto.Click += btnEliminarProducto_Click;
             // 
             // btnModificarProducto
             // 
-            this.btnModificarProducto.Location = new System.Drawing.Point(150, 25);
-            this.btnModificarProducto.Name = "btnModificarProducto";
-            this.btnModificarProducto.Size = new System.Drawing.Size(95, 31);
-            this.btnModificarProducto.TabIndex = 17;
-            this.btnModificarProducto.Text = "Modificar";
-            this.btnModificarProducto.UseVisualStyleBackColor = true;
-            this.btnModificarProducto.Click += new System.EventHandler(this.btnModificarProducto_Click);
+            btnModificarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnModificarProducto.Image = (Image)resources.GetObject("btnModificarProducto.Image");
+            btnModificarProducto.ImageAlign = ContentAlignment.MiddleRight;
+            btnModificarProducto.Location = new Point(166, 12);
+            btnModificarProducto.Margin = new Padding(4, 3, 4, 3);
+            btnModificarProducto.Name = "btnModificarProducto";
+            btnModificarProducto.Size = new Size(120, 53);
+            btnModificarProducto.TabIndex = 17;
+            btnModificarProducto.Text = "Modificar";
+            btnModificarProducto.UseVisualStyleBackColor = true;
+            btnModificarProducto.Click += btnModificarProducto_Click;
             // 
             // btnAgregarProducto
             // 
-            this.btnAgregarProducto.Location = new System.Drawing.Point(33, 25);
-            this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(95, 31);
-            this.btnAgregarProducto.TabIndex = 16;
-            this.btnAgregarProducto.Text = "Agregar";
-            this.btnAgregarProducto.UseVisualStyleBackColor = true;
-            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
+            btnAgregarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnAgregarProducto.Image = (Image)resources.GetObject("btnAgregarProducto.Image");
+            btnAgregarProducto.ImageAlign = ContentAlignment.MiddleRight;
+            btnAgregarProducto.Location = new Point(24, 12);
+            btnAgregarProducto.Margin = new Padding(4, 3, 4, 3);
+            btnAgregarProducto.Name = "btnAgregarProducto";
+            btnAgregarProducto.Size = new Size(125, 53);
+            btnAgregarProducto.TabIndex = 16;
+            btnAgregarProducto.Text = "Agregar";
+            btnAgregarProducto.UseVisualStyleBackColor = true;
+            btnAgregarProducto.Click += btnAgregarProducto_Click;
             // 
             // groupBoxModificar
             // 
-            this.groupBoxModificar.Controls.Add(this.btnBuscarM);
-            this.groupBoxModificar.Controls.Add(this.groupBoxdatosM);
-            this.groupBoxModificar.Controls.Add(this.txtIDM);
-            this.groupBoxModificar.Controls.Add(this.label11);
-            this.groupBoxModificar.Controls.Add(this.btnModificar);
-            this.groupBoxModificar.Location = new System.Drawing.Point(21, 72);
-            this.groupBoxModificar.Name = "groupBoxModificar";
-            this.groupBoxModificar.Size = new System.Drawing.Size(360, 399);
-            this.groupBoxModificar.TabIndex = 19;
-            this.groupBoxModificar.TabStop = false;
+            groupBoxModificar.Controls.Add(btnBuscarM);
+            groupBoxModificar.Controls.Add(groupBoxdatosM);
+            groupBoxModificar.Controls.Add(txtIDM);
+            groupBoxModificar.Controls.Add(label11);
+            groupBoxModificar.Controls.Add(btnModificar);
+            groupBoxModificar.Location = new Point(24, 83);
+            groupBoxModificar.Margin = new Padding(4, 3, 4, 3);
+            groupBoxModificar.Name = "groupBoxModificar";
+            groupBoxModificar.Padding = new Padding(4, 3, 4, 3);
+            groupBoxModificar.Size = new Size(420, 460);
+            groupBoxModificar.TabIndex = 19;
+            groupBoxModificar.TabStop = false;
             // 
             // btnBuscarM
             // 
-            this.btnBuscarM.Location = new System.Drawing.Point(229, 30);
-            this.btnBuscarM.Name = "btnBuscarM";
-            this.btnBuscarM.Size = new System.Drawing.Size(82, 31);
-            this.btnBuscarM.TabIndex = 13;
-            this.btnBuscarM.Text = "Buscar";
-            this.btnBuscarM.UseVisualStyleBackColor = true;
-            this.btnBuscarM.Click += new System.EventHandler(this.btnBuscarM_Click_1);
+            btnBuscarM.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnBuscarM.Image = (Image)resources.GetObject("btnBuscarM.Image");
+            btnBuscarM.ImageAlign = ContentAlignment.BottomRight;
+            btnBuscarM.Location = new Point(267, 22);
+            btnBuscarM.Margin = new Padding(4, 3, 4, 3);
+            btnBuscarM.Name = "btnBuscarM";
+            btnBuscarM.Size = new Size(131, 49);
+            btnBuscarM.TabIndex = 13;
+            btnBuscarM.Text = "Buscar";
+            btnBuscarM.UseVisualStyleBackColor = true;
+            btnBuscarM.Click += btnBuscarM_Click_1;
             // 
             // groupBoxdatosM
             // 
-            this.groupBoxdatosM.Controls.Add(this.txtPrecioM);
-            this.groupBoxdatosM.Controls.Add(this.txtNombreM);
-            this.groupBoxdatosM.Controls.Add(this.label9);
-            this.groupBoxdatosM.Controls.Add(this.txtCantStockM);
-            this.groupBoxdatosM.Controls.Add(this.label6);
-            this.groupBoxdatosM.Controls.Add(this.label8);
-            this.groupBoxdatosM.Controls.Add(this.txtDescripcionM);
-            this.groupBoxdatosM.Controls.Add(this.label7);
-            this.groupBoxdatosM.Enabled = false;
-            this.groupBoxdatosM.Location = new System.Drawing.Point(6, 75);
-            this.groupBoxdatosM.Name = "groupBoxdatosM";
-            this.groupBoxdatosM.Size = new System.Drawing.Size(348, 212);
-            this.groupBoxdatosM.TabIndex = 5;
-            this.groupBoxdatosM.TabStop = false;
+            groupBoxdatosM.Controls.Add(txtPrecioM);
+            groupBoxdatosM.Controls.Add(txtNombreM);
+            groupBoxdatosM.Controls.Add(label9);
+            groupBoxdatosM.Controls.Add(txtCantStockM);
+            groupBoxdatosM.Controls.Add(label6);
+            groupBoxdatosM.Controls.Add(label8);
+            groupBoxdatosM.Controls.Add(txtDescripcionM);
+            groupBoxdatosM.Controls.Add(label7);
+            groupBoxdatosM.Enabled = false;
+            groupBoxdatosM.Location = new Point(7, 87);
+            groupBoxdatosM.Margin = new Padding(4, 3, 4, 3);
+            groupBoxdatosM.Name = "groupBoxdatosM";
+            groupBoxdatosM.Padding = new Padding(4, 3, 4, 3);
+            groupBoxdatosM.Size = new Size(406, 245);
+            groupBoxdatosM.TabIndex = 5;
+            groupBoxdatosM.TabStop = false;
             // 
             // txtPrecioM
             // 
-            this.txtPrecioM.Location = new System.Drawing.Point(142, 120);
-            this.txtPrecioM.Name = "txtPrecioM";
-            this.txtPrecioM.Size = new System.Drawing.Size(182, 20);
-            this.txtPrecioM.TabIndex = 7;
+            txtPrecioM.Location = new Point(166, 138);
+            txtPrecioM.Margin = new Padding(4, 3, 4, 3);
+            txtPrecioM.Name = "txtPrecioM";
+            txtPrecioM.Size = new Size(212, 23);
+            txtPrecioM.TabIndex = 7;
             // 
             // txtNombreM
             // 
-            this.txtNombreM.Location = new System.Drawing.Point(142, 32);
-            this.txtNombreM.Name = "txtNombreM";
-            this.txtNombreM.Size = new System.Drawing.Size(182, 20);
-            this.txtNombreM.TabIndex = 1;
+            txtNombreM.Location = new Point(166, 37);
+            txtNombreM.Margin = new Padding(4, 3, 4, 3);
+            txtNombreM.Name = "txtNombreM";
+            txtNombreM.Size = new Size(212, 23);
+            txtNombreM.TabIndex = 1;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(32, 39);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Nombre";
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label9.Location = new Point(37, 45);
+            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(53, 15);
+            label9.TabIndex = 2;
+            label9.Text = "Nombre";
             // 
             // txtCantStockM
             // 
-            this.txtCantStockM.Location = new System.Drawing.Point(142, 162);
-            this.txtCantStockM.Name = "txtCantStockM";
-            this.txtCantStockM.Size = new System.Drawing.Size(182, 20);
-            this.txtCantStockM.TabIndex = 9;
+            txtCantStockM.Location = new Point(166, 187);
+            txtCantStockM.Margin = new Padding(4, 3, 4, 3);
+            txtCantStockM.Name = "txtCantStockM";
+            txtCantStockM.Size = new Size(212, 23);
+            txtCantStockM.TabIndex = 9;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 168);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "CantStock";
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.Location = new Point(40, 194);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(64, 15);
+            label6.TabIndex = 8;
+            label6.Text = "CantStock";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(34, 82);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Descripcion";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label8.Location = new Point(40, 95);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(72, 15);
+            label8.TabIndex = 4;
+            label8.Text = "Descripcion";
             // 
             // txtDescripcionM
             // 
-            this.txtDescripcionM.Location = new System.Drawing.Point(142, 76);
-            this.txtDescripcionM.Name = "txtDescripcionM";
-            this.txtDescripcionM.Size = new System.Drawing.Size(182, 20);
-            this.txtDescripcionM.TabIndex = 5;
+            txtDescripcionM.Location = new Point(166, 88);
+            txtDescripcionM.Margin = new Padding(4, 3, 4, 3);
+            txtDescripcionM.Name = "txtDescripcionM";
+            txtDescripcionM.Size = new Size(212, 23);
+            txtDescripcionM.TabIndex = 5;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(34, 126);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Precio";
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label7.Location = new Point(40, 145);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(42, 15);
+            label7.TabIndex = 6;
+            label7.Text = "Precio";
             // 
             // txtIDM
             // 
-            this.txtIDM.Location = new System.Drawing.Point(102, 35);
-            this.txtIDM.Name = "txtIDM";
-            this.txtIDM.Size = new System.Drawing.Size(91, 20);
-            this.txtIDM.TabIndex = 12;
+            txtIDM.Location = new Point(119, 40);
+            txtIDM.Margin = new Padding(4, 3, 4, 3);
+            txtIDM.Name = "txtIDM";
+            txtIDM.Size = new Size(106, 23);
+            txtIDM.TabIndex = 12;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(34, 38);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Id Producto";
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label11.Location = new Point(40, 44);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(72, 15);
+            label11.TabIndex = 11;
+            label11.Text = "Id Producto";
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(122, 338);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(109, 39);
-            this.btnModificar.TabIndex = 10;
-            this.btnModificar.Text = "MODIFICAR";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
+            btnModificar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
+            btnModificar.ImageAlign = ContentAlignment.MiddleRight;
+            btnModificar.Location = new Point(142, 367);
+            btnModificar.Margin = new Padding(4, 3, 4, 3);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(150, 66);
+            btnModificar.TabIndex = 10;
+            btnModificar.Text = "MODIFICAR";
+            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click_1;
             // 
             // groupBoxAgregarProducto
             // 
-            this.groupBoxAgregarProducto.Controls.Add(this.txtIdProveedorA);
-            this.groupBoxAgregarProducto.Controls.Add(this.label2);
-            this.groupBoxAgregarProducto.Controls.Add(this.btnAceptarA);
-            this.groupBoxAgregarProducto.Controls.Add(this.txtCantStockA);
-            this.groupBoxAgregarProducto.Controls.Add(this.label5);
-            this.groupBoxAgregarProducto.Controls.Add(this.txtPrecioA);
-            this.groupBoxAgregarProducto.Controls.Add(this.label4);
-            this.groupBoxAgregarProducto.Controls.Add(this.txtDescripcionA);
-            this.groupBoxAgregarProducto.Controls.Add(this.label3);
-            this.groupBoxAgregarProducto.Controls.Add(this.txtNombreA);
-            this.groupBoxAgregarProducto.Controls.Add(this.label1);
-            this.groupBoxAgregarProducto.Location = new System.Drawing.Point(21, 72);
-            this.groupBoxAgregarProducto.Name = "groupBoxAgregarProducto";
-            this.groupBoxAgregarProducto.Size = new System.Drawing.Size(360, 399);
-            this.groupBoxAgregarProducto.TabIndex = 15;
-            this.groupBoxAgregarProducto.TabStop = false;
-            // 
-            // btnAceptarA
-            // 
-            this.btnAceptarA.Location = new System.Drawing.Point(122, 293);
-            this.btnAceptarA.Name = "btnAceptarA";
-            this.btnAceptarA.Size = new System.Drawing.Size(109, 39);
-            this.btnAceptarA.TabIndex = 10;
-            this.btnAceptarA.Text = "ACEPTAR";
-            this.btnAceptarA.UseVisualStyleBackColor = true;
-            this.btnAceptarA.Click += new System.EventHandler(this.btnAceptarA_Click_1);
-            // 
-            // txtCantStockA
-            // 
-            this.txtCantStockA.Location = new System.Drawing.Point(159, 177);
-            this.txtCantStockA.Name = "txtCantStockA";
-            this.txtCantStockA.Size = new System.Drawing.Size(182, 20);
-            this.txtCantStockA.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 180);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "CantStock";
-            // 
-            // txtPrecioA
-            // 
-            this.txtPrecioA.Location = new System.Drawing.Point(159, 135);
-            this.txtPrecioA.Name = "txtPrecioA";
-            this.txtPrecioA.Size = new System.Drawing.Size(182, 20);
-            this.txtPrecioA.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 138);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Precio";
-            // 
-            // txtDescripcionA
-            // 
-            this.txtDescripcionA.Location = new System.Drawing.Point(159, 91);
-            this.txtDescripcionA.Name = "txtDescripcionA";
-            this.txtDescripcionA.Size = new System.Drawing.Size(182, 20);
-            this.txtDescripcionA.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Descripcion";
-            // 
-            // txtNombreA
-            // 
-            this.txtNombreA.Location = new System.Drawing.Point(159, 41);
-            this.txtNombreA.Name = "txtNombreA";
-            this.txtNombreA.Size = new System.Drawing.Size(182, 20);
-            this.txtNombreA.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
-            // 
-            // groupBoxEliminar
-            // 
-            this.groupBoxEliminar.Controls.Add(this.txtIDE);
-            this.groupBoxEliminar.Controls.Add(this.label17);
-            this.groupBoxEliminar.Controls.Add(this.btnEliminarE);
-            this.groupBoxEliminar.Location = new System.Drawing.Point(21, 72);
-            this.groupBoxEliminar.Name = "groupBoxEliminar";
-            this.groupBoxEliminar.Size = new System.Drawing.Size(360, 399);
-            this.groupBoxEliminar.TabIndex = 20;
-            this.groupBoxEliminar.TabStop = false;
-            // 
-            // txtIDE
-            // 
-            this.txtIDE.Location = new System.Drawing.Point(174, 88);
-            this.txtIDE.Name = "txtIDE";
-            this.txtIDE.Size = new System.Drawing.Size(91, 20);
-            this.txtIDE.TabIndex = 12;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(79, 91);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(62, 13);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Id Producto";
-            // 
-            // btnEliminarE
-            // 
-            this.btnEliminarE.Location = new System.Drawing.Point(108, 169);
-            this.btnEliminarE.Name = "btnEliminarE";
-            this.btnEliminarE.Size = new System.Drawing.Size(109, 39);
-            this.btnEliminarE.TabIndex = 10;
-            this.btnEliminarE.Text = "EKIMINAR";
-            this.btnEliminarE.UseVisualStyleBackColor = true;
-            this.btnEliminarE.Click += new System.EventHandler(this.btnEliminarE_Click_1);
+            groupBoxAgregarProducto.Controls.Add(txtIdProveedorA);
+            groupBoxAgregarProducto.Controls.Add(label2);
+            groupBoxAgregarProducto.Controls.Add(btnAceptarA);
+            groupBoxAgregarProducto.Controls.Add(txtCantStockA);
+            groupBoxAgregarProducto.Controls.Add(label5);
+            groupBoxAgregarProducto.Controls.Add(txtPrecioA);
+            groupBoxAgregarProducto.Controls.Add(label4);
+            groupBoxAgregarProducto.Controls.Add(txtDescripcionA);
+            groupBoxAgregarProducto.Controls.Add(label3);
+            groupBoxAgregarProducto.Controls.Add(txtNombreA);
+            groupBoxAgregarProducto.Controls.Add(label1);
+            groupBoxAgregarProducto.Location = new Point(24, 83);
+            groupBoxAgregarProducto.Margin = new Padding(4, 3, 4, 3);
+            groupBoxAgregarProducto.Name = "groupBoxAgregarProducto";
+            groupBoxAgregarProducto.Padding = new Padding(4, 3, 4, 3);
+            groupBoxAgregarProducto.Size = new Size(420, 460);
+            groupBoxAgregarProducto.TabIndex = 15;
+            groupBoxAgregarProducto.TabStop = false;
             // 
             // txtIdProveedorA
             // 
-            this.txtIdProveedorA.Location = new System.Drawing.Point(159, 221);
-            this.txtIdProveedorA.Name = "txtIdProveedorA";
-            this.txtIdProveedorA.Size = new System.Drawing.Size(182, 20);
-            this.txtIdProveedorA.TabIndex = 12;
+            txtIdProveedorA.Location = new Point(186, 255);
+            txtIdProveedorA.Margin = new Padding(4, 3, 4, 3);
+            txtIdProveedorA.Name = "txtIdProveedorA";
+            txtIdProveedorA.Size = new Size(212, 23);
+            txtIdProveedorA.TabIndex = 12;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 224);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Id Proveedor";
+            label2.AutoSize = true;
+            label2.Location = new Point(30, 258);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(74, 15);
+            label2.TabIndex = 11;
+            label2.Text = "Id Proveedor";
+            // 
+            // btnAceptarA
+            // 
+            btnAceptarA.Location = new Point(142, 338);
+            btnAceptarA.Margin = new Padding(4, 3, 4, 3);
+            btnAceptarA.Name = "btnAceptarA";
+            btnAceptarA.Size = new Size(127, 45);
+            btnAceptarA.TabIndex = 10;
+            btnAceptarA.Text = "ACEPTAR";
+            btnAceptarA.UseVisualStyleBackColor = true;
+            btnAceptarA.Click += btnAceptarA_Click_1;
+            // 
+            // txtCantStockA
+            // 
+            txtCantStockA.Location = new Point(186, 204);
+            txtCantStockA.Margin = new Padding(4, 3, 4, 3);
+            txtCantStockA.Name = "txtCantStockA";
+            txtCantStockA.Size = new Size(212, 23);
+            txtCantStockA.TabIndex = 9;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(30, 208);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(61, 15);
+            label5.TabIndex = 8;
+            label5.Text = "CantStock";
+            // 
+            // txtPrecioA
+            // 
+            txtPrecioA.Location = new Point(186, 156);
+            txtPrecioA.Margin = new Padding(4, 3, 4, 3);
+            txtPrecioA.Name = "txtPrecioA";
+            txtPrecioA.Size = new Size(212, 23);
+            txtPrecioA.TabIndex = 7;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(30, 159);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(40, 15);
+            label4.TabIndex = 6;
+            label4.Text = "Precio";
+            // 
+            // txtDescripcionA
+            // 
+            txtDescripcionA.Location = new Point(186, 105);
+            txtDescripcionA.Margin = new Padding(4, 3, 4, 3);
+            txtDescripcionA.Name = "txtDescripcionA";
+            txtDescripcionA.Size = new Size(212, 23);
+            txtDescripcionA.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(30, 108);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Descripcion";
+            // 
+            // txtNombreA
+            // 
+            txtNombreA.Location = new Point(186, 47);
+            txtNombreA.Margin = new Padding(4, 3, 4, 3);
+            txtNombreA.Name = "txtNombreA";
+            txtNombreA.Size = new Size(212, 23);
+            txtNombreA.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(30, 51);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(51, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Nombre";
+            // 
+            // groupBoxEliminar
+            // 
+            groupBoxEliminar.Controls.Add(txtIDE);
+            groupBoxEliminar.Controls.Add(label17);
+            groupBoxEliminar.Controls.Add(btnEliminarE);
+            groupBoxEliminar.Location = new Point(24, 83);
+            groupBoxEliminar.Margin = new Padding(4, 3, 4, 3);
+            groupBoxEliminar.Name = "groupBoxEliminar";
+            groupBoxEliminar.Padding = new Padding(4, 3, 4, 3);
+            groupBoxEliminar.Size = new Size(420, 460);
+            groupBoxEliminar.TabIndex = 20;
+            groupBoxEliminar.TabStop = false;
+            // 
+            // txtIDE
+            // 
+            txtIDE.Location = new Point(203, 102);
+            txtIDE.Margin = new Padding(4, 3, 4, 3);
+            txtIDE.Name = "txtIDE";
+            txtIDE.Size = new Size(106, 23);
+            txtIDE.TabIndex = 12;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(92, 105);
+            label17.Margin = new Padding(4, 0, 4, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(69, 15);
+            label17.TabIndex = 11;
+            label17.Text = "Id Producto";
+            // 
+            // btnEliminarE
+            // 
+            btnEliminarE.Location = new Point(126, 195);
+            btnEliminarE.Margin = new Padding(4, 3, 4, 3);
+            btnEliminarE.Name = "btnEliminarE";
+            btnEliminarE.Size = new Size(127, 45);
+            btnEliminarE.TabIndex = 10;
+            btnEliminarE.Text = "EKIMINAR";
+            btnEliminarE.UseVisualStyleBackColor = true;
+            btnEliminarE.Click += btnEliminarE_Click_1;
             // 
             // Producto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 500);
-            this.Controls.Add(this.btnEliminarProducto);
-            this.Controls.Add(this.btnModificarProducto);
-            this.Controls.Add(this.btnAgregarProducto);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBoxModificar);
-            this.Controls.Add(this.groupBoxAgregarProducto);
-            this.Controls.Add(this.groupBoxEliminar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Producto";
-            this.Text = "Producto";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBoxModificar.ResumeLayout(false);
-            this.groupBoxModificar.PerformLayout();
-            this.groupBoxdatosM.ResumeLayout(false);
-            this.groupBoxdatosM.PerformLayout();
-            this.groupBoxAgregarProducto.ResumeLayout(false);
-            this.groupBoxAgregarProducto.PerformLayout();
-            this.groupBoxEliminar.ResumeLayout(false);
-            this.groupBoxEliminar.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.BurlyWood;
+            ClientSize = new Size(1050, 577);
+            Controls.Add(btnEliminarProducto);
+            Controls.Add(btnModificarProducto);
+            Controls.Add(btnAgregarProducto);
+            Controls.Add(dataGridView1);
+            Controls.Add(groupBoxModificar);
+            Controls.Add(groupBoxAgregarProducto);
+            Controls.Add(groupBoxEliminar);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Producto";
+            Text = "Producto";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBoxModificar.ResumeLayout(false);
+            groupBoxModificar.PerformLayout();
+            groupBoxdatosM.ResumeLayout(false);
+            groupBoxdatosM.PerformLayout();
+            groupBoxAgregarProducto.ResumeLayout(false);
+            groupBoxAgregarProducto.PerformLayout();
+            groupBoxEliminar.ResumeLayout(false);
+            groupBoxEliminar.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

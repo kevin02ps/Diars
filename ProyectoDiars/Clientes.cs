@@ -47,11 +47,11 @@ namespace InversionesHermanos
             }
             else
             {
-                groupBoxdatosM.Enabled=false;
+                groupBoxdatosM.Enabled = false;
                 txtDniM.Text = "";
                 txtDireccionM.Text = "";
                 txtTelefonoM.Text = "";
-                txtCorreoM.Text = "";      
+                txtCorreoM.Text = "";
             }
         }
 
@@ -88,5 +88,9 @@ namespace InversionesHermanos
             cargar_tabla();
         }
 
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -427,6 +427,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Clientes";
             Text = "Clientes";
+            Load += Clientes_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBoxAgregarCliente.ResumeLayout(false);
             groupBoxAgregarCliente.PerformLayout();

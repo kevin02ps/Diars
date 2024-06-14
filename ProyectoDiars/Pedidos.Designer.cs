@@ -28,295 +28,328 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.id_producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBuscarCliente = new System.Windows.Forms.Button();
-            this.groupBoxPedidoPedido = new System.Windows.Forms.GroupBox();
-            this.txtPrecioAgregar = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblDescripcionProducto = new System.Windows.Forms.Label();
-            this.btnAceptarAgregar = new System.Windows.Forms.Button();
-            this.txtCantidadAgregar = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnBuscarProductoAgregar = new System.Windows.Forms.Button();
-            this.txtIdProducto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtIdCliente = new System.Windows.Forms.TextBox();
-            this.groupBoxCliente = new System.Windows.Forms.GroupBox();
-            this.lblNombreCliente = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnGenerarComprobante = new System.Windows.Forms.Button();
-            this.comboBoxTipoPago = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.groupBoxPedidoPedido.SuspendLayout();
-            this.groupBoxCliente.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
+            dataGridView1 = new DataGridView();
+            dataGridView = new DataGridView();
+            id_producto = new DataGridViewTextBoxColumn();
+            Producto = new DataGridViewTextBoxColumn();
+            Cantidad = new DataGridViewTextBoxColumn();
+            Precio = new DataGridViewTextBoxColumn();
+            PrecioTotal = new DataGridViewTextBoxColumn();
+            btnBuscarCliente = new Button();
+            groupBoxPedidoPedido = new GroupBox();
+            txtPrecioAgregar = new TextBox();
+            label5 = new Label();
+            lblDescripcionProducto = new Label();
+            btnAceptarAgregar = new Button();
+            txtCantidadAgregar = new TextBox();
+            label3 = new Label();
+            btnBuscarProductoAgregar = new Button();
+            txtIdProducto = new TextBox();
+            label2 = new Label();
+            txtIdCliente = new TextBox();
+            groupBoxCliente = new GroupBox();
+            lblNombreCliente = new Label();
+            label1 = new Label();
+            btnGenerarComprobante = new Button();
+            comboBoxTipoPago = new ComboBox();
+            label4 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
+            groupBoxPedidoPedido.SuspendLayout();
+            groupBoxCliente.SuspendLayout();
+            SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(554, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(334, 252);
-            this.dataGridView1.TabIndex = 13;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(646, 57);
+            dataGridView1.Margin = new Padding(4, 3, 4, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(390, 291);
+            dataGridView1.TabIndex = 13;
             // 
             // dataGridView
             // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id_producto,
-            this.Producto,
-            this.Cantidad,
-            this.Precio,
-            this.PrecioTotal});
-            this.dataGridView.Location = new System.Drawing.Point(36, 328);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(698, 138);
-            this.dataGridView.TabIndex = 7;
+            dataGridView.AllowUserToAddRows = false;
+            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView.Columns.AddRange(new DataGridViewColumn[] { id_producto, Producto, Cantidad, Precio, PrecioTotal });
+            dataGridView.Location = new Point(38, 377);
+            dataGridView.Margin = new Padding(4, 3, 4, 3);
+            dataGridView.Name = "dataGridView";
+            dataGridView.Size = new Size(674, 159);
+            dataGridView.TabIndex = 7;
             // 
             // id_producto
             // 
-            this.id_producto.HeaderText = "id_producto";
-            this.id_producto.Name = "id_producto";
-            this.id_producto.Width = 80;
+            id_producto.HeaderText = "id_producto";
+            id_producto.Name = "id_producto";
+            id_producto.Width = 80;
             // 
             // Producto
             // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            this.Producto.Width = 250;
+            Producto.HeaderText = "Producto";
+            Producto.Name = "Producto";
+            Producto.Width = 250;
             // 
             // Cantidad
             // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
+            Cantidad.HeaderText = "Cantidad";
+            Cantidad.Name = "Cantidad";
             // 
             // Precio
             // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
+            Precio.HeaderText = "Precio";
+            Precio.Name = "Precio";
             // 
             // PrecioTotal
             // 
-            this.PrecioTotal.HeaderText = "PrecioTotal";
-            this.PrecioTotal.Name = "PrecioTotal";
+            PrecioTotal.HeaderText = "PrecioTotal";
+            PrecioTotal.Name = "PrecioTotal";
             // 
             // btnBuscarCliente
             // 
-            this.btnBuscarCliente.Location = new System.Drawing.Point(200, 46);
-            this.btnBuscarCliente.Name = "btnBuscarCliente";
-            this.btnBuscarCliente.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarCliente.TabIndex = 11;
-            this.btnBuscarCliente.Text = "Buscar";
-            this.btnBuscarCliente.UseVisualStyleBackColor = true;
-            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click_1);
+            btnBuscarCliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnBuscarCliente.Image = (Image)resources.GetObject("btnBuscarCliente.Image");
+            btnBuscarCliente.ImageAlign = ContentAlignment.MiddleRight;
+            btnBuscarCliente.Location = new Point(233, 41);
+            btnBuscarCliente.Margin = new Padding(4, 3, 4, 3);
+            btnBuscarCliente.Name = "btnBuscarCliente";
+            btnBuscarCliente.Size = new Size(112, 40);
+            btnBuscarCliente.TabIndex = 11;
+            btnBuscarCliente.Text = "Buscar";
+            btnBuscarCliente.UseVisualStyleBackColor = true;
+            btnBuscarCliente.Click += btnBuscarCliente_Click_1;
             // 
             // groupBoxPedidoPedido
             // 
-            this.groupBoxPedidoPedido.Controls.Add(this.txtPrecioAgregar);
-            this.groupBoxPedidoPedido.Controls.Add(this.label5);
-            this.groupBoxPedidoPedido.Controls.Add(this.lblDescripcionProducto);
-            this.groupBoxPedidoPedido.Controls.Add(this.btnAceptarAgregar);
-            this.groupBoxPedidoPedido.Controls.Add(this.txtCantidadAgregar);
-            this.groupBoxPedidoPedido.Controls.Add(this.label3);
-            this.groupBoxPedidoPedido.Enabled = false;
-            this.groupBoxPedidoPedido.Location = new System.Drawing.Point(57, 163);
-            this.groupBoxPedidoPedido.Name = "groupBoxPedidoPedido";
-            this.groupBoxPedidoPedido.Size = new System.Drawing.Size(436, 138);
-            this.groupBoxPedidoPedido.TabIndex = 12;
-            this.groupBoxPedidoPedido.TabStop = false;
-            this.groupBoxPedidoPedido.Text = "Pedido";
+            groupBoxPedidoPedido.Controls.Add(txtPrecioAgregar);
+            groupBoxPedidoPedido.Controls.Add(label5);
+            groupBoxPedidoPedido.Controls.Add(lblDescripcionProducto);
+            groupBoxPedidoPedido.Controls.Add(btnAceptarAgregar);
+            groupBoxPedidoPedido.Controls.Add(txtCantidadAgregar);
+            groupBoxPedidoPedido.Controls.Add(label3);
+            groupBoxPedidoPedido.Enabled = false;
+            groupBoxPedidoPedido.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBoxPedidoPedido.Location = new Point(66, 188);
+            groupBoxPedidoPedido.Margin = new Padding(4, 3, 4, 3);
+            groupBoxPedidoPedido.Name = "groupBoxPedidoPedido";
+            groupBoxPedidoPedido.Padding = new Padding(4, 3, 4, 3);
+            groupBoxPedidoPedido.Size = new Size(509, 159);
+            groupBoxPedidoPedido.TabIndex = 12;
+            groupBoxPedidoPedido.TabStop = false;
+            groupBoxPedidoPedido.Text = "Pedido";
             // 
             // txtPrecioAgregar
             // 
-            this.txtPrecioAgregar.Enabled = false;
-            this.txtPrecioAgregar.Location = new System.Drawing.Point(96, 94);
-            this.txtPrecioAgregar.Name = "txtPrecioAgregar";
-            this.txtPrecioAgregar.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecioAgregar.TabIndex = 10;
+            txtPrecioAgregar.Enabled = false;
+            txtPrecioAgregar.Location = new Point(112, 108);
+            txtPrecioAgregar.Margin = new Padding(4, 3, 4, 3);
+            txtPrecioAgregar.Name = "txtPrecioAgregar";
+            txtPrecioAgregar.Size = new Size(116, 23);
+            txtPrecioAgregar.TabIndex = 10;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 97);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Precio";
+            label5.AutoSize = true;
+            label5.Location = new Point(22, 112);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(42, 15);
+            label5.TabIndex = 9;
+            label5.Text = "Precio";
             // 
             // lblDescripcionProducto
             // 
-            this.lblDescripcionProducto.AutoSize = true;
-            this.lblDescripcionProducto.Location = new System.Drawing.Point(52, 26);
-            this.lblDescripcionProducto.Name = "lblDescripcionProducto";
-            this.lblDescripcionProducto.Size = new System.Drawing.Size(16, 13);
-            this.lblDescripcionProducto.TabIndex = 8;
-            this.lblDescripcionProducto.Text = "->";
+            lblDescripcionProducto.AutoSize = true;
+            lblDescripcionProducto.Location = new Point(61, 30);
+            lblDescripcionProducto.Margin = new Padding(4, 0, 4, 0);
+            lblDescripcionProducto.Name = "lblDescripcionProducto";
+            lblDescripcionProducto.Size = new Size(20, 15);
+            lblDescripcionProducto.TabIndex = 8;
+            lblDescripcionProducto.Text = "->";
             // 
             // btnAceptarAgregar
             // 
-            this.btnAceptarAgregar.Location = new System.Drawing.Point(289, 60);
-            this.btnAceptarAgregar.Name = "btnAceptarAgregar";
-            this.btnAceptarAgregar.Size = new System.Drawing.Size(95, 41);
-            this.btnAceptarAgregar.TabIndex = 7;
-            this.btnAceptarAgregar.Text = "Agregar";
-            this.btnAceptarAgregar.UseVisualStyleBackColor = true;
-            this.btnAceptarAgregar.Click += new System.EventHandler(this.btnAceptarAgregar_Click_1);
+            btnAceptarAgregar.Image = (Image)resources.GetObject("btnAceptarAgregar.Image");
+            btnAceptarAgregar.ImageAlign = ContentAlignment.MiddleRight;
+            btnAceptarAgregar.Location = new Point(337, 69);
+            btnAceptarAgregar.Margin = new Padding(4, 3, 4, 3);
+            btnAceptarAgregar.Name = "btnAceptarAgregar";
+            btnAceptarAgregar.Size = new Size(119, 47);
+            btnAceptarAgregar.TabIndex = 7;
+            btnAceptarAgregar.Text = "Agregar";
+            btnAceptarAgregar.UseVisualStyleBackColor = true;
+            btnAceptarAgregar.Click += btnAceptarAgregar_Click_1;
             // 
             // txtCantidadAgregar
             // 
-            this.txtCantidadAgregar.Location = new System.Drawing.Point(96, 53);
-            this.txtCantidadAgregar.Name = "txtCantidadAgregar";
-            this.txtCantidadAgregar.Size = new System.Drawing.Size(100, 20);
-            this.txtCantidadAgregar.TabIndex = 6;
-            this.txtCantidadAgregar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadAgregar_KeyPress);
+            txtCantidadAgregar.Location = new Point(112, 61);
+            txtCantidadAgregar.Margin = new Padding(4, 3, 4, 3);
+            txtCantidadAgregar.Name = "txtCantidadAgregar";
+            txtCantidadAgregar.Size = new Size(116, 23);
+            txtCantidadAgregar.TabIndex = 6;
+            txtCantidadAgregar.KeyPress += txtCantidadAgregar_KeyPress;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Cantidad";
+            label3.AutoSize = true;
+            label3.Location = new Point(22, 69);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(55, 15);
+            label3.TabIndex = 5;
+            label3.Text = "Cantidad";
             // 
             // btnBuscarProductoAgregar
             // 
-            this.btnBuscarProductoAgregar.Location = new System.Drawing.Point(200, 129);
-            this.btnBuscarProductoAgregar.Name = "btnBuscarProductoAgregar";
-            this.btnBuscarProductoAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarProductoAgregar.TabIndex = 13;
-            this.btnBuscarProductoAgregar.Text = "Buscar";
-            this.btnBuscarProductoAgregar.UseVisualStyleBackColor = true;
-            this.btnBuscarProductoAgregar.Click += new System.EventHandler(this.btnBuscarProductoAgregar_Click_1);
+            btnBuscarProductoAgregar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnBuscarProductoAgregar.Image = (Image)resources.GetObject("btnBuscarProductoAgregar.Image");
+            btnBuscarProductoAgregar.ImageAlign = ContentAlignment.MiddleRight;
+            btnBuscarProductoAgregar.Location = new Point(233, 146);
+            btnBuscarProductoAgregar.Margin = new Padding(4, 3, 4, 3);
+            btnBuscarProductoAgregar.Name = "btnBuscarProductoAgregar";
+            btnBuscarProductoAgregar.Size = new Size(112, 37);
+            btnBuscarProductoAgregar.TabIndex = 13;
+            btnBuscarProductoAgregar.Text = "Buscar";
+            btnBuscarProductoAgregar.UseVisualStyleBackColor = true;
+            btnBuscarProductoAgregar.Click += btnBuscarProductoAgregar_Click_1;
             // 
             // txtIdProducto
             // 
-            this.txtIdProducto.Location = new System.Drawing.Point(101, 131);
-            this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(60, 20);
-            this.txtIdProducto.TabIndex = 4;
-            this.txtIdProducto.TextChanged += new System.EventHandler(this.txtIdProducto_TextChanged);
-            this.txtIdProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdProducto_KeyPress);
-            this.txtIdProducto.MouseEnter += new System.EventHandler(this.txtIdProducto_MouseEnter_1);
+            txtIdProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txtIdProducto.Location = new Point(118, 151);
+            txtIdProducto.Margin = new Padding(4, 3, 4, 3);
+            txtIdProducto.Name = "txtIdProducto";
+            txtIdProducto.Size = new Size(69, 23);
+            txtIdProducto.TabIndex = 4;
+            txtIdProducto.TextChanged += txtIdProducto_TextChanged;
+            txtIdProducto.KeyPress += txtIdProducto_KeyPress;
+            txtIdProducto.MouseEnter += txtIdProducto_MouseEnter_1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Id Producto";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.Location = new Point(38, 155);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(72, 15);
+            label2.TabIndex = 0;
+            label2.Text = "Id Producto";
             // 
             // txtIdCliente
             // 
-            this.txtIdCliente.Location = new System.Drawing.Point(93, 46);
-            this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(64, 20);
-            this.txtIdCliente.TabIndex = 10;
-            this.txtIdCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdCliente_KeyPress);
-            this.txtIdCliente.MouseEnter += new System.EventHandler(this.txtIdCliente_MouseEnter_1);
+            txtIdCliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txtIdCliente.Location = new Point(108, 53);
+            txtIdCliente.Margin = new Padding(4, 3, 4, 3);
+            txtIdCliente.Name = "txtIdCliente";
+            txtIdCliente.Size = new Size(74, 23);
+            txtIdCliente.TabIndex = 10;
+            txtIdCliente.KeyPress += txtIdCliente_KeyPress;
+            txtIdCliente.MouseEnter += txtIdCliente_MouseEnter_1;
             // 
             // groupBoxCliente
             // 
-            this.groupBoxCliente.Controls.Add(this.lblNombreCliente);
-            this.groupBoxCliente.Location = new System.Drawing.Point(57, 75);
-            this.groupBoxCliente.Name = "groupBoxCliente";
-            this.groupBoxCliente.Size = new System.Drawing.Size(436, 46);
-            this.groupBoxCliente.TabIndex = 8;
-            this.groupBoxCliente.TabStop = false;
-            this.groupBoxCliente.Text = "Cliente";
+            groupBoxCliente.Controls.Add(lblNombreCliente);
+            groupBoxCliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            groupBoxCliente.Location = new Point(66, 87);
+            groupBoxCliente.Margin = new Padding(4, 3, 4, 3);
+            groupBoxCliente.Name = "groupBoxCliente";
+            groupBoxCliente.Padding = new Padding(4, 3, 4, 3);
+            groupBoxCliente.Size = new Size(509, 53);
+            groupBoxCliente.TabIndex = 8;
+            groupBoxCliente.TabStop = false;
+            groupBoxCliente.Text = "Cliente";
             // 
             // lblNombreCliente
             // 
-            this.lblNombreCliente.AutoSize = true;
-            this.lblNombreCliente.Location = new System.Drawing.Point(35, 16);
-            this.lblNombreCliente.Name = "lblNombreCliente";
-            this.lblNombreCliente.Size = new System.Drawing.Size(16, 13);
-            this.lblNombreCliente.TabIndex = 0;
-            this.lblNombreCliente.Text = "...";
+            lblNombreCliente.AutoSize = true;
+            lblNombreCliente.Location = new Point(41, 18);
+            lblNombreCliente.Margin = new Padding(4, 0, 4, 0);
+            lblNombreCliente.Name = "lblNombreCliente";
+            lblNombreCliente.Size = new Size(16, 15);
+            lblNombreCliente.TabIndex = 0;
+            lblNombreCliente.Text = "...";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Id Cliente:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.Location = new Point(38, 57);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 15);
+            label1.TabIndex = 9;
+            label1.Text = "Id Cliente:";
             // 
             // btnGenerarComprobante
             // 
-            this.btnGenerarComprobante.Location = new System.Drawing.Point(753, 405);
-            this.btnGenerarComprobante.Name = "btnGenerarComprobante";
-            this.btnGenerarComprobante.Size = new System.Drawing.Size(135, 42);
-            this.btnGenerarComprobante.TabIndex = 14;
-            this.btnGenerarComprobante.Text = "Generar Comprobante";
-            this.btnGenerarComprobante.UseVisualStyleBackColor = true;
-            this.btnGenerarComprobante.Click += new System.EventHandler(this.btnGenerarComprobante_Click);
+            btnGenerarComprobante.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnGenerarComprobante.Image = (Image)resources.GetObject("btnGenerarComprobante.Image");
+            btnGenerarComprobante.ImageAlign = ContentAlignment.MiddleRight;
+            btnGenerarComprobante.Location = new Point(781, 458);
+            btnGenerarComprobante.Margin = new Padding(4, 3, 4, 3);
+            btnGenerarComprobante.Name = "btnGenerarComprobante";
+            btnGenerarComprobante.Size = new Size(136, 56);
+            btnGenerarComprobante.TabIndex = 14;
+            btnGenerarComprobante.Text = "Generar Comprobante   ";
+            btnGenerarComprobante.UseVisualStyleBackColor = true;
+            btnGenerarComprobante.Click += btnGenerarComprobante_Click;
             // 
             // comboBoxTipoPago
             // 
-            this.comboBoxTipoPago.FormattingEnabled = true;
-            this.comboBoxTipoPago.Items.AddRange(new object[] {
-            "Efectivo",
-            "Tarjeta de Crédito",
-            "Transferencia Bancaria",
-            "Cheque",
-            "Billetera Electrónica"});
-            this.comboBoxTipoPago.Location = new System.Drawing.Point(753, 364);
-            this.comboBoxTipoPago.Name = "comboBoxTipoPago";
-            this.comboBoxTipoPago.Size = new System.Drawing.Size(135, 21);
-            this.comboBoxTipoPago.TabIndex = 15;
+            comboBoxTipoPago.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            comboBoxTipoPago.FormattingEnabled = true;
+            comboBoxTipoPago.Items.AddRange(new object[] { "Efectivo", "Tarjeta de Crédito", "Transferencia Bancaria", "Cheque", "Billetera Electrónica" });
+            comboBoxTipoPago.Location = new Point(769, 397);
+            comboBoxTipoPago.Margin = new Padding(4, 3, 4, 3);
+            comboBoxTipoPago.Name = "comboBoxTipoPago";
+            comboBoxTipoPago.Size = new Size(157, 23);
+            comboBoxTipoPago.TabIndex = 15;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(750, 348);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Tipo de pago";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.Location = new Point(766, 379);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(78, 15);
+            label4.TabIndex = 16;
+            label4.Text = "Tipo de pago";
             // 
             // Pedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 500);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxTipoPago);
-            this.Controls.Add(this.btnBuscarProductoAgregar);
-            this.Controls.Add(this.btnGenerarComprobante);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dataGridView);
-            this.Controls.Add(this.btnBuscarCliente);
-            this.Controls.Add(this.groupBoxPedidoPedido);
-            this.Controls.Add(this.txtIdCliente);
-            this.Controls.Add(this.groupBoxCliente);
-            this.Controls.Add(this.txtIdProducto);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Pedidos";
-            this.Text = "Pedidos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.groupBoxPedidoPedido.ResumeLayout(false);
-            this.groupBoxPedidoPedido.PerformLayout();
-            this.groupBoxCliente.ResumeLayout(false);
-            this.groupBoxCliente.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(1050, 577);
+            Controls.Add(label4);
+            Controls.Add(comboBoxTipoPago);
+            Controls.Add(btnBuscarProductoAgregar);
+            Controls.Add(btnGenerarComprobante);
+            Controls.Add(dataGridView1);
+            Controls.Add(dataGridView);
+            Controls.Add(btnBuscarCliente);
+            Controls.Add(groupBoxPedidoPedido);
+            Controls.Add(txtIdCliente);
+            Controls.Add(groupBoxCliente);
+            Controls.Add(txtIdProducto);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Pedidos";
+            Text = "Pedidos";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
+            groupBoxPedidoPedido.ResumeLayout(false);
+            groupBoxPedidoPedido.PerformLayout();
+            groupBoxCliente.ResumeLayout(false);
+            groupBoxCliente.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

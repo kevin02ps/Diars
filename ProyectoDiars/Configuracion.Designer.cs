@@ -28,51 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtUbiComprobantes = new System.Windows.Forms.TextBox();
-            this.btnUbiComprobante = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracion));
+            label1 = new Label();
+            txtUbiComprobantes = new TextBox();
+            btnUbiComprobante = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ubicacion donde se guarda los comprobantes:";
+            label1.AutoSize = true;
+            label1.Location = new Point(89, 51);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(252, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Ubicacion donde se guarda los comprobantes:";
             // 
             // txtUbiComprobantes
             // 
-            this.txtUbiComprobantes.Location = new System.Drawing.Point(91, 71);
-            this.txtUbiComprobantes.Name = "txtUbiComprobantes";
-            this.txtUbiComprobantes.Size = new System.Drawing.Size(412, 20);
-            this.txtUbiComprobantes.TabIndex = 1;
+            txtUbiComprobantes.Location = new Point(89, 81);
+            txtUbiComprobantes.Margin = new Padding(4, 3, 4, 3);
+            txtUbiComprobantes.Name = "txtUbiComprobantes";
+            txtUbiComprobantes.Size = new Size(480, 23);
+            txtUbiComprobantes.TabIndex = 1;
             // 
             // btnUbiComprobante
             // 
-            this.btnUbiComprobante.Location = new System.Drawing.Point(509, 68);
-            this.btnUbiComprobante.Name = "btnUbiComprobante";
-            this.btnUbiComprobante.Size = new System.Drawing.Size(103, 23);
-            this.btnUbiComprobante.TabIndex = 2;
-            this.btnUbiComprobante.Text = "CONFIRMAR";
-            this.btnUbiComprobante.UseVisualStyleBackColor = true;
-            this.btnUbiComprobante.Click += new System.EventHandler(this.btnUbiComprobante_Click);
+            btnUbiComprobante.Location = new Point(594, 78);
+            btnUbiComprobante.Margin = new Padding(4, 3, 4, 3);
+            btnUbiComprobante.Name = "btnUbiComprobante";
+            btnUbiComprobante.Size = new Size(120, 27);
+            btnUbiComprobante.TabIndex = 2;
+            btnUbiComprobante.Text = "CONFIRMAR";
+            btnUbiComprobante.UseVisualStyleBackColor = true;
+            btnUbiComprobante.Click += btnUbiComprobante_Click;
             // 
             // Configuracion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 461);
-            this.Controls.Add(this.btnUbiComprobante);
-            this.Controls.Add(this.txtUbiComprobantes);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Configuracion";
-            this.Text = "Configuracion";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(749, 421);
+            Controls.Add(btnUbiComprobante);
+            Controls.Add(txtUbiComprobantes);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Configuracion";
+            Text = "Configuracion";
+            Load += Configuracion_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

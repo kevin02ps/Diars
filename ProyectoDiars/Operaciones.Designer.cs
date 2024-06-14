@@ -60,7 +60,7 @@
             btnVentas.Name = "btnVentas";
             btnVentas.Size = new Size(233, 46);
             btnVentas.TabIndex = 0;
-            btnVentas.Text = "Empledo";
+            btnVentas.Text = "Empleado";
             btnVentas.UseVisualStyleBackColor = true;
             btnVentas.Click += btnEmpleado_Click;
             // 
@@ -154,7 +154,7 @@
             btnProducto.Name = "btnProducto";
             btnProducto.Size = new Size(233, 46);
             btnProducto.TabIndex = 2;
-            btnProducto.Text = "Producto";
+            btnProducto.Text = "Productos";
             btnProducto.UseVisualStyleBackColor = true;
             btnProducto.Click += btnProducto_Click;
             // 

@@ -722,7 +722,7 @@ namespace InversionesHermanos.Conexion
             try
             {
                 string query = "INSERT INTO Usuarios (Usuario, Contraseña, Id_TipoEstado) " +
-                               "VALUES (@usuario, @contraseña, 1)";
+                               "VALUES (@usuario, @contraseña, 2)";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {

@@ -29,36 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            btnIniciarSesion = new Button();
             txtUsuario = new TextBox();
             txtPassword = new TextBox();
-            label3 = new Label();
             pictureBox1 = new PictureBox();
+            btnIniciarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // btnIniciarSesion
-            // 
-            btnIniciarSesion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnIniciarSesion.Location = new Point(138, 323);
-            btnIniciarSesion.Margin = new Padding(4, 3, 4, 3);
-            btnIniciarSesion.Name = "btnIniciarSesion";
-            btnIniciarSesion.Size = new Size(136, 41);
-            btnIniciarSesion.TabIndex = 3;
-            btnIniciarSesion.Text = "Iniciar Sesión";
-            btnIniciarSesion.UseVisualStyleBackColor = true;
-            btnIniciarSesion.Click += btnIniciarSesion_Click;
             // 
             // txtUsuario
             // 
             txtUsuario.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtUsuario.ForeColor = Color.Gray;
-            txtUsuario.Location = new Point(98, 223);
+            txtUsuario.Location = new Point(98, 192);
             txtUsuario.Multiline = true;
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(221, 29);
+            txtUsuario.Size = new Size(228, 31);
             txtUsuario.TabIndex = 1;
             txtUsuario.Text = "Usuario";
+            txtUsuario.TextAlign = HorizontalAlignment.Center;
             // 
             // txtPassword
             // 
@@ -66,43 +54,50 @@
             txtPassword.AccessibleName = "";
             txtPassword.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtPassword.ForeColor = Color.Gray;
-            txtPassword.Location = new Point(98, 269);
+            txtPassword.Location = new Point(98, 241);
             txtPassword.MaxLength = 30;
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(221, 29);
+            txtPassword.Size = new Size(228, 32);
             txtPassword.TabIndex = 2;
             txtPassword.Text = "Contraseña";
+            txtPassword.TextAlign = HorizontalAlignment.Center;
             txtPassword.UseSystemPasswordChar = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(98, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(209, 29);
-            label3.TabIndex = 0;
-            label3.Text = "INICIAR SESION";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(114, 41);
+            pictureBox1.Location = new Point(137, 34);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(173, 166);
+            pictureBox1.Size = new Size(133, 122);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            // 
+            // btnIniciarSesion
+            // 
+            btnIniciarSesion.BackColor = Color.Linen;
+            btnIniciarSesion.FlatAppearance.BorderColor = Color.DarkGray;
+            btnIniciarSesion.FlatAppearance.BorderSize = 3;
+            btnIniciarSesion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnIniciarSesion.Image = (Image)resources.GetObject("btnIniciarSesion.Image");
+            btnIniciarSesion.ImageAlign = ContentAlignment.MiddleRight;
+            btnIniciarSesion.Location = new Point(116, 297);
+            btnIniciarSesion.Margin = new Padding(4, 3, 4, 3);
+            btnIniciarSesion.Name = "btnIniciarSesion";
+            btnIniciarSesion.Size = new Size(172, 43);
+            btnIniciarSesion.TabIndex = 3;
+            btnIniciarSesion.Text = "Iniciar Sesión";
+            btnIniciarSesion.UseVisualStyleBackColor = false;
+            btnIniciarSesion.Click += btnIniciarSesion_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Aquamarine;
+            BackColor = Color.Azure;
             ClientSize = new Size(404, 415);
             Controls.Add(pictureBox1);
-            Controls.Add(label3);
             Controls.Add(txtPassword);
             Controls.Add(txtUsuario);
             Controls.Add(btnIniciarSesion);
@@ -121,12 +116,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnIniciarSesion;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label3;
         private PictureBox pictureBox1;
+        private Button btnIniciarSesion;
     }
 }
 

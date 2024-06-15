@@ -472,7 +472,7 @@
             btnEliminarE.Name = "btnEliminarE";
             btnEliminarE.Size = new Size(127, 45);
             btnEliminarE.TabIndex = 10;
-            btnEliminarE.Text = "EKIMINAR";
+            btnEliminarE.Text = "ELIMINAR";
             btnEliminarE.UseVisualStyleBackColor = true;
             btnEliminarE.Click += btnEliminarE_Click_1;
             // 

@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars\\proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars\\proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1655,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Producto.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Producto.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Producto.cs",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Comprobante.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Comprobante.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Comprobante.cs",
@@ -118,29 +118,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Operaciones.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Operaciones.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Operaciones.cs",
               "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T17:40:36.159Z"
+              "WhenOpened": "2024-06-14T17:40:36.159Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Login.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
               "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Login.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoDiars\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T02:09:43.288Z"
+              "WhenOpened": "2024-06-15T02:09:43.288Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Proveedores.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Proveedores.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Proveedores.cs",
@@ -152,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Consulta.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Consulta.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
@@ -164,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Login.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
@@ -176,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Configuracion.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Configuracion.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Configuracion.cs",
@@ -188,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Pedidos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Pedidos.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Pedidos.cs",
@@ -200,14 +202,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Clientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Clientes.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Clientes.cs",
-              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars\\ProyectoDiars\\Clientes.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoDiars\\Clientes.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T17:48:43.622Z"
+              "WhenOpened": "2024-06-14T17:48:43.622Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         },

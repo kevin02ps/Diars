@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             dataGridView1 = new DataGridView();
             groupBoxAgregarCliente = new GroupBox();
@@ -44,6 +47,9 @@
             btnModificarCliente = new Button();
             groupBoxModificar = new GroupBox();
             btnBuscarM = new Button();
+            txtIDM = new TextBox();
+            label11 = new Label();
+            btnModificar = new Button();
             groupBoxdatosM = new GroupBox();
             txtTelefonoM = new TextBox();
             txtDniM = new TextBox();
@@ -53,9 +59,6 @@
             label8 = new Label();
             txtDireccionM = new TextBox();
             label7 = new Label();
-            txtIDM = new TextBox();
-            label11 = new Label();
-            btnModificar = new Button();
             groupBoxEliminar = new GroupBox();
             txtIDE = new TextBox();
             label17 = new Label();
@@ -70,10 +73,36 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = Color.SteelBlue;
             dataGridView1.Location = new Point(455, 14);
             dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.Size = new Size(581, 531);
             dataGridView1.TabIndex = 0;
             // 
@@ -98,12 +127,14 @@
             // 
             // btnAceptarA
             // 
+            btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
+            btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
             btnAceptarA.Location = new Point(142, 338);
             btnAceptarA.Margin = new Padding(4, 3, 4, 3);
             btnAceptarA.Name = "btnAceptarA";
-            btnAceptarA.Size = new Size(127, 45);
+            btnAceptarA.Size = new Size(129, 45);
             btnAceptarA.TabIndex = 10;
-            btnAceptarA.Text = "ACEPTAR";
+            btnAceptarA.Text = "AGREGAR";
             btnAceptarA.UseVisualStyleBackColor = true;
             btnAceptarA.Click += btnAceptarA_Click;
             // 
@@ -181,6 +212,7 @@
             // 
             // btnAgregarCliente
             // 
+            btnAgregarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregarCliente.Image = (Image)resources.GetObject("btnAgregarCliente.Image");
             btnAgregarCliente.ImageAlign = ContentAlignment.MiddleRight;
             btnAgregarCliente.Location = new Point(28, 30);
@@ -194,12 +226,13 @@
             // 
             // btnModificarCliente
             // 
+            btnModificarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnModificarCliente.Image = (Image)resources.GetObject("btnModificarCliente.Image");
             btnModificarCliente.ImageAlign = ContentAlignment.MiddleRight;
             btnModificarCliente.Location = new Point(163, 30);
             btnModificarCliente.Margin = new Padding(4, 3, 4, 3);
             btnModificarCliente.Name = "btnModificarCliente";
-            btnModificarCliente.Size = new Size(111, 36);
+            btnModificarCliente.Size = new Size(122, 36);
             btnModificarCliente.TabIndex = 3;
             btnModificarCliente.Text = "Modificar";
             btnModificarCliente.UseVisualStyleBackColor = true;
@@ -208,10 +241,10 @@
             // groupBoxModificar
             // 
             groupBoxModificar.Controls.Add(btnBuscarM);
-            groupBoxModificar.Controls.Add(groupBoxdatosM);
             groupBoxModificar.Controls.Add(txtIDM);
             groupBoxModificar.Controls.Add(label11);
             groupBoxModificar.Controls.Add(btnModificar);
+            groupBoxModificar.Controls.Add(groupBoxdatosM);
             groupBoxModificar.Location = new Point(14, 84);
             groupBoxModificar.Margin = new Padding(4, 3, 4, 3);
             groupBoxModificar.Name = "groupBoxModificar";
@@ -233,8 +266,40 @@
             btnBuscarM.UseVisualStyleBackColor = true;
             btnBuscarM.Click += btnBuscarM_Click;
             // 
+            // txtIDM
+            // 
+            txtIDM.Location = new Point(106, 40);
+            txtIDM.Margin = new Padding(4, 3, 4, 3);
+            txtIDM.Name = "txtIDM";
+            txtIDM.Size = new Size(106, 23);
+            txtIDM.TabIndex = 12;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(40, 44);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(57, 15);
+            label11.TabIndex = 11;
+            label11.Text = "Id Cliente";
+            // 
+            // btnModificar
+            // 
+            btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
+            btnModificar.ImageAlign = ContentAlignment.MiddleRight;
+            btnModificar.Location = new Point(144, 354);
+            btnModificar.Margin = new Padding(4, 3, 4, 3);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(127, 45);
+            btnModificar.TabIndex = 10;
+            btnModificar.Text = "MODIFICAR";
+            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
+            // 
             // groupBoxdatosM
             // 
+            groupBoxdatosM.BackColor = Color.Transparent;
             groupBoxdatosM.Controls.Add(txtTelefonoM);
             groupBoxdatosM.Controls.Add(txtDniM);
             groupBoxdatosM.Controls.Add(label9);
@@ -271,6 +336,7 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
             label9.Location = new Point(37, 45);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
@@ -324,37 +390,6 @@
             label7.TabIndex = 6;
             label7.Text = "Telefono";
             // 
-            // txtIDM
-            // 
-            txtIDM.Location = new Point(106, 40);
-            txtIDM.Margin = new Padding(4, 3, 4, 3);
-            txtIDM.Name = "txtIDM";
-            txtIDM.Size = new Size(106, 23);
-            txtIDM.TabIndex = 12;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(40, 44);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(57, 15);
-            label11.TabIndex = 11;
-            label11.Text = "Id Cliente";
-            // 
-            // btnModificar
-            // 
-            btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
-            btnModificar.ImageAlign = ContentAlignment.MiddleRight;
-            btnModificar.Location = new Point(144, 354);
-            btnModificar.Margin = new Padding(4, 3, 4, 3);
-            btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(127, 45);
-            btnModificar.TabIndex = 10;
-            btnModificar.Text = "MODIFICAR";
-            btnModificar.UseVisualStyleBackColor = true;
-            btnModificar.Click += btnModificar_Click;
-            // 
             // groupBoxEliminar
             // 
             groupBoxEliminar.Controls.Add(txtIDE);
@@ -379,26 +414,31 @@
             // label17
             // 
             label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.Location = new Point(92, 105);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(57, 15);
+            label17.Size = new Size(60, 15);
             label17.TabIndex = 11;
             label17.Text = "Id Cliente";
             // 
             // btnEliminarE
             // 
+            btnEliminarE.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
+            btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarE.Location = new Point(126, 195);
             btnEliminarE.Margin = new Padding(4, 3, 4, 3);
             btnEliminarE.Name = "btnEliminarE";
             btnEliminarE.Size = new Size(127, 45);
             btnEliminarE.TabIndex = 10;
-            btnEliminarE.Text = "EKIMINAR";
+            btnEliminarE.Text = "ELIMINAR";
             btnEliminarE.UseVisualStyleBackColor = true;
             btnEliminarE.Click += btnEliminarE_Click;
             // 
             // btnEliminar
             // 
+            btnEliminar.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnEliminar.Image = (Image)resources.GetObject("btnEliminar.Image");
             btnEliminar.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminar.Location = new Point(301, 30);
@@ -420,9 +460,9 @@
             Controls.Add(btnModificarCliente);
             Controls.Add(btnAgregarCliente);
             Controls.Add(dataGridView1);
+            Controls.Add(groupBoxEliminar);
             Controls.Add(groupBoxModificar);
             Controls.Add(groupBoxAgregarCliente);
-            Controls.Add(groupBoxEliminar);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Clientes";

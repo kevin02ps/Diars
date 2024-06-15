@@ -35,6 +35,7 @@
             btnProveedores = new Button();
             btnConsultas = new Button();
             panel = new Panel();
+            pictureBox2 = new PictureBox();
             btnProducto = new Button();
             lblEmpleado = new Label();
             panel1 = new Panel();
@@ -42,6 +43,8 @@
             btnConfiguracion = new Button();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
+            panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -135,11 +138,22 @@
             // panel
             // 
             panel.BackColor = Color.LightYellow;
+            panel.Controls.Add(pictureBox2);
             panel.Location = new Point(233, 35);
             panel.Margin = new Padding(4, 3, 4, 3);
             panel.Name = "panel";
             panel.Size = new Size(1050, 577);
             panel.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(1050, 574);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // btnProducto
             // 
@@ -259,6 +273,8 @@
             Text = "Menu";
             FormClosing += Operaciones_FormClosing;
             FormClosed += Operaciones_FormClosed;
+            panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -281,5 +297,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnConfiguracion;
         private System.Windows.Forms.Button btnSalir;
+        private PictureBox pictureBox2;
     }
 }

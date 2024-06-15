@@ -335,19 +335,21 @@
             // 
             // txtIdProveedorA
             // 
+            txtIdProveedorA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtIdProveedorA.Location = new Point(186, 255);
             txtIdProveedorA.Margin = new Padding(4, 3, 4, 3);
             txtIdProveedorA.Name = "txtIdProveedorA";
-            txtIdProveedorA.Size = new Size(212, 23);
+            txtIdProveedorA.Size = new Size(212, 22);
             txtIdProveedorA.TabIndex = 12;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label2.Location = new Point(30, 258);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(74, 15);
+            label2.Size = new Size(84, 16);
             label2.TabIndex = 11;
             label2.Text = "Id Proveedor";
             // 
@@ -367,73 +369,81 @@
             // 
             // txtCantStockA
             // 
+            txtCantStockA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtCantStockA.Location = new Point(186, 204);
             txtCantStockA.Margin = new Padding(4, 3, 4, 3);
             txtCantStockA.Name = "txtCantStockA";
-            txtCantStockA.Size = new Size(212, 23);
+            txtCantStockA.Size = new Size(212, 22);
             txtCantStockA.TabIndex = 9;
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label5.Location = new Point(30, 208);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(61, 15);
+            label5.Size = new Size(66, 16);
             label5.TabIndex = 8;
             label5.Text = "CantStock";
             // 
             // txtPrecioA
             // 
+            txtPrecioA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtPrecioA.Location = new Point(186, 156);
             txtPrecioA.Margin = new Padding(4, 3, 4, 3);
             txtPrecioA.Name = "txtPrecioA";
-            txtPrecioA.Size = new Size(212, 23);
+            txtPrecioA.Size = new Size(212, 22);
             txtPrecioA.TabIndex = 7;
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label4.Location = new Point(30, 159);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(40, 15);
+            label4.Size = new Size(45, 16);
             label4.TabIndex = 6;
             label4.Text = "Precio";
             // 
             // txtDescripcionA
             // 
+            txtDescripcionA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtDescripcionA.Location = new Point(186, 105);
             txtDescripcionA.Margin = new Padding(4, 3, 4, 3);
             txtDescripcionA.Name = "txtDescripcionA";
-            txtDescripcionA.Size = new Size(212, 23);
+            txtDescripcionA.Size = new Size(212, 22);
             txtDescripcionA.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label3.Location = new Point(30, 108);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(69, 15);
+            label3.Size = new Size(77, 16);
             label3.TabIndex = 4;
             label3.Text = "Descripcion";
             // 
             // txtNombreA
             // 
+            txtNombreA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtNombreA.Location = new Point(186, 47);
             txtNombreA.Margin = new Padding(4, 3, 4, 3);
             txtNombreA.Name = "txtNombreA";
-            txtNombreA.Size = new Size(212, 23);
+            txtNombreA.Size = new Size(212, 22);
             txtNombreA.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label1.Location = new Point(30, 51);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(51, 15);
+            label1.Size = new Size(55, 16);
             label1.TabIndex = 0;
             label1.Text = "Nombre";
             // 
@@ -472,6 +482,7 @@
             // 
             // btnEliminarE
             // 
+            btnEliminarE.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
             btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarE.Location = new Point(126, 195);

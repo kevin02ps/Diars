@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             dataGridView1 = new DataGridView();
             groupBoxAgregarCliente = new GroupBox();
@@ -74,14 +74,14 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.HotTrack;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.SteelBlue;
@@ -89,20 +89,20 @@
             dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.RoyalBlue;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
-            dataGridViewCellStyle3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = Color.White;
-            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle6.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             dataGridView1.Size = new Size(581, 531);
             dataGridView1.TabIndex = 0;
             // 
@@ -117,6 +117,7 @@
             groupBoxAgregarCliente.Controls.Add(label3);
             groupBoxAgregarCliente.Controls.Add(txtDniA);
             groupBoxAgregarCliente.Controls.Add(label1);
+            groupBoxAgregarCliente.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBoxAgregarCliente.Location = new Point(14, 84);
             groupBoxAgregarCliente.Margin = new Padding(4, 3, 4, 3);
             groupBoxAgregarCliente.Name = "groupBoxAgregarCliente";
@@ -143,7 +144,7 @@
             txtCorreoA.Location = new Point(186, 204);
             txtCorreoA.Margin = new Padding(4, 3, 4, 3);
             txtCorreoA.Name = "txtCorreoA";
-            txtCorreoA.Size = new Size(212, 23);
+            txtCorreoA.Size = new Size(212, 21);
             txtCorreoA.TabIndex = 9;
             // 
             // label5
@@ -152,7 +153,7 @@
             label5.Location = new Point(30, 208);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(43, 15);
+            label5.Size = new Size(44, 15);
             label5.TabIndex = 8;
             label5.Text = "Correo";
             // 
@@ -161,7 +162,7 @@
             txtTelefonoA.Location = new Point(186, 156);
             txtTelefonoA.Margin = new Padding(4, 3, 4, 3);
             txtTelefonoA.Name = "txtTelefonoA";
-            txtTelefonoA.Size = new Size(212, 23);
+            txtTelefonoA.Size = new Size(212, 21);
             txtTelefonoA.TabIndex = 7;
             // 
             // label4
@@ -170,7 +171,7 @@
             label4.Location = new Point(30, 159);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(52, 15);
+            label4.Size = new Size(53, 15);
             label4.TabIndex = 6;
             label4.Text = "Telefono";
             // 
@@ -179,7 +180,7 @@
             txtDireccionA.Location = new Point(186, 105);
             txtDireccionA.Margin = new Padding(4, 3, 4, 3);
             txtDireccionA.Name = "txtDireccionA";
-            txtDireccionA.Size = new Size(212, 23);
+            txtDireccionA.Size = new Size(212, 21);
             txtDireccionA.TabIndex = 5;
             // 
             // label3
@@ -188,7 +189,7 @@
             label3.Location = new Point(30, 108);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(57, 15);
+            label3.Size = new Size(60, 15);
             label3.TabIndex = 4;
             label3.Text = "Direccion";
             // 
@@ -197,7 +198,7 @@
             txtDniA.Location = new Point(186, 47);
             txtDniA.Margin = new Padding(4, 3, 4, 3);
             txtDniA.Name = "txtDniA";
-            txtDniA.Size = new Size(212, 23);
+            txtDniA.Size = new Size(212, 21);
             txtDniA.TabIndex = 1;
             // 
             // label1
@@ -206,7 +207,7 @@
             label1.Location = new Point(30, 51);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(27, 15);
+            label1.Size = new Size(26, 15);
             label1.TabIndex = 0;
             label1.Text = "DNI";
             // 
@@ -245,6 +246,7 @@
             groupBoxModificar.Controls.Add(label11);
             groupBoxModificar.Controls.Add(btnModificar);
             groupBoxModificar.Controls.Add(groupBoxdatosM);
+            groupBoxModificar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBoxModificar.Location = new Point(14, 84);
             groupBoxModificar.Margin = new Padding(4, 3, 4, 3);
             groupBoxModificar.Name = "groupBoxModificar";
@@ -271,7 +273,7 @@
             txtIDM.Location = new Point(106, 40);
             txtIDM.Margin = new Padding(4, 3, 4, 3);
             txtIDM.Name = "txtIDM";
-            txtIDM.Size = new Size(106, 23);
+            txtIDM.Size = new Size(106, 22);
             txtIDM.TabIndex = 12;
             // 
             // label11
@@ -280,7 +282,7 @@
             label11.Location = new Point(40, 44);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(57, 15);
+            label11.Size = new Size(63, 16);
             label11.TabIndex = 11;
             label11.Text = "Id Cliente";
             // 
@@ -322,7 +324,7 @@
             txtTelefonoM.Location = new Point(166, 138);
             txtTelefonoM.Margin = new Padding(4, 3, 4, 3);
             txtTelefonoM.Name = "txtTelefonoM";
-            txtTelefonoM.Size = new Size(212, 23);
+            txtTelefonoM.Size = new Size(212, 22);
             txtTelefonoM.TabIndex = 7;
             // 
             // txtDniM
@@ -330,7 +332,7 @@
             txtDniM.Location = new Point(166, 37);
             txtDniM.Margin = new Padding(4, 3, 4, 3);
             txtDniM.Name = "txtDniM";
-            txtDniM.Size = new Size(212, 23);
+            txtDniM.Size = new Size(212, 22);
             txtDniM.TabIndex = 1;
             // 
             // label9
@@ -340,7 +342,7 @@
             label9.Location = new Point(37, 45);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(27, 15);
+            label9.Size = new Size(28, 16);
             label9.TabIndex = 2;
             label9.Text = "DNI";
             // 
@@ -349,7 +351,7 @@
             txtCorreoM.Location = new Point(166, 187);
             txtCorreoM.Margin = new Padding(4, 3, 4, 3);
             txtCorreoM.Name = "txtCorreoM";
-            txtCorreoM.Size = new Size(212, 23);
+            txtCorreoM.Size = new Size(212, 22);
             txtCorreoM.TabIndex = 9;
             // 
             // label6
@@ -358,7 +360,7 @@
             label6.Location = new Point(40, 194);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(43, 15);
+            label6.Size = new Size(48, 16);
             label6.TabIndex = 8;
             label6.Text = "Correo";
             // 
@@ -368,7 +370,7 @@
             label8.Location = new Point(40, 95);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(57, 15);
+            label8.Size = new Size(64, 16);
             label8.TabIndex = 4;
             label8.Text = "Direccion";
             // 
@@ -377,7 +379,7 @@
             txtDireccionM.Location = new Point(166, 88);
             txtDireccionM.Margin = new Padding(4, 3, 4, 3);
             txtDireccionM.Name = "txtDireccionM";
-            txtDireccionM.Size = new Size(212, 23);
+            txtDireccionM.Size = new Size(212, 22);
             txtDireccionM.TabIndex = 5;
             // 
             // label7
@@ -386,7 +388,7 @@
             label7.Location = new Point(40, 145);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(52, 15);
+            label7.Size = new Size(58, 16);
             label7.TabIndex = 6;
             label7.Text = "Telefono";
             // 
@@ -460,9 +462,9 @@
             Controls.Add(btnModificarCliente);
             Controls.Add(btnAgregarCliente);
             Controls.Add(dataGridView1);
+            Controls.Add(groupBoxAgregarCliente);
             Controls.Add(groupBoxEliminar);
             Controls.Add(groupBoxModificar);
-            Controls.Add(groupBoxAgregarCliente);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Clientes";

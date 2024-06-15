@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedores));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             btnEliminarProducto = new Button();
             btnModificarProducto = new Button();
             btnAgregarProducto = new Button();
@@ -70,6 +73,9 @@
             // 
             // btnEliminarProducto
             // 
+            btnEliminarProducto.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnEliminarProducto.Image = (Image)resources.GetObject("btnEliminarProducto.Image");
+            btnEliminarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarProducto.Location = new Point(307, 29);
             btnEliminarProducto.Margin = new Padding(4, 3, 4, 3);
             btnEliminarProducto.Name = "btnEliminarProducto";
@@ -81,6 +87,9 @@
             // 
             // btnModificarProducto
             // 
+            btnModificarProducto.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnModificarProducto.Image = (Image)resources.GetObject("btnModificarProducto.Image");
+            btnModificarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnModificarProducto.Location = new Point(170, 29);
             btnModificarProducto.Margin = new Padding(4, 3, 4, 3);
             btnModificarProducto.Name = "btnModificarProducto";
@@ -92,6 +101,9 @@
             // 
             // btnAgregarProducto
             // 
+            btnAgregarProducto.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnAgregarProducto.Image = (Image)resources.GetObject("btnAgregarProducto.Image");
+            btnAgregarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnAgregarProducto.Location = new Point(34, 29);
             btnAgregarProducto.Margin = new Padding(4, 3, 4, 3);
             btnAgregarProducto.Name = "btnAgregarProducto";
@@ -105,11 +117,39 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.GridColor = Color.SteelBlue;
             dataGridView1.Location = new Point(447, 29);
             dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.Size = new Size(584, 519);
             dataGridView1.TabIndex = 21;
             // 
@@ -125,6 +165,7 @@
             groupBoxAgregar.Controls.Add(label3);
             groupBoxAgregar.Controls.Add(txtRazonSocialA);
             groupBoxAgregar.Controls.Add(label1);
+            groupBoxAgregar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBoxAgregar.Location = new Point(20, 83);
             groupBoxAgregar.Margin = new Padding(4, 3, 4, 3);
             groupBoxAgregar.Name = "groupBoxAgregar";
@@ -138,7 +179,7 @@
             txtContactoA.Location = new Point(186, 171);
             txtContactoA.Margin = new Padding(4, 3, 4, 3);
             txtContactoA.Name = "txtContactoA";
-            txtContactoA.Size = new Size(212, 23);
+            txtContactoA.Size = new Size(212, 22);
             txtContactoA.TabIndex = 12;
             // 
             // label5
@@ -147,19 +188,20 @@
             label5.Location = new Point(30, 174);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(56, 15);
+            label5.Size = new Size(61, 16);
             label5.TabIndex = 11;
             label5.Text = "Contacto";
             // 
             // btnAceptarA
             // 
+            btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
             btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
             btnAceptarA.Location = new Point(126, 286);
             btnAceptarA.Margin = new Padding(4, 3, 4, 3);
             btnAceptarA.Name = "btnAceptarA";
-            btnAceptarA.Size = new Size(127, 45);
+            btnAceptarA.Size = new Size(135, 46);
             btnAceptarA.TabIndex = 10;
-            btnAceptarA.Text = "ACEPTAR";
+            btnAceptarA.Text = "AGREGAR";
             btnAceptarA.UseVisualStyleBackColor = true;
             btnAceptarA.Click += btnAceptarA_Click;
             // 
@@ -168,7 +210,7 @@
             txtDireccionA.Location = new Point(186, 217);
             txtDireccionA.Margin = new Padding(4, 3, 4, 3);
             txtDireccionA.Name = "txtDireccionA";
-            txtDireccionA.Size = new Size(212, 23);
+            txtDireccionA.Size = new Size(212, 22);
             txtDireccionA.TabIndex = 7;
             // 
             // label4
@@ -177,7 +219,7 @@
             label4.Location = new Point(30, 220);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(57, 15);
+            label4.Size = new Size(64, 16);
             label4.TabIndex = 6;
             label4.Text = "Direccion";
             // 
@@ -186,7 +228,7 @@
             txtRucA.Location = new Point(186, 127);
             txtRucA.Margin = new Padding(4, 3, 4, 3);
             txtRucA.Name = "txtRucA";
-            txtRucA.Size = new Size(212, 23);
+            txtRucA.Size = new Size(212, 22);
             txtRucA.TabIndex = 5;
             // 
             // label3
@@ -195,7 +237,7 @@
             label3.Location = new Point(30, 130);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(27, 15);
+            label3.Size = new Size(29, 16);
             label3.TabIndex = 4;
             label3.Text = "Ruc";
             // 
@@ -204,7 +246,7 @@
             txtRazonSocialA.Location = new Point(186, 77);
             txtRazonSocialA.Margin = new Padding(4, 3, 4, 3);
             txtRazonSocialA.Name = "txtRazonSocialA";
-            txtRazonSocialA.Size = new Size(212, 23);
+            txtRazonSocialA.Size = new Size(212, 22);
             txtRazonSocialA.TabIndex = 1;
             // 
             // label1
@@ -213,7 +255,7 @@
             label1.Location = new Point(30, 81);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(73, 15);
+            label1.Size = new Size(82, 16);
             label1.TabIndex = 0;
             label1.Text = "Razon Social";
             // 
@@ -222,6 +264,7 @@
             groupBoxEliminar.Controls.Add(txtIDE);
             groupBoxEliminar.Controls.Add(label17);
             groupBoxEliminar.Controls.Add(btnEliminarE);
+            groupBoxEliminar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBoxEliminar.Location = new Point(20, 83);
             groupBoxEliminar.Margin = new Padding(4, 3, 4, 3);
             groupBoxEliminar.Name = "groupBoxEliminar";
@@ -235,7 +278,7 @@
             txtIDE.Location = new Point(203, 102);
             txtIDE.Margin = new Padding(4, 3, 4, 3);
             txtIDE.Name = "txtIDE";
-            txtIDE.Size = new Size(106, 23);
+            txtIDE.Size = new Size(106, 22);
             txtIDE.TabIndex = 12;
             // 
             // label17
@@ -244,7 +287,7 @@
             label17.Location = new Point(92, 105);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(74, 15);
+            label17.Size = new Size(84, 16);
             label17.TabIndex = 11;
             label17.Text = "Id Proveedor";
             // 
@@ -268,6 +311,7 @@
             groupBoxModificar.Controls.Add(txtIDM);
             groupBoxModificar.Controls.Add(label11);
             groupBoxModificar.Controls.Add(btnModificar);
+            groupBoxModificar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBoxModificar.Location = new Point(20, 83);
             groupBoxModificar.Margin = new Padding(4, 3, 4, 3);
             groupBoxModificar.Name = "groupBoxModificar";
@@ -278,6 +322,8 @@
             // 
             // btnBuscarM
             // 
+            btnBuscarM.Image = (Image)resources.GetObject("btnBuscarM.Image");
+            btnBuscarM.ImageAlign = ContentAlignment.MiddleRight;
             btnBuscarM.Location = new Point(267, 35);
             btnBuscarM.Margin = new Padding(4, 3, 4, 3);
             btnBuscarM.Name = "btnBuscarM";
@@ -311,7 +357,7 @@
             txtDireccionM.Location = new Point(166, 187);
             txtDireccionM.Margin = new Padding(4, 3, 4, 3);
             txtDireccionM.Name = "txtDireccionM";
-            txtDireccionM.Size = new Size(212, 23);
+            txtDireccionM.Size = new Size(212, 22);
             txtDireccionM.TabIndex = 9;
             // 
             // label2
@@ -320,7 +366,7 @@
             label2.Location = new Point(40, 194);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(57, 15);
+            label2.Size = new Size(64, 16);
             label2.TabIndex = 8;
             label2.Text = "Direccion";
             // 
@@ -329,7 +375,7 @@
             txtContactoM.Location = new Point(166, 138);
             txtContactoM.Margin = new Padding(4, 3, 4, 3);
             txtContactoM.Name = "txtContactoM";
-            txtContactoM.Size = new Size(212, 23);
+            txtContactoM.Size = new Size(212, 22);
             txtContactoM.TabIndex = 7;
             // 
             // txtRazonSocialM
@@ -337,7 +383,7 @@
             txtRazonSocialM.Location = new Point(166, 37);
             txtRazonSocialM.Margin = new Padding(4, 3, 4, 3);
             txtRazonSocialM.Name = "txtRazonSocialM";
-            txtRazonSocialM.Size = new Size(212, 23);
+            txtRazonSocialM.Size = new Size(212, 22);
             txtRazonSocialM.TabIndex = 1;
             // 
             // label9
@@ -346,7 +392,7 @@
             label9.Location = new Point(37, 45);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(73, 15);
+            label9.Size = new Size(82, 16);
             label9.TabIndex = 2;
             label9.Text = "Razon Social";
             // 
@@ -356,7 +402,7 @@
             label8.Location = new Point(40, 95);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(27, 15);
+            label8.Size = new Size(29, 16);
             label8.TabIndex = 4;
             label8.Text = "Ruc";
             // 
@@ -365,7 +411,7 @@
             txtRucM.Location = new Point(166, 88);
             txtRucM.Margin = new Padding(4, 3, 4, 3);
             txtRucM.Name = "txtRucM";
-            txtRucM.Size = new Size(212, 23);
+            txtRucM.Size = new Size(212, 22);
             txtRucM.TabIndex = 5;
             // 
             // label7
@@ -374,7 +420,7 @@
             label7.Location = new Point(40, 145);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(56, 15);
+            label7.Size = new Size(61, 16);
             label7.TabIndex = 6;
             label7.Text = "Contacto";
             // 
@@ -383,7 +429,7 @@
             txtIDM.Location = new Point(126, 42);
             txtIDM.Margin = new Padding(4, 3, 4, 3);
             txtIDM.Name = "txtIDM";
-            txtIDM.Size = new Size(106, 23);
+            txtIDM.Size = new Size(106, 22);
             txtIDM.TabIndex = 12;
             // 
             // label11
@@ -392,12 +438,14 @@
             label11.Location = new Point(40, 44);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(74, 15);
+            label11.Size = new Size(84, 16);
             label11.TabIndex = 11;
             label11.Text = "Id Proveedor";
             // 
             // btnModificar
             // 
+            btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
+            btnModificar.ImageAlign = ContentAlignment.MiddleRight;
             btnModificar.Location = new Point(142, 390);
             btnModificar.Margin = new Padding(4, 3, 4, 3);
             btnModificar.Name = "btnModificar";
@@ -411,15 +459,15 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.LightCyan;
             ClientSize = new Size(1050, 577);
             Controls.Add(btnEliminarProducto);
             Controls.Add(btnModificarProducto);
             Controls.Add(btnAgregarProducto);
             Controls.Add(dataGridView1);
+            Controls.Add(groupBoxAgregar);
             Controls.Add(groupBoxEliminar);
             Controls.Add(groupBoxModificar);
-            Controls.Add(groupBoxAgregar);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Proveedores";

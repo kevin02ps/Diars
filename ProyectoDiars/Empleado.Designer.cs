@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleado));
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
@@ -72,10 +73,13 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnEliminar.Image = (Image)resources.GetObject("btnEliminar.Image");
+            btnEliminar.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminar.Location = new Point(301, 39);
             btnEliminar.Margin = new Padding(4, 3, 4, 3);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(111, 36);
+            btnEliminar.Size = new Size(126, 36);
             btnEliminar.TabIndex = 19;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -83,10 +87,13 @@
             // 
             // btnModificarCliente
             // 
+            btnModificarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnModificarCliente.Image = (Image)resources.GetObject("btnModificarCliente.Image");
+            btnModificarCliente.ImageAlign = ContentAlignment.MiddleRight;
             btnModificarCliente.Location = new Point(163, 39);
             btnModificarCliente.Margin = new Padding(4, 3, 4, 3);
             btnModificarCliente.Name = "btnModificarCliente";
-            btnModificarCliente.Size = new Size(111, 36);
+            btnModificarCliente.Size = new Size(130, 36);
             btnModificarCliente.TabIndex = 18;
             btnModificarCliente.Text = "Modificar";
             btnModificarCliente.UseVisualStyleBackColor = true;
@@ -94,10 +101,13 @@
             // 
             // btnAgregarCliente
             // 
+            btnAgregarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnAgregarCliente.Image = (Image)resources.GetObject("btnAgregarCliente.Image");
+            btnAgregarCliente.ImageAlign = ContentAlignment.MiddleRight;
             btnAgregarCliente.Location = new Point(28, 39);
             btnAgregarCliente.Margin = new Padding(4, 3, 4, 3);
             btnAgregarCliente.Name = "btnAgregarCliente";
-            btnAgregarCliente.Size = new Size(111, 36);
+            btnAgregarCliente.Size = new Size(127, 36);
             btnAgregarCliente.TabIndex = 17;
             btnAgregarCliente.Text = "Agregar";
             btnAgregarCliente.UseVisualStyleBackColor = true;
@@ -141,6 +151,7 @@
             // 
             // groupBoxModificar
             // 
+            groupBoxModificar.BackColor = Color.LightBlue;
             groupBoxModificar.Controls.Add(btnBuscarM);
             groupBoxModificar.Controls.Add(txtIDM);
             groupBoxModificar.Controls.Add(label11);
@@ -156,42 +167,52 @@
             // 
             // btnBuscarM
             // 
-            btnBuscarM.Location = new Point(267, 35);
+            btnBuscarM.BackColor = Color.LightBlue;
+            btnBuscarM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnBuscarM.Image = (Image)resources.GetObject("btnBuscarM.Image");
+            btnBuscarM.ImageAlign = ContentAlignment.MiddleRight;
+            btnBuscarM.Location = new Point(258, 31);
             btnBuscarM.Margin = new Padding(4, 3, 4, 3);
             btnBuscarM.Name = "btnBuscarM";
-            btnBuscarM.Size = new Size(96, 36);
+            btnBuscarM.Size = new Size(113, 46);
             btnBuscarM.TabIndex = 13;
             btnBuscarM.Text = "Buscar";
-            btnBuscarM.UseVisualStyleBackColor = true;
+            btnBuscarM.UseVisualStyleBackColor = false;
             btnBuscarM.Click += btnBuscarM_Click_1;
             // 
             // txtIDM
             // 
+            txtIDM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtIDM.Location = new Point(126, 40);
             txtIDM.Margin = new Padding(4, 3, 4, 3);
             txtIDM.Name = "txtIDM";
-            txtIDM.Size = new Size(106, 23);
+            txtIDM.Size = new Size(106, 22);
             txtIDM.TabIndex = 12;
             // 
             // label11
             // 
             label11.AutoSize = true;
+            label11.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label11.Location = new Point(40, 44);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(73, 15);
+            label11.Size = new Size(82, 16);
             label11.TabIndex = 11;
             label11.Text = "Id Empleado";
             // 
             // btnModificar
             // 
+            btnModificar.BackColor = Color.LightBlue;
+            btnModificar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
+            btnModificar.ImageAlign = ContentAlignment.MiddleRight;
             btnModificar.Location = new Point(144, 354);
             btnModificar.Margin = new Padding(4, 3, 4, 3);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(127, 45);
+            btnModificar.Size = new Size(147, 46);
             btnModificar.TabIndex = 10;
             btnModificar.Text = "MODIFICAR";
-            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.UseVisualStyleBackColor = false;
             btnModificar.Click += btnModificar_Click_1;
             // 
             // groupBoxdatosM
@@ -215,75 +236,83 @@
             // 
             // comboBoxCargoM
             // 
+            comboBoxCargoM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             comboBoxCargoM.FormattingEnabled = true;
             comboBoxCargoM.Items.AddRange(new object[] { "GERENTE", "VENDEDOR", "ADMINISTRADOR" });
             comboBoxCargoM.Location = new Point(166, 95);
             comboBoxCargoM.Margin = new Padding(4, 3, 4, 3);
             comboBoxCargoM.Name = "comboBoxCargoM";
-            comboBoxCargoM.Size = new Size(212, 23);
+            comboBoxCargoM.Size = new Size(212, 24);
             comboBoxCargoM.TabIndex = 10;
             // 
             // txtUsuarioM
             // 
+            txtUsuarioM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtUsuarioM.Location = new Point(166, 138);
             txtUsuarioM.Margin = new Padding(4, 3, 4, 3);
             txtUsuarioM.Name = "txtUsuarioM";
-            txtUsuarioM.Size = new Size(212, 23);
+            txtUsuarioM.Size = new Size(212, 22);
             txtUsuarioM.TabIndex = 7;
             // 
             // txtDniM
             // 
+            txtDniM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtDniM.Location = new Point(166, 37);
             txtDniM.Margin = new Padding(4, 3, 4, 3);
             txtDniM.Name = "txtDniM";
-            txtDniM.Size = new Size(212, 23);
+            txtDniM.Size = new Size(212, 22);
             txtDniM.TabIndex = 1;
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label9.Location = new Point(37, 45);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(27, 15);
+            label9.Size = new Size(28, 16);
             label9.TabIndex = 2;
             label9.Text = "DNI";
             // 
             // txtContraseñaM
             // 
+            txtContraseñaM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtContraseñaM.Location = new Point(166, 187);
             txtContraseñaM.Margin = new Padding(4, 3, 4, 3);
             txtContraseñaM.Name = "txtContraseñaM";
-            txtContraseñaM.Size = new Size(212, 23);
+            txtContraseñaM.Size = new Size(212, 22);
             txtContraseñaM.TabIndex = 9;
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label6.Location = new Point(40, 194);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(67, 15);
+            label6.Size = new Size(74, 16);
             label6.TabIndex = 8;
             label6.Text = "Contraseña";
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label8.Location = new Point(40, 95);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(39, 15);
+            label8.Size = new Size(44, 16);
             label8.TabIndex = 4;
             label8.Text = "Cargo";
             // 
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label7.Location = new Point(40, 145);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(47, 15);
+            label7.Size = new Size(50, 16);
             label7.TabIndex = 6;
             label7.Text = "Usuario";
             // 
@@ -308,86 +337,97 @@
             // 
             // comboBoxCargoA
             // 
+            comboBoxCargoA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             comboBoxCargoA.FormattingEnabled = true;
             comboBoxCargoA.Items.AddRange(new object[] { "GERENTE", "VENDEDOR", "ADMINISTRADOR" });
             comboBoxCargoA.Location = new Point(173, 99);
             comboBoxCargoA.Margin = new Padding(4, 3, 4, 3);
             comboBoxCargoA.Name = "comboBoxCargoA";
-            comboBoxCargoA.Size = new Size(212, 23);
+            comboBoxCargoA.Size = new Size(212, 24);
             comboBoxCargoA.TabIndex = 14;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label2.Location = new Point(30, 208);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(67, 15);
+            label2.Size = new Size(74, 16);
             label2.TabIndex = 13;
             label2.Text = "Contraseña";
             // 
             // label10
             // 
             label10.AutoSize = true;
+            label10.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label10.Location = new Point(30, 108);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
-            label10.Size = new Size(39, 15);
+            label10.Size = new Size(44, 16);
             label10.TabIndex = 11;
             label10.Text = "Cargo";
             // 
             // label12
             // 
             label12.AutoSize = true;
+            label12.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label12.Location = new Point(30, 159);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
-            label12.Size = new Size(47, 15);
+            label12.Size = new Size(50, 16);
             label12.TabIndex = 12;
             label12.Text = "Usuario";
             // 
             // btnAceptarA
             // 
-            btnAceptarA.Location = new Point(142, 338);
+            btnAceptarA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
+            btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
+            btnAceptarA.Location = new Point(142, 274);
             btnAceptarA.Margin = new Padding(4, 3, 4, 3);
             btnAceptarA.Name = "btnAceptarA";
-            btnAceptarA.Size = new Size(127, 45);
+            btnAceptarA.Size = new Size(137, 48);
             btnAceptarA.TabIndex = 10;
-            btnAceptarA.Text = "ACEPTAR";
+            btnAceptarA.Text = "AGREGAR";
             btnAceptarA.UseVisualStyleBackColor = true;
             btnAceptarA.Click += btnAceptarA_Click_1;
             // 
             // txtContraseñaA
             // 
+            txtContraseñaA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtContraseñaA.Location = new Point(173, 200);
             txtContraseñaA.Margin = new Padding(4, 3, 4, 3);
             txtContraseñaA.Name = "txtContraseñaA";
-            txtContraseñaA.Size = new Size(212, 23);
+            txtContraseñaA.Size = new Size(212, 22);
             txtContraseñaA.TabIndex = 9;
             // 
             // txtUsuarioA
             // 
+            txtUsuarioA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtUsuarioA.Location = new Point(173, 151);
             txtUsuarioA.Margin = new Padding(4, 3, 4, 3);
             txtUsuarioA.Name = "txtUsuarioA";
-            txtUsuarioA.Size = new Size(212, 23);
+            txtUsuarioA.Size = new Size(212, 22);
             txtUsuarioA.TabIndex = 7;
             // 
             // txtDniA
             // 
+            txtDniA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtDniA.Location = new Point(173, 43);
             txtDniA.Margin = new Padding(4, 3, 4, 3);
             txtDniA.Name = "txtDniA";
-            txtDniA.Size = new Size(212, 23);
+            txtDniA.Size = new Size(212, 22);
             txtDniA.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label1.Location = new Point(30, 51);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(27, 15);
+            label1.Size = new Size(28, 16);
             label1.TabIndex = 0;
             label1.Text = "DNI";
             // 
@@ -406,30 +446,35 @@
             // 
             // txtIDE
             // 
+            txtIDE.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtIDE.Location = new Point(203, 102);
             txtIDE.Margin = new Padding(4, 3, 4, 3);
             txtIDE.Name = "txtIDE";
-            txtIDE.Size = new Size(106, 23);
+            txtIDE.Size = new Size(106, 22);
             txtIDE.TabIndex = 12;
             // 
             // label17
             // 
             label17.AutoSize = true;
+            label17.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label17.Location = new Point(92, 105);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(73, 15);
+            label17.Size = new Size(82, 16);
             label17.TabIndex = 11;
             label17.Text = "Id Empleado";
             // 
             // btnEliminarE
             // 
+            btnEliminarE.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
+            btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarE.Location = new Point(126, 195);
             btnEliminarE.Margin = new Padding(4, 3, 4, 3);
             btnEliminarE.Name = "btnEliminarE";
             btnEliminarE.Size = new Size(127, 45);
             btnEliminarE.TabIndex = 10;
-            btnEliminarE.Text = "EKIMINAR";
+            btnEliminarE.Text = "ELIMINAR";
             btnEliminarE.UseVisualStyleBackColor = true;
             btnEliminarE.Click += btnEliminarE_Click_1;
             // 
@@ -439,17 +484,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoValidate = AutoValidate.Disable;
+            BackColor = Color.LightBlue;
             ClientSize = new Size(1050, 577);
             ControlBox = false;
             Controls.Add(btnEliminar);
             Controls.Add(btnModificarCliente);
             Controls.Add(btnAgregarCliente);
             Controls.Add(dataGridView1);
+            Controls.Add(groupBoxModificar);
             Controls.Add(groupBoxAgregarCliente);
             Controls.Add(groupBoxEliminar);
-            Controls.Add(groupBoxModificar);
             FormBorderStyle = FormBorderStyle.None;
             HelpButton = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             MinimizeBox = false;

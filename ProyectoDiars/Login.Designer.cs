@@ -56,13 +56,11 @@
             txtPassword.ForeColor = Color.Gray;
             txtPassword.Location = new Point(98, 241);
             txtPassword.MaxLength = 30;
-            txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(228, 32);
+            txtPassword.Size = new Size(228, 24);
             txtPassword.TabIndex = 2;
             txtPassword.Text = "Contraseña";
             txtPassword.TextAlign = HorizontalAlignment.Center;
-            txtPassword.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 

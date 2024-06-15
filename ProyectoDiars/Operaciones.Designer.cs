@@ -161,11 +161,11 @@
             // lblEmpleado
             // 
             lblEmpleado.AutoSize = true;
-            lblEmpleado.Font = new Font("Arial Narrow", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblEmpleado.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEmpleado.Location = new Point(240, 9);
             lblEmpleado.Margin = new Padding(4, 0, 4, 0);
             lblEmpleado.Name = "lblEmpleado";
-            lblEmpleado.Size = new Size(67, 20);
+            lblEmpleado.Size = new Size(90, 19);
             lblEmpleado.TabIndex = 3;
             lblEmpleado.Text = "Empleado";
             // 

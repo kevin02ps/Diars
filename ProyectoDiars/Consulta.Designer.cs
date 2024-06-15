@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consulta));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             btnConsultarPedidos = new Button();
             groupBoxConsultaPedidos = new GroupBox();
             btnBuscarCP = new Button();
@@ -45,16 +52,17 @@
             // 
             // btnConsultarPedidos
             // 
+            btnConsultarPedidos.BackColor = Color.Cornsilk;
             btnConsultarPedidos.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnConsultarPedidos.Image = (Image)resources.GetObject("btnConsultarPedidos.Image");
             btnConsultarPedidos.ImageAlign = ContentAlignment.MiddleRight;
-            btnConsultarPedidos.Location = new Point(54, 12);
+            btnConsultarPedidos.Location = new Point(65, 12);
             btnConsultarPedidos.Margin = new Padding(4, 3, 4, 3);
             btnConsultarPedidos.Name = "btnConsultarPedidos";
-            btnConsultarPedidos.Size = new Size(175, 29);
+            btnConsultarPedidos.Size = new Size(201, 29);
             btnConsultarPedidos.TabIndex = 0;
             btnConsultarPedidos.Text = "Consultar Pedidos";
-            btnConsultarPedidos.UseVisualStyleBackColor = true;
+            btnConsultarPedidos.UseVisualStyleBackColor = false;
             btnConsultarPedidos.Click += btnConsultarPedidos_Click;
             // 
             // groupBoxConsultaPedidos
@@ -74,6 +82,7 @@
             // 
             // btnBuscarCP
             // 
+            btnBuscarCP.BackColor = SystemColors.InactiveBorder;
             btnBuscarCP.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnBuscarCP.Image = (Image)resources.GetObject("btnBuscarCP.Image");
             btnBuscarCP.ImageAlign = ContentAlignment.MiddleRight;
@@ -83,24 +92,86 @@
             btnBuscarCP.Size = new Size(134, 40);
             btnBuscarCP.TabIndex = 4;
             btnBuscarCP.Text = "Buscar";
-            btnBuscarCP.UseVisualStyleBackColor = true;
+            btnBuscarCP.UseVisualStyleBackColor = false;
             btnBuscarCP.Click += btnBuscarCP_Click;
             // 
             // dataGridViewDetallePedidoC
             // 
+            dataGridViewDetallePedidoC.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridViewDetallePedidoC.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridViewDetallePedidoC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewDetallePedidoC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridViewDetallePedidoC.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewDetallePedidoC.EnableHeadersVisualStyles = false;
+            dataGridViewDetallePedidoC.GridColor = Color.SteelBlue;
             dataGridViewDetallePedidoC.Location = new Point(40, 209);
             dataGridViewDetallePedidoC.Margin = new Padding(4, 3, 4, 3);
             dataGridViewDetallePedidoC.Name = "dataGridViewDetallePedidoC";
+            dataGridViewDetallePedidoC.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = Color.White;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridViewDetallePedidoC.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle4.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = Color.LightSteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = Color.White;
+            dataGridViewDetallePedidoC.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewDetallePedidoC.Size = new Size(939, 231);
             dataGridViewDetallePedidoC.TabIndex = 3;
             // 
             // dataGridViewPedidoC
             // 
+            dataGridViewPedidoC.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridViewPedidoC.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle5.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = Color.White;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridViewPedidoC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dataGridViewPedidoC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewPedidoC.EnableHeadersVisualStyles = false;
+            dataGridViewPedidoC.GridColor = Color.RoyalBlue;
             dataGridViewPedidoC.Location = new Point(309, 36);
             dataGridViewPedidoC.Margin = new Padding(4, 3, 4, 3);
             dataGridViewPedidoC.Name = "dataGridViewPedidoC";
+            dataGridViewPedidoC.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = Color.White;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dataGridViewPedidoC.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle7.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle7.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle7.ForeColor = Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = Color.RoyalBlue;
+            dataGridViewCellStyle7.SelectionForeColor = Color.White;
+            dataGridViewPedidoC.RowsDefaultCellStyle = dataGridViewCellStyle7;
             dataGridViewPedidoC.Size = new Size(670, 148);
             dataGridViewPedidoC.TabIndex = 2;
             // 
@@ -137,7 +208,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1031, 532);
             Controls.Add(pictureBox1);
             Controls.Add(groupBoxConsultaPedidos);

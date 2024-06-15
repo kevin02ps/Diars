@@ -38,6 +38,9 @@
             btnAgregarProducto = new Button();
             groupBoxModificar = new GroupBox();
             btnBuscarM = new Button();
+            txtIDM = new TextBox();
+            label11 = new Label();
+            btnModificar = new Button();
             groupBoxdatosM = new GroupBox();
             txtPrecioM = new TextBox();
             txtNombreM = new TextBox();
@@ -47,9 +50,6 @@
             label8 = new Label();
             txtDescripcionM = new TextBox();
             label7 = new Label();
-            txtIDM = new TextBox();
-            label11 = new Label();
-            btnModificar = new Button();
             groupBoxAgregarProducto = new GroupBox();
             txtIdProveedorA = new TextBox();
             label2 = new Label();
@@ -158,10 +158,10 @@
             // groupBoxModificar
             // 
             groupBoxModificar.Controls.Add(btnBuscarM);
-            groupBoxModificar.Controls.Add(groupBoxdatosM);
             groupBoxModificar.Controls.Add(txtIDM);
             groupBoxModificar.Controls.Add(label11);
             groupBoxModificar.Controls.Add(btnModificar);
+            groupBoxModificar.Controls.Add(groupBoxdatosM);
             groupBoxModificar.Location = new Point(24, 83);
             groupBoxModificar.Margin = new Padding(4, 3, 4, 3);
             groupBoxModificar.Name = "groupBoxModificar";
@@ -183,6 +183,39 @@
             btnBuscarM.Text = "Buscar";
             btnBuscarM.UseVisualStyleBackColor = true;
             btnBuscarM.Click += btnBuscarM_Click_1;
+            // 
+            // txtIDM
+            // 
+            txtIDM.Location = new Point(119, 40);
+            txtIDM.Margin = new Padding(4, 3, 4, 3);
+            txtIDM.Name = "txtIDM";
+            txtIDM.Size = new Size(106, 23);
+            txtIDM.TabIndex = 12;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label11.Location = new Point(40, 44);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(72, 15);
+            label11.TabIndex = 11;
+            label11.Text = "Id Producto";
+            // 
+            // btnModificar
+            // 
+            btnModificar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
+            btnModificar.ImageAlign = ContentAlignment.MiddleRight;
+            btnModificar.Location = new Point(142, 367);
+            btnModificar.Margin = new Padding(4, 3, 4, 3);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(150, 66);
+            btnModificar.TabIndex = 10;
+            btnModificar.Text = "MODIFICAR";
+            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click_1;
             // 
             // groupBoxdatosM
             // 
@@ -279,39 +312,6 @@
             label7.TabIndex = 6;
             label7.Text = "Precio";
             // 
-            // txtIDM
-            // 
-            txtIDM.Location = new Point(119, 40);
-            txtIDM.Margin = new Padding(4, 3, 4, 3);
-            txtIDM.Name = "txtIDM";
-            txtIDM.Size = new Size(106, 23);
-            txtIDM.TabIndex = 12;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label11.Location = new Point(40, 44);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(72, 15);
-            label11.TabIndex = 11;
-            label11.Text = "Id Producto";
-            // 
-            // btnModificar
-            // 
-            btnModificar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
-            btnModificar.ImageAlign = ContentAlignment.MiddleRight;
-            btnModificar.Location = new Point(142, 367);
-            btnModificar.Margin = new Padding(4, 3, 4, 3);
-            btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(150, 66);
-            btnModificar.TabIndex = 10;
-            btnModificar.Text = "MODIFICAR";
-            btnModificar.UseVisualStyleBackColor = true;
-            btnModificar.Click += btnModificar_Click_1;
-            // 
             // groupBoxAgregarProducto
             // 
             groupBoxAgregarProducto.Controls.Add(txtIdProveedorA);
@@ -353,12 +353,15 @@
             // 
             // btnAceptarA
             // 
+            btnAceptarA.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
+            btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
             btnAceptarA.Location = new Point(142, 338);
             btnAceptarA.Margin = new Padding(4, 3, 4, 3);
             btnAceptarA.Name = "btnAceptarA";
-            btnAceptarA.Size = new Size(127, 45);
+            btnAceptarA.Size = new Size(139, 45);
             btnAceptarA.TabIndex = 10;
-            btnAceptarA.Text = "ACEPTAR";
+            btnAceptarA.Text = "AGREGAR";
             btnAceptarA.UseVisualStyleBackColor = true;
             btnAceptarA.Click += btnAceptarA_Click_1;
             // 
@@ -449,6 +452,7 @@
             // 
             // txtIDE
             // 
+            txtIDE.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtIDE.Location = new Point(203, 102);
             txtIDE.Margin = new Padding(4, 3, 4, 3);
             txtIDE.Name = "txtIDE";
@@ -458,19 +462,22 @@
             // label17
             // 
             label17.AutoSize = true;
+            label17.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.Location = new Point(92, 105);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(69, 15);
+            label17.Size = new Size(75, 16);
             label17.TabIndex = 11;
             label17.Text = "Id Producto";
             // 
             // btnEliminarE
             // 
+            btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
+            btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarE.Location = new Point(126, 195);
             btnEliminarE.Margin = new Padding(4, 3, 4, 3);
             btnEliminarE.Name = "btnEliminarE";
-            btnEliminarE.Size = new Size(127, 45);
+            btnEliminarE.Size = new Size(136, 41);
             btnEliminarE.TabIndex = 10;
             btnEliminarE.Text = "ELIMINAR";
             btnEliminarE.UseVisualStyleBackColor = true;
@@ -480,15 +487,15 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.BurlyWood;
+            BackColor = Color.PowderBlue;
             ClientSize = new Size(1050, 577);
             Controls.Add(btnEliminarProducto);
             Controls.Add(btnModificarProducto);
             Controls.Add(btnAgregarProducto);
             Controls.Add(dataGridView1);
-            Controls.Add(groupBoxModificar);
             Controls.Add(groupBoxAgregarProducto);
             Controls.Add(groupBoxEliminar);
+            Controls.Add(groupBoxModificar);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Producto";

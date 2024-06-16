@@ -29,222 +29,244 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comprobante));
-            this.lblFoB = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblNumeroFactura = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblRuc = new System.Windows.Forms.Label();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lblMontoTotal = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonConfirmar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            lblFoB = new Label();
+            label2 = new Label();
+            lblNumeroFactura = new Label();
+            lblFecha = new Label();
+            label5 = new Label();
+            lblRuc = new Label();
+            lblCliente = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            lblMontoTotal = new Label();
+            pictureBox1 = new PictureBox();
+            buttonConfirmar = new Button();
+            btnCerrar = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // lblFoB
             // 
-            this.lblFoB.AutoSize = true;
-            this.lblFoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoB.Location = new System.Drawing.Point(549, 36);
-            this.lblFoB.Name = "lblFoB";
-            this.lblFoB.Size = new System.Drawing.Size(132, 29);
-            this.lblFoB.TabIndex = 0;
-            this.lblFoB.Text = "FACTURA";
+            lblFoB.AutoSize = true;
+            lblFoB.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            lblFoB.Location = new Point(640, 42);
+            lblFoB.Margin = new Padding(4, 0, 4, 0);
+            lblFoB.Name = "lblFoB";
+            lblFoB.Size = new Size(56, 15);
+            lblFoB.TabIndex = 0;
+            lblFoB.Text = "FACTURA";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(234, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "INVERSIONES HERMANOS M & R S.A.C.";
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label2.Location = new Point(273, 73);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(203, 15);
+            label2.TabIndex = 1;
+            label2.Text = "INVERSIONES HERMANOS M & R S.A.C.";
             // 
             // lblNumeroFactura
             // 
-            this.lblNumeroFactura.AutoSize = true;
-            this.lblNumeroFactura.Location = new System.Drawing.Point(534, 85);
-            this.lblNumeroFactura.Name = "lblNumeroFactura";
-            this.lblNumeroFactura.Size = new System.Drawing.Size(75, 13);
-            this.lblNumeroFactura.TabIndex = 2;
-            this.lblNumeroFactura.Text = "N° FACTURA:";
+            lblNumeroFactura.AutoSize = true;
+            lblNumeroFactura.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            lblNumeroFactura.Location = new Point(623, 98);
+            lblNumeroFactura.Margin = new Padding(4, 0, 4, 0);
+            lblNumeroFactura.Name = "lblNumeroFactura";
+            lblNumeroFactura.Size = new Size(75, 15);
+            lblNumeroFactura.TabIndex = 2;
+            lblNumeroFactura.Text = "N° FACTURA:";
             // 
             // lblFecha
             // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(332, 189);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(40, 13);
-            this.lblFecha.TabIndex = 3;
-            this.lblFecha.Text = "Fecha:";
+            lblFecha.AutoSize = true;
+            lblFecha.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            lblFecha.Location = new Point(387, 218);
+            lblFecha.Margin = new Padding(4, 0, 4, 0);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(44, 15);
+            lblFecha.TabIndex = 3;
+            lblFecha.Text = "Fecha:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(534, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "RUC: 20610265023";
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label5.Location = new Point(623, 133);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(101, 15);
+            label5.TabIndex = 4;
+            label5.Text = "RUC: 20610265023";
             // 
             // lblRuc
             // 
-            this.lblRuc.AutoSize = true;
-            this.lblRuc.Location = new System.Drawing.Point(562, 189);
-            this.lblRuc.Name = "lblRuc";
-            this.lblRuc.Size = new System.Drawing.Size(30, 13);
-            this.lblRuc.TabIndex = 5;
-            this.lblRuc.Text = "Ruc:";
+            lblRuc.AutoSize = true;
+            lblRuc.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            lblRuc.Location = new Point(656, 218);
+            lblRuc.Margin = new Padding(4, 0, 4, 0);
+            lblRuc.Name = "lblRuc";
+            lblRuc.Size = new Size(31, 15);
+            lblRuc.TabIndex = 5;
+            lblRuc.Text = "Ruc:";
             // 
             // lblCliente
             // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(55, 189);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(42, 13);
-            this.lblCliente.TabIndex = 6;
-            this.lblCliente.Text = "Cliente:";
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            lblCliente.Location = new Point(64, 218);
+            lblCliente.Margin = new Padding(4, 0, 4, 0);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(48, 15);
+            lblCliente.TabIndex = 6;
+            lblCliente.Text = "Cliente:";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(235, 85);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(206, 9);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "URB. PALMERAS RINCONADA CAL. LAS CASUARINAS";
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label8.Location = new Point(274, 98);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(283, 15);
+            label8.TabIndex = 7;
+            label8.Text = "URB. PALMERAS RINCONADA CAL. LAS CASUARINAS";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(234, 103);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "976296754";
+            label9.AutoSize = true;
+            label9.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label9.Location = new Point(273, 119);
+            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(61, 15);
+            label9.TabIndex = 8;
+            label9.Text = "976296754";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(165, 240);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Producto";
+            label10.AutoSize = true;
+            label10.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label10.Location = new Point(195, 243);
+            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(56, 15);
+            label10.TabIndex = 9;
+            label10.Text = "Producto";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(55, 240);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 13);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Cantidad";
+            label11.AutoSize = true;
+            label11.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label11.Location = new Point(64, 243);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(56, 15);
+            label11.TabIndex = 10;
+            label11.Text = "Cantidad";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(425, 240);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 13);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Precio";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(585, 240);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(31, 13);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Total";
+            label12.AutoSize = true;
+            label12.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label12.Location = new Point(388, 243);
+            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(42, 15);
+            label12.TabIndex = 11;
+            label12.Text = "Precio";
             // 
             // lblMontoTotal
             // 
-            this.lblMontoTotal.AutoSize = true;
-            this.lblMontoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMontoTotal.Location = new System.Drawing.Point(515, 290);
-            this.lblMontoTotal.Name = "lblMontoTotal";
-            this.lblMontoTotal.Size = new System.Drawing.Size(93, 16);
-            this.lblMontoTotal.TabIndex = 13;
-            this.lblMontoTotal.Text = "Monto Total:";
+            lblMontoTotal.AutoSize = true;
+            lblMontoTotal.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMontoTotal.Location = new Point(656, 414);
+            lblMontoTotal.Margin = new Padding(4, 0, 4, 0);
+            lblMontoTotal.Name = "lblMontoTotal";
+            lblMontoTotal.Size = new Size(93, 16);
+            lblMontoTotal.TabIndex = 13;
+            lblMontoTotal.Text = "Monto Total:";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(58, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(68, 55);
+            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(192, 92);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
             // 
             // buttonConfirmar
             // 
-            this.buttonConfirmar.Location = new System.Drawing.Point(370, 12);
-            this.buttonConfirmar.Name = "buttonConfirmar";
-            this.buttonConfirmar.Size = new System.Drawing.Size(157, 34);
-            this.buttonConfirmar.TabIndex = 15;
-            this.buttonConfirmar.Text = "IMPRIMIR Y GUARDAR";
-            this.buttonConfirmar.UseVisualStyleBackColor = true;
-            this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
+            buttonConfirmar.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            buttonConfirmar.Image = (Image)resources.GetObject("buttonConfirmar.Image");
+            buttonConfirmar.ImageAlign = ContentAlignment.MiddleRight;
+            buttonConfirmar.Location = new Point(432, 14);
+            buttonConfirmar.Margin = new Padding(4, 3, 4, 3);
+            buttonConfirmar.Name = "buttonConfirmar";
+            buttonConfirmar.Size = new Size(200, 39);
+            buttonConfirmar.TabIndex = 15;
+            buttonConfirmar.Text = "IMPRIMIR Y GUARDAR";
+            buttonConfirmar.UseVisualStyleBackColor = true;
+            buttonConfirmar.Click += buttonConfirmar_Click;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(248, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(104, 34);
-            this.btnCerrar.TabIndex = 16;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            btnCerrar.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
+            btnCerrar.ImageAlign = ContentAlignment.MiddleRight;
+            btnCerrar.Location = new Point(289, 14);
+            btnCerrar.Margin = new Padding(4, 3, 4, 3);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(121, 39);
+            btnCerrar.TabIndex = 16;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // Comprobante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(750, 400);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.buttonConfirmar);
-            this.Controls.Add(this.lblMontoTotal);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.lblCliente);
-            this.Controls.Add(this.lblRuc);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblFecha);
-            this.Controls.Add(this.lblNumeroFactura);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblFoB);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Comprobante";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Comprobante";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Comprobante_Paint);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Comprobante_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Comprobante_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnableAllowFocusChange;
+            BackColor = Color.PowderBlue;
+            ClientSize = new Size(875, 462);
+            Controls.Add(btnCerrar);
+            Controls.Add(buttonConfirmar);
+            Controls.Add(lblMontoTotal);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(lblCliente);
+            Controls.Add(lblRuc);
+            Controls.Add(label5);
+            Controls.Add(lblFecha);
+            Controls.Add(lblNumeroFactura);
+            Controls.Add(label2);
+            Controls.Add(lblFoB);
+            Controls.Add(pictureBox1);
+            Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Comprobante";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Comprobante";
+            Paint += Comprobante_Paint;
+            MouseDown += Comprobante_MouseDown;
+            MouseMove += Comprobante_MouseMove;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -261,7 +283,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblMontoTotal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonConfirmar;

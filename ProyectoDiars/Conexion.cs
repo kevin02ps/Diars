@@ -5,12 +5,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net.Http;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
 using System.Windows;
 using static Mysqlx.Crud.Order.Types;
 
@@ -20,8 +14,7 @@ namespace InversionesHermanos.Conexion
     {
         MySqlConnection connection = new MySqlConnection("Server=bljedez49bwzhuwfxsb0-mysql.services.clever-cloud.com;Port=3306;Database=bljedez49bwzhuwfxsb0;Uid=utmmn1g1jgy0kewg;Pwd=1DRUhKmXabIu9u3K83aI;");
 
-        
-        public void Conectar()
+    public void Conectar()
         {
             try
             {
@@ -95,7 +88,7 @@ namespace InversionesHermanos.Conexion
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    System.Windows.MessageBox.Show("Error: " + ex.Message);
                 }
                 connection.Close();
             }
@@ -158,7 +151,7 @@ namespace InversionesHermanos.Conexion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los datos: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al cargar los datos: " + ex.Message);
             }
             connection.Close();
             return dataTable;
@@ -185,17 +178,17 @@ namespace InversionesHermanos.Conexion
 
                     if (filasModificadas > 0)
                     {
-                        MessageBox.Show("Datos modificados correctamente.");
+                        System.Windows.MessageBox.Show("Datos modificados correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró el producto con ID " + id_producto);
+                        System.Windows.MessageBox.Show("No se encontró el producto con ID " + id_producto);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al modificar los datos: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al modificar los datos: " + ex.Message);
             }
             connection.Close();
         }
@@ -219,17 +212,17 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Producto agregado correctamente.");
+                        System.Windows.MessageBox.Show("Producto agregado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo agregar el producto.");
+                        System.Windows.MessageBox.Show("No se pudo agregar el producto.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar el producto: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al agregar el producto: " + ex.Message);
             }
             connection.Close();
         }
@@ -248,18 +241,18 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Producto eliminado correctamente.");
+                        System.Windows.MessageBox.Show("Producto eliminado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró ningún Producto con el ID especificado.");
+                        System.Windows.MessageBox.Show("No se encontró ningún Producto con el ID especificado.");
                     }
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al eliminar el Producto: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al eliminar el Producto: " + ex.Message);
             }
             connection.Close();
         }
@@ -324,18 +317,18 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Nuevo cliente agregado correctamente.");
+                        System.Windows.MessageBox.Show("Nuevo cliente agregado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo agregar el nuevo cliente.");
+                        System.Windows.MessageBox.Show("No se pudo agregar el nuevo cliente.");
                     }
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar el nuevo cliente: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al agregar el nuevo cliente: " + ex.Message);
             }
 
             connection.Close();
@@ -360,17 +353,17 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Cliente modificado correctamente.");
+                        System.Windows.MessageBox.Show("Cliente modificado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró ningún cliente con el ID especificado.");
+                        System.Windows.MessageBox.Show("No se encontró ningún cliente con el ID especificado.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al modificar el cliente: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al modificar el cliente: " + ex.Message);
             }
             connection.Close();
         }
@@ -389,18 +382,18 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Cliente eliminado correctamente.");
+                        System.Windows.MessageBox.Show("Cliente eliminado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró ningún cliente con el ID especificado.");
+                        System.Windows.MessageBox.Show("No se encontró ningún cliente con el ID especificado.");
                     }
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al eliminar el cliente: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al eliminar el cliente: " + ex.Message);
             }
             connection.Close();
         }
@@ -462,18 +455,18 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Nuevo Proveedor agregado correctamente.");
+                        System.Windows.MessageBox.Show("Nuevo Proveedor agregado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo agregar el nuevo Proveedor.");
+                        System.Windows.MessageBox.Show("No se pudo agregar el nuevo Proveedor.");
                     }
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar el nuevo Proveedor: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al agregar el nuevo Proveedor: " + ex.Message);
             }
 
             connection.Close();
@@ -497,17 +490,17 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Proveedor modificado correctamente.");
+                        System.Windows.MessageBox.Show("Proveedor modificado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró ningún Proveedor con el ID especificado.");
+                        System.Windows.MessageBox.Show("No se encontró ningún Proveedor con el ID especificado.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al modificar el Proveedor: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al modificar el Proveedor: " + ex.Message);
             }
             connection.Close();
         }
@@ -526,18 +519,18 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Proveedor eliminado correctamente.");
+                        System.Windows.MessageBox.Show("Proveedor eliminado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró ningún Proveedor con el ID especificado.");
+                        System.Windows.MessageBox.Show("No se encontró ningún Proveedor con el ID especificado.");
                     }
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al eliminar el Proveedor: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al eliminar el Proveedor: " + ex.Message);
             }
             connection.Close();
         }
@@ -612,12 +605,12 @@ namespace InversionesHermanos.Conexion
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    System.Windows.MessageBox.Show("Error: " + ex.Message);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar el nuevo Pedido: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al agregar el nuevo Pedido: " + ex.Message);
             }           
 
             connection.Close();
@@ -644,7 +637,7 @@ namespace InversionesHermanos.Conexion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar el nuevo Pedido: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al agregar el nuevo Pedido: " + ex.Message);
             }
             connection.Close();
         }
@@ -664,7 +657,7 @@ namespace InversionesHermanos.Conexion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar la nueva Boleta: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al agregar la nueva Boleta: " + ex.Message);
             }
 
             connection.Close();
@@ -685,7 +678,7 @@ namespace InversionesHermanos.Conexion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al quitar productos: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al quitar productos: " + ex.Message);
             }
             connection.Close();
         }
@@ -706,7 +699,7 @@ namespace InversionesHermanos.Conexion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los datos: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al cargar los datos: " + ex.Message);
             }
             connection.Close();
             return dataTable;
@@ -757,18 +750,18 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Nuevo Empleado agregado correctamente.");
+                        System.Windows.MessageBox.Show("Nuevo Empleado agregado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo agregar el nuevo Empleado.");
+                        System.Windows.MessageBox.Show("No se pudo agregar el nuevo Empleado.");
                     }
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar el nuevo Empleados: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al agregar el nuevo Empleados: " + ex.Message);
             }
 
             connection.Close();
@@ -816,17 +809,17 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Empleado modificado correctamente.");
+                        System.Windows.MessageBox.Show("Empleado modificado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró ningún Empleado con el ID especificado.");
+                        System.Windows.MessageBox.Show("No se encontró ningún Empleado con el ID especificado.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al modificar el Empleado: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al modificar el Empleado: " + ex.Message);
             }
             connection.Close();
         }
@@ -865,17 +858,17 @@ namespace InversionesHermanos.Conexion
 
                     if (filasAfectadas > 0)
                     {
-                        MessageBox.Show("Empleado eliminado correctamente.");
+                        System.Windows.MessageBox.Show("Empleado eliminado correctamente.");
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró ningún cliEmpleadoente con el ID especificado.");
+                        System.Windows.MessageBox.Show("No se encontró ningún cliEmpleadoente con el ID especificado.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al eliminar el Empleado: " + ex.Message);
+                System.Windows.MessageBox.Show("Error al eliminar el Empleado: " + ex.Message);
             }
             connection.Close();
         }

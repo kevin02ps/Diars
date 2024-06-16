@@ -14,22 +14,10 @@ namespace InversionesHermanos.Conexion
     {
         MySqlConnection connection = new MySqlConnection("Server=bljedez49bwzhuwfxsb0-mysql.services.clever-cloud.com;Port=3306;Database=bljedez49bwzhuwfxsb0;Uid=utmmn1g1jgy0kewg;Pwd=1DRUhKmXabIu9u3K83aI;");
 
-    public void Conectar()
-        {
-            try
-            {
-                connection.Open();
-                Console.WriteLine("Conexión exitosa");
-            }
-            catch (MySqlException e)
-            {
-                Console.WriteLine("Error al conectar con la base de datos: " + e.Message);
-            }
-        }
-
         //Metodo para Iniciar Sesion
         public string[] VerificarUsuario(string usuario, string contrasena)
         {
+            connection.Close();
             connection.Open();
             string query = "SELECT E.Id_Empleado, E.Dni, C.TipoDeCargo, U.Id_usuario, U.Id_TipoEstado FROM Usuarios U " +
                            "INNER JOIN Empleados E ON E.id_usuario = U.id_usuario " +
@@ -585,7 +573,7 @@ namespace InversionesHermanos.Conexion
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@id_cliente", id_cliente);
-                    command.Parameters.AddWithValue("@Fecha", Fecha );
+                    command.Parameters.AddWithValue("@Fecha", "2023-09-12");
                     command.Parameters.AddWithValue("@id_empleado", id_empleado);
                     command.Parameters.AddWithValue("@MontoTotal", MontoTotal);
                     command.Parameters.AddWithValue("@Id_TipoPago", Id_TipoPago);
@@ -649,7 +637,7 @@ namespace InversionesHermanos.Conexion
                 string query = "INSERT INTO Boleta (Fecha, EstadoPedido, Id_Pedido) VALUES (@Fecha, @EstadoPedido, @IdPedido)";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Fecha", fecha);
+                    command.Parameters.AddWithValue("@Fecha", "2023-09-12");
                     command.Parameters.AddWithValue("@EstadoPedido", estadoPedido);
                     command.Parameters.AddWithValue("@IdPedido", idPedido);
                     command.ExecuteNonQuery();

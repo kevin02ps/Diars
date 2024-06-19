@@ -65,7 +65,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(137, 34);
+            pictureBox1.Location = new Point(143, 30);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(133, 122);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -94,6 +94,7 @@
             AutoScaleDimensions = new SizeF(7F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(404, 415);
             Controls.Add(pictureBox1);
             Controls.Add(txtPassword);

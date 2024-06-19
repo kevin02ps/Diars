@@ -124,10 +124,6 @@ namespace InversionesHermanos
             }
         }
 
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
     }
 }
 

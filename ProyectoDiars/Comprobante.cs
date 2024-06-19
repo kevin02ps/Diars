@@ -28,7 +28,7 @@ namespace InversionesHermanos
         int MontoTotal { get; set; }
         int id_pedido { get; set; }
         private Point _mouseStartPoint;
-        int alto {  get; set; }
+        int alto { get; set; }
 
         int XPDF = 500;
         int YPDF = 300;
@@ -68,10 +68,10 @@ namespace InversionesHermanos
             catch
             {
                 return dni;
-            }           
+            }
         }
 
-        public void CargarDatos( )
+        public void CargarDatos()
         {
             ArrayList cliente = conexion.ObtenerClientePorId(pedido.id_cliente);
             lblCliente.Text = "Cliente:  " + consultarClientePorDni(Convert.ToString(cliente[0]));
@@ -87,16 +87,16 @@ namespace InversionesHermanos
                 string producto = fila[1].ToString();
                 string precio = fila[3].ToString();
                 string precioT = fila[4].ToString();
-                
+
                 // Crear Labels para mostrar los datos
                 Label labelCantidad = new Label();
                 labelCantidad.Text = cantidad;
                 labelCantidad.AutoSize = true; // Ajustar automáticamente el tamaño
                 labelCantidad.Location = new System.Drawing.Point(65, this.alto); // Posición en el formulario
                 this.Controls.Add(labelCantidad);
-        
+
                 Label labelProducto = new Label();
-                labelProducto.Text =  producto;
+                labelProducto.Text = producto;
                 labelProducto.AutoSize = true; // Ajustar automáticamente el tamaño
                 labelProducto.Location = new System.Drawing.Point(175, this.alto); // Posición en el formulario
                 this.Controls.Add(labelProducto);
@@ -108,7 +108,7 @@ namespace InversionesHermanos
                 this.Controls.Add(labelPrecio);
 
                 Label labelPrecioT = new Label();
-                labelPrecioT.Text =  precioT;
+                labelPrecioT.Text = precioT;
                 labelPrecioT.AutoSize = true; // Ajustar automáticamente el tamaño
                 labelPrecioT.Location = new System.Drawing.Point(595, this.alto); // Posición en el formulario              
                 this.Controls.Add(labelPrecioT);
@@ -132,7 +132,7 @@ namespace InversionesHermanos
             string fecha = DateTime.Today.ToString("yyyy-MM-dd");
 
             //Agregar Pedido
-            this.id_pedido =  conexion.AgregarNuevoPedido(pedido.id_cliente, fecha, Login.id_empleado, this.MontoTotal, pedido.TipoPago);
+            this.id_pedido = conexion.AgregarNuevoPedido(pedido.id_cliente, fecha, Login.id_empleado, this.MontoTotal, pedido.TipoPago);
             conexion.InsertarBoleta(fecha, true, this.id_pedido);
 
             //Agregar DetallePedido
@@ -156,7 +156,7 @@ namespace InversionesHermanos
         }
 
         public void ObtenerPdf()
-        {               
+        {
             // Crear un bitmap con el tamaño de la ventana del formulario
             Bitmap screenshot = new Bitmap(this.Width, this.Height);
 
@@ -246,5 +246,19 @@ namespace InversionesHermanos
             this.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        //Barra manipulable personalizada
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
 }

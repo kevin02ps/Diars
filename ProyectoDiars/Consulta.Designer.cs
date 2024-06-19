@@ -38,6 +38,7 @@
             label1 = new Label();
             label2 = new Label();
             comboBox1 = new ComboBox();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)chartControl1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chartControl2).BeginInit();
             SuspendLayout();
@@ -58,7 +59,7 @@
             // 
             // comboBoxGrafico1
             // 
-            comboBoxGrafico1.BackColor = Color.RoyalBlue;
+            comboBoxGrafico1.BackColor = Color.White;
             comboBoxGrafico1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             comboBoxGrafico1.ForeColor = Color.White;
             comboBoxGrafico1.FormattingEnabled = true;
@@ -70,7 +71,13 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Black;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            button1.ForeColor = Color.LightGray;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleRight;
             button1.Location = new Point(737, 5);
@@ -78,7 +85,8 @@
             button1.Size = new Size(132, 39);
             button1.TabIndex = 3;
             button1.Text = "Confirmar";
-            button1.UseVisualStyleBackColor = true;
+            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // dateTimePicker1
@@ -103,6 +111,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label1.ForeColor = Color.LightGray;
             label1.Location = new Point(406, 16);
             label1.Name = "label1";
             label1.Size = new Size(44, 16);
@@ -113,6 +122,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label2.ForeColor = Color.LightGray;
             label2.Location = new Point(557, 17);
             label2.Name = "label2";
             label2.Size = new Size(48, 16);
@@ -121,7 +131,7 @@
             // 
             // comboBox1
             // 
-            comboBox1.BackColor = Color.RoyalBlue;
+            comboBox1.BackColor = Color.White;
             comboBox1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             comboBox1.ForeColor = Color.White;
             comboBox1.FormattingEnabled = true;
@@ -131,13 +141,20 @@
             comboBox1.Size = new Size(121, 24);
             comboBox1.TabIndex = 8;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Black;
+            panel1.Location = new Point(5, 47);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1022, 380);
+            panel1.TabIndex = 9;
+            // 
             // Consulta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1031, 532);
+            BackColor = Color.FromArgb(4, 41, 68);
+            ClientSize = new Size(1039, 471);
             Controls.Add(comboBox1);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -147,9 +164,11 @@
             Controls.Add(comboBoxGrafico1);
             Controls.Add(chartControl2);
             Controls.Add(chartControl1);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Consulta";
+            Opacity = 0.9D;
             Text = "Agregar_Pedido";
             ((System.ComponentModel.ISupportInitialize)chartControl1).EndInit();
             ((System.ComponentModel.ISupportInitialize)chartControl2).EndInit();
@@ -168,5 +187,6 @@
         private Label label1;
         private Label label2;
         private ComboBox comboBox1;
+        private Panel panel1;
     }
 }

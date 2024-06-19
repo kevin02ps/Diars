@@ -73,6 +73,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = SystemColors.HotTrack;
@@ -108,7 +109,7 @@
             // 
             // groupBoxAgregarCliente
             // 
-            groupBoxAgregarCliente.BackColor = Color.Transparent;
+            groupBoxAgregarCliente.BackColor = Color.Black;
             groupBoxAgregarCliente.Controls.Add(btnAceptarA);
             groupBoxAgregarCliente.Controls.Add(txtCorreoA);
             groupBoxAgregarCliente.Controls.Add(label5);
@@ -129,15 +130,21 @@
             // 
             // btnAceptarA
             // 
-            btnAceptarA.BackColor = Color.Azure;
+            btnAceptarA.BackColor = Color.FromArgb(4, 41, 68);
+            btnAceptarA.FlatAppearance.BorderSize = 0;
+            btnAceptarA.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnAceptarA.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnAceptarA.FlatStyle = FlatStyle.Flat;
+            btnAceptarA.ForeColor = Color.LightGray;
             btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
             btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
-            btnAceptarA.Location = new Point(142, 338);
+            btnAceptarA.Location = new Point(142, 314);
             btnAceptarA.Margin = new Padding(4, 3, 4, 3);
             btnAceptarA.Name = "btnAceptarA";
-            btnAceptarA.Size = new Size(129, 45);
+            btnAceptarA.Size = new Size(129, 60);
             btnAceptarA.TabIndex = 10;
             btnAceptarA.Text = "AGREGAR";
+            btnAceptarA.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAceptarA.UseVisualStyleBackColor = false;
             btnAceptarA.Click += btnAceptarA_Click;
             // 
@@ -152,6 +159,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = Color.LightGray;
             label5.Location = new Point(30, 208);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -170,6 +178,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = Color.LightGray;
             label4.Location = new Point(30, 159);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
@@ -188,6 +197,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.LightGray;
             label3.Location = new Point(30, 108);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
@@ -206,6 +216,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.LightGray;
             label1.Location = new Point(30, 51);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -215,30 +226,44 @@
             // 
             // btnAgregarCliente
             // 
+            btnAgregarCliente.BackColor = Color.Black;
+            btnAgregarCliente.FlatAppearance.BorderSize = 0;
+            btnAgregarCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnAgregarCliente.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnAgregarCliente.FlatStyle = FlatStyle.Flat;
             btnAgregarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAgregarCliente.ForeColor = Color.LightGray;
             btnAgregarCliente.Image = (Image)resources.GetObject("btnAgregarCliente.Image");
             btnAgregarCliente.ImageAlign = ContentAlignment.MiddleRight;
-            btnAgregarCliente.Location = new Point(28, 30);
+            btnAgregarCliente.Location = new Point(28, 14);
             btnAgregarCliente.Margin = new Padding(4, 3, 4, 3);
             btnAgregarCliente.Name = "btnAgregarCliente";
-            btnAgregarCliente.Size = new Size(111, 36);
+            btnAgregarCliente.Size = new Size(111, 52);
             btnAgregarCliente.TabIndex = 2;
             btnAgregarCliente.Text = "Agregar";
-            btnAgregarCliente.UseVisualStyleBackColor = true;
+            btnAgregarCliente.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnAgregarCliente.UseVisualStyleBackColor = false;
             btnAgregarCliente.Click += btnAgregarCliente_Click;
             // 
             // btnModificarCliente
             // 
+            btnModificarCliente.BackColor = Color.Black;
+            btnModificarCliente.FlatAppearance.BorderSize = 0;
+            btnModificarCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnModificarCliente.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnModificarCliente.FlatStyle = FlatStyle.Flat;
             btnModificarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnModificarCliente.ForeColor = Color.LightGray;
             btnModificarCliente.Image = (Image)resources.GetObject("btnModificarCliente.Image");
             btnModificarCliente.ImageAlign = ContentAlignment.MiddleRight;
-            btnModificarCliente.Location = new Point(163, 30);
+            btnModificarCliente.Location = new Point(163, 14);
             btnModificarCliente.Margin = new Padding(4, 3, 4, 3);
             btnModificarCliente.Name = "btnModificarCliente";
-            btnModificarCliente.Size = new Size(122, 36);
+            btnModificarCliente.Size = new Size(122, 52);
             btnModificarCliente.TabIndex = 3;
             btnModificarCliente.Text = "Modificar";
-            btnModificarCliente.UseVisualStyleBackColor = true;
+            btnModificarCliente.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnModificarCliente.UseVisualStyleBackColor = false;
             btnModificarCliente.Click += btnModificarCliente_Click;
             // 
             // groupBoxModificar
@@ -446,24 +471,30 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.BackColor = Color.Black;
+            btnEliminar.FlatAppearance.BorderSize = 0;
+            btnEliminar.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnEliminar.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnEliminar.ForeColor = Color.LightGray;
             btnEliminar.Image = (Image)resources.GetObject("btnEliminar.Image");
             btnEliminar.ImageAlign = ContentAlignment.MiddleRight;
-            btnEliminar.Location = new Point(301, 30);
+            btnEliminar.Location = new Point(301, 14);
             btnEliminar.Margin = new Padding(4, 3, 4, 3);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(111, 36);
+            btnEliminar.Size = new Size(111, 52);
             btnEliminar.TabIndex = 4;
             btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnEliminar.UseVisualStyleBackColor = false;
             btnEliminar.Click += btnEliminar_Click;
             // 
             // Clientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Azure;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.FromArgb(4, 41, 68);
             ClientSize = new Size(1050, 577);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificarCliente);
@@ -475,6 +506,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Clientes";
+            Opacity = 0.9D;
             Text = "Clientes";
             Load += Clientes_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

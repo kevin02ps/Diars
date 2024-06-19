@@ -73,46 +73,64 @@
             // 
             // btnEliminarProducto
             // 
-            btnEliminarProducto.BackColor = SystemColors.Control;
+            btnEliminarProducto.BackColor = SystemColors.ActiveCaptionText;
+            btnEliminarProducto.FlatAppearance.BorderSize = 0;
+            btnEliminarProducto.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnEliminarProducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnEliminarProducto.FlatStyle = FlatStyle.Flat;
             btnEliminarProducto.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnEliminarProducto.ForeColor = Color.LightGray;
             btnEliminarProducto.Image = (Image)resources.GetObject("btnEliminarProducto.Image");
             btnEliminarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarProducto.Location = new Point(307, 29);
             btnEliminarProducto.Margin = new Padding(4, 3, 4, 3);
             btnEliminarProducto.Name = "btnEliminarProducto";
-            btnEliminarProducto.Size = new Size(111, 36);
+            btnEliminarProducto.Size = new Size(111, 48);
             btnEliminarProducto.TabIndex = 25;
             btnEliminarProducto.Text = "Eliminar";
+            btnEliminarProducto.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminarProducto.UseVisualStyleBackColor = false;
             btnEliminarProducto.Click += btnEliminarProducto_Click_1;
             // 
             // btnModificarProducto
             // 
-            btnModificarProducto.BackColor = SystemColors.Control;
+            btnModificarProducto.BackColor = SystemColors.ActiveCaptionText;
+            btnModificarProducto.FlatAppearance.BorderSize = 0;
+            btnModificarProducto.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnModificarProducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnModificarProducto.FlatStyle = FlatStyle.Flat;
             btnModificarProducto.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnModificarProducto.ForeColor = Color.LightGray;
             btnModificarProducto.Image = (Image)resources.GetObject("btnModificarProducto.Image");
             btnModificarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnModificarProducto.Location = new Point(170, 29);
             btnModificarProducto.Margin = new Padding(4, 3, 4, 3);
             btnModificarProducto.Name = "btnModificarProducto";
-            btnModificarProducto.Size = new Size(111, 36);
+            btnModificarProducto.Size = new Size(111, 48);
             btnModificarProducto.TabIndex = 24;
             btnModificarProducto.Text = "Modificar";
+            btnModificarProducto.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnModificarProducto.UseVisualStyleBackColor = false;
             btnModificarProducto.Click += btnModificarProducto_Click_1;
             // 
             // btnAgregarProducto
             // 
-            btnAgregarProducto.BackColor = SystemColors.Control;
+            btnAgregarProducto.BackColor = SystemColors.ActiveCaptionText;
+            btnAgregarProducto.FlatAppearance.BorderSize = 0;
+            btnAgregarProducto.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnAgregarProducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnAgregarProducto.FlatStyle = FlatStyle.Flat;
             btnAgregarProducto.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnAgregarProducto.ForeColor = Color.LightGray;
             btnAgregarProducto.Image = (Image)resources.GetObject("btnAgregarProducto.Image");
             btnAgregarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnAgregarProducto.Location = new Point(34, 29);
             btnAgregarProducto.Margin = new Padding(4, 3, 4, 3);
             btnAgregarProducto.Name = "btnAgregarProducto";
-            btnAgregarProducto.Size = new Size(111, 36);
+            btnAgregarProducto.Size = new Size(111, 48);
             btnAgregarProducto.TabIndex = 23;
             btnAgregarProducto.Text = "Agregar";
+            btnAgregarProducto.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAgregarProducto.UseVisualStyleBackColor = false;
             btnAgregarProducto.Click += btnAgregarProducto_Click_1;
             // 
@@ -120,7 +138,7 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -265,7 +283,7 @@
             // 
             // groupBoxEliminar
             // 
-            groupBoxEliminar.BackColor = Color.Transparent;
+            groupBoxEliminar.BackColor = Color.Black;
             groupBoxEliminar.Controls.Add(txtIDE);
             groupBoxEliminar.Controls.Add(label17);
             groupBoxEliminar.Controls.Add(btnEliminarE);
@@ -289,6 +307,7 @@
             // label17
             // 
             label17.AutoSize = true;
+            label17.ForeColor = Color.LightGray;
             label17.Location = new Point(92, 105);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
@@ -298,15 +317,21 @@
             // 
             // btnEliminarE
             // 
-            btnEliminarE.BackColor = SystemColors.Control;
+            btnEliminarE.BackColor = Color.FromArgb(4, 41, 68);
+            btnEliminarE.FlatAppearance.BorderSize = 0;
+            btnEliminarE.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnEliminarE.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnEliminarE.FlatStyle = FlatStyle.Flat;
+            btnEliminarE.ForeColor = Color.LightGray;
             btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
             btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarE.Location = new Point(126, 195);
             btnEliminarE.Margin = new Padding(4, 3, 4, 3);
             btnEliminarE.Name = "btnEliminarE";
-            btnEliminarE.Size = new Size(127, 45);
+            btnEliminarE.Size = new Size(127, 53);
             btnEliminarE.TabIndex = 10;
             btnEliminarE.Text = "ELIMINAR";
+            btnEliminarE.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminarE.UseVisualStyleBackColor = false;
             btnEliminarE.Click += btnEliminarE_Click;
             // 
@@ -468,8 +493,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightCyan;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.FromArgb(4, 41, 68);
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1050, 577);
             Controls.Add(btnEliminarProducto);
@@ -483,6 +507,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Proveedores";
+            Opacity = 0.9D;
             Text = "Proveedores";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBoxAgregar.ResumeLayout(false);

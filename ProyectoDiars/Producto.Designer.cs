@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Producto));
             dataGridView1 = new DataGridView();
             btnEliminarProducto = new Button();
@@ -77,17 +77,17 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.RoyalBlue;
-            dataGridViewCellStyle1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle4.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.SteelBlue;
@@ -96,27 +96,32 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(44, 66, 91);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
-            dataGridViewCellStyle3.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = Color.White;
-            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(44, 66, 91);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle6.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             dataGridView1.Size = new Size(584, 519);
             dataGridView1.TabIndex = 0;
             // 
             // btnEliminarProducto
             // 
-            btnEliminarProducto.BackColor = SystemColors.Control;
+            btnEliminarProducto.BackColor = Color.Black;
+            btnEliminarProducto.FlatAppearance.BorderSize = 0;
+            btnEliminarProducto.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnEliminarProducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnEliminarProducto.FlatStyle = FlatStyle.Flat;
             btnEliminarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnEliminarProducto.ForeColor = Color.LightGray;
             btnEliminarProducto.Image = (Image)resources.GetObject("btnEliminarProducto.Image");
             btnEliminarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarProducto.Location = new Point(294, 12);
@@ -125,13 +130,19 @@
             btnEliminarProducto.Size = new Size(129, 53);
             btnEliminarProducto.TabIndex = 18;
             btnEliminarProducto.Text = "Eliminar";
+            btnEliminarProducto.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminarProducto.UseVisualStyleBackColor = false;
             btnEliminarProducto.Click += btnEliminarProducto_Click;
             // 
             // btnModificarProducto
             // 
-            btnModificarProducto.BackColor = SystemColors.Control;
+            btnModificarProducto.BackColor = Color.Black;
+            btnModificarProducto.FlatAppearance.BorderSize = 0;
+            btnModificarProducto.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnModificarProducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnModificarProducto.FlatStyle = FlatStyle.Flat;
             btnModificarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnModificarProducto.ForeColor = Color.LightGray;
             btnModificarProducto.Image = (Image)resources.GetObject("btnModificarProducto.Image");
             btnModificarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnModificarProducto.Location = new Point(166, 12);
@@ -140,13 +151,19 @@
             btnModificarProducto.Size = new Size(120, 53);
             btnModificarProducto.TabIndex = 17;
             btnModificarProducto.Text = "Modificar";
+            btnModificarProducto.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnModificarProducto.UseVisualStyleBackColor = false;
             btnModificarProducto.Click += btnModificarProducto_Click;
             // 
             // btnAgregarProducto
             // 
-            btnAgregarProducto.BackColor = SystemColors.Control;
+            btnAgregarProducto.BackColor = Color.Black;
+            btnAgregarProducto.FlatAppearance.BorderSize = 0;
+            btnAgregarProducto.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnAgregarProducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnAgregarProducto.FlatStyle = FlatStyle.Flat;
             btnAgregarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnAgregarProducto.ForeColor = Color.LightGray;
             btnAgregarProducto.Image = (Image)resources.GetObject("btnAgregarProducto.Image");
             btnAgregarProducto.ImageAlign = ContentAlignment.MiddleRight;
             btnAgregarProducto.Location = new Point(24, 12);
@@ -155,6 +172,7 @@
             btnAgregarProducto.Size = new Size(125, 53);
             btnAgregarProducto.TabIndex = 16;
             btnAgregarProducto.Text = "Agregar";
+            btnAgregarProducto.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAgregarProducto.UseVisualStyleBackColor = false;
             btnAgregarProducto.Click += btnAgregarProducto_Click;
             // 
@@ -457,7 +475,7 @@
             // 
             // groupBoxEliminar
             // 
-            groupBoxEliminar.BackColor = Color.Transparent;
+            groupBoxEliminar.BackColor = Color.Black;
             groupBoxEliminar.Controls.Add(txtIDE);
             groupBoxEliminar.Controls.Add(label17);
             groupBoxEliminar.Controls.Add(btnEliminarE);
@@ -482,6 +500,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.LightGray;
             label17.Location = new Point(92, 105);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
@@ -491,16 +510,22 @@
             // 
             // btnEliminarE
             // 
-            btnEliminarE.BackColor = SystemColors.Control;
+            btnEliminarE.BackColor = Color.FromArgb(4, 41, 68);
+            btnEliminarE.FlatAppearance.BorderSize = 0;
+            btnEliminarE.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnEliminarE.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnEliminarE.FlatStyle = FlatStyle.Flat;
             btnEliminarE.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminarE.ForeColor = Color.LightGray;
             btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
             btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
             btnEliminarE.Location = new Point(126, 195);
             btnEliminarE.Margin = new Padding(4, 3, 4, 3);
             btnEliminarE.Name = "btnEliminarE";
-            btnEliminarE.Size = new Size(136, 41);
+            btnEliminarE.Size = new Size(136, 52);
             btnEliminarE.TabIndex = 10;
             btnEliminarE.Text = "ELIMINAR";
+            btnEliminarE.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEliminarE.UseVisualStyleBackColor = false;
             btnEliminarE.Click += btnEliminarE_Click_1;
             // 
@@ -508,8 +533,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PowderBlue;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.FromArgb(4, 41, 68);
             ClientSize = new Size(1050, 577);
             Controls.Add(btnEliminarProducto);
             Controls.Add(btnModificarProducto);
@@ -521,6 +545,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Producto";
+            Opacity = 0.9D;
             Text = "Producto";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBoxModificar.ResumeLayout(false);

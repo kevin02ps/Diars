@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JeanN - G\\source\\repos\\d2\\ProyectoDiars\\ProyectoDiars.csproj": {}
+    "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\ProyectoDiars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JeanN - G\\source\\repos\\d2\\ProyectoDiars\\ProyectoDiars.csproj": {
+    "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\ProyectoDiars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JeanN - G\\source\\repos\\d2\\ProyectoDiars\\ProyectoDiars.csproj",
+        "projectUniqueName": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\ProyectoDiars.csproj",
         "projectName": "ProyectoDiars",
-        "projectPath": "C:\\Users\\JeanN - G\\source\\repos\\d2\\ProyectoDiars\\ProyectoDiars.csproj",
-        "packagesPath": "C:\\Users\\JeanN - G\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JeanN - G\\source\\repos\\d2\\ProyectoDiars\\obj\\",
+        "projectPath": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\ProyectoDiars.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+          "D:\\devexpress\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\JeanN - G\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -28,7 +28,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -92,7 +92,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

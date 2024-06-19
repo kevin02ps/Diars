@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle18 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle19 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle20 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle21 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle22 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle23 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle24 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             dataGridView1 = new DataGridView();
             dataGridView = new DataGridView();
@@ -71,89 +71,89 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.FromArgb(45, 66, 91);
-            dataGridViewCellStyle17.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = Color.RoyalBlue;
-            dataGridViewCellStyle17.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle17.ForeColor = Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = Color.White;
-            dataGridViewCellStyle17.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = SystemColors.Window;
-            dataGridViewCellStyle18.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle18.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = DataGridViewTriState.False;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.SteelBlue;
             dataGridView1.Location = new Point(646, 57);
             dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle19.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = Color.RoyalBlue;
-            dataGridViewCellStyle19.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle19.ForeColor = Color.White;
-            dataGridViewCellStyle19.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = Color.White;
-            dataGridViewCellStyle19.WrapMode = DataGridViewTriState.True;
-            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            dataGridViewCellStyle20.BackColor = Color.FromArgb(45, 66, 91);
-            dataGridViewCellStyle20.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle20.ForeColor = Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle20.SelectionForeColor = Color.White;
-            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = Color.White;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle4.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.Size = new Size(390, 291);
             dataGridView1.TabIndex = 13;
             // 
             // dataGridView
             // 
             dataGridView.AllowUserToAddRows = false;
-            dataGridView.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridView.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle21.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = Color.RoyalBlue;
-            dataGridViewCellStyle21.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle21.ForeColor = Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = Color.White;
-            dataGridViewCellStyle21.WrapMode = DataGridViewTriState.True;
-            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle5.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = Color.White;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView.Columns.AddRange(new DataGridViewColumn[] { id_producto, Producto, Cantidad, Precio, PrecioTotal });
-            dataGridViewCellStyle22.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = SystemColors.Window;
-            dataGridViewCellStyle22.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle22.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle22.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = DataGridViewTriState.False;
-            dataGridView.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = SystemColors.Window;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            dataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             dataGridView.GridColor = Color.SteelBlue;
             dataGridView.Location = new Point(38, 377);
             dataGridView.Margin = new Padding(4, 3, 4, 3);
             dataGridView.Name = "dataGridView";
             dataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle23.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = Color.RoyalBlue;
-            dataGridViewCellStyle23.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle23.ForeColor = Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = Color.RoyalBlue;
-            dataGridViewCellStyle23.SelectionForeColor = Color.White;
-            dataGridViewCellStyle23.WrapMode = DataGridViewTriState.True;
-            dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
-            dataGridViewCellStyle24.BackColor = Color.FromArgb(45, 66, 91);
-            dataGridViewCellStyle24.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle24.ForeColor = Color.White;
-            dataGridViewCellStyle24.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle24.SelectionForeColor = Color.White;
-            dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle7.ForeColor = Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = Color.RoyalBlue;
+            dataGridViewCellStyle7.SelectionForeColor = Color.White;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle8.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle8.ForeColor = Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle8.SelectionForeColor = Color.White;
+            dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
             dataGridView.Size = new Size(673, 158);
             dataGridView.TabIndex = 7;
             // 
@@ -186,20 +186,28 @@
             // 
             // btnBuscarCliente
             // 
+            btnBuscarCliente.BackColor = Color.Black;
+            btnBuscarCliente.FlatAppearance.BorderSize = 0;
+            btnBuscarCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnBuscarCliente.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnBuscarCliente.FlatStyle = FlatStyle.Flat;
             btnBuscarCliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnBuscarCliente.ForeColor = Color.LightGray;
             btnBuscarCliente.Image = (Image)resources.GetObject("btnBuscarCliente.Image");
             btnBuscarCliente.ImageAlign = ContentAlignment.MiddleRight;
-            btnBuscarCliente.Location = new Point(233, 41);
+            btnBuscarCliente.Location = new Point(233, 24);
             btnBuscarCliente.Margin = new Padding(4, 3, 4, 3);
             btnBuscarCliente.Name = "btnBuscarCliente";
-            btnBuscarCliente.Size = new Size(112, 40);
+            btnBuscarCliente.Size = new Size(112, 45);
             btnBuscarCliente.TabIndex = 11;
             btnBuscarCliente.Text = "Buscar";
-            btnBuscarCliente.UseVisualStyleBackColor = true;
+            btnBuscarCliente.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnBuscarCliente.UseVisualStyleBackColor = false;
             btnBuscarCliente.Click += btnBuscarCliente_Click_1;
             // 
             // groupBoxPedidoPedido
             // 
+            groupBoxPedidoPedido.BackColor = Color.Black;
             groupBoxPedidoPedido.Controls.Add(txtPrecioAgregar);
             groupBoxPedidoPedido.Controls.Add(label5);
             groupBoxPedidoPedido.Controls.Add(lblDescripcionProducto);
@@ -208,7 +216,8 @@
             groupBoxPedidoPedido.Controls.Add(label3);
             groupBoxPedidoPedido.Enabled = false;
             groupBoxPedidoPedido.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            groupBoxPedidoPedido.Location = new Point(66, 188);
+            groupBoxPedidoPedido.ForeColor = Color.LightGray;
+            groupBoxPedidoPedido.Location = new Point(66, 196);
             groupBoxPedidoPedido.Margin = new Padding(4, 3, 4, 3);
             groupBoxPedidoPedido.Name = "groupBoxPedidoPedido";
             groupBoxPedidoPedido.Padding = new Padding(4, 3, 4, 3);
@@ -229,6 +238,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = Color.LightGray;
             label5.Location = new Point(22, 112);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -248,15 +258,22 @@
             // 
             // btnAceptarAgregar
             // 
+            btnAceptarAgregar.BackColor = Color.FromArgb(4, 41, 68);
+            btnAceptarAgregar.FlatAppearance.BorderSize = 0;
+            btnAceptarAgregar.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnAceptarAgregar.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnAceptarAgregar.FlatStyle = FlatStyle.Flat;
+            btnAceptarAgregar.Font = new Font("Century Gothic", 9.75F);
             btnAceptarAgregar.Image = (Image)resources.GetObject("btnAceptarAgregar.Image");
             btnAceptarAgregar.ImageAlign = ContentAlignment.MiddleRight;
-            btnAceptarAgregar.Location = new Point(337, 69);
+            btnAceptarAgregar.Location = new Point(321, 61);
             btnAceptarAgregar.Margin = new Padding(4, 3, 4, 3);
             btnAceptarAgregar.Name = "btnAceptarAgregar";
-            btnAceptarAgregar.Size = new Size(119, 47);
+            btnAceptarAgregar.Size = new Size(135, 58);
             btnAceptarAgregar.TabIndex = 7;
             btnAceptarAgregar.Text = "Agregar";
-            btnAceptarAgregar.UseVisualStyleBackColor = true;
+            btnAceptarAgregar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnAceptarAgregar.UseVisualStyleBackColor = false;
             btnAceptarAgregar.Click += btnAceptarAgregar_Click_1;
             // 
             // txtCantidadAgregar
@@ -271,6 +288,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.LightGray;
             label3.Location = new Point(22, 69);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
@@ -280,16 +298,23 @@
             // 
             // btnBuscarProductoAgregar
             // 
+            btnBuscarProductoAgregar.BackColor = Color.Black;
+            btnBuscarProductoAgregar.FlatAppearance.BorderSize = 0;
+            btnBuscarProductoAgregar.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            btnBuscarProductoAgregar.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+            btnBuscarProductoAgregar.FlatStyle = FlatStyle.Flat;
             btnBuscarProductoAgregar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnBuscarProductoAgregar.ForeColor = Color.LightGray;
             btnBuscarProductoAgregar.Image = (Image)resources.GetObject("btnBuscarProductoAgregar.Image");
             btnBuscarProductoAgregar.ImageAlign = ContentAlignment.MiddleRight;
-            btnBuscarProductoAgregar.Location = new Point(233, 146);
+            btnBuscarProductoAgregar.Location = new Point(233, 140);
             btnBuscarProductoAgregar.Margin = new Padding(4, 3, 4, 3);
             btnBuscarProductoAgregar.Name = "btnBuscarProductoAgregar";
-            btnBuscarProductoAgregar.Size = new Size(112, 37);
+            btnBuscarProductoAgregar.Size = new Size(112, 44);
             btnBuscarProductoAgregar.TabIndex = 13;
             btnBuscarProductoAgregar.Text = "Buscar";
-            btnBuscarProductoAgregar.UseVisualStyleBackColor = true;
+            btnBuscarProductoAgregar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnBuscarProductoAgregar.UseVisualStyleBackColor = false;
             btnBuscarProductoAgregar.Click += btnBuscarProductoAgregar_Click_1;
             // 
             // txtIdProducto
@@ -308,6 +333,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.ForeColor = Color.LightGray;
             label2.Location = new Point(38, 155);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
@@ -318,7 +344,7 @@
             // txtIdCliente
             // 
             txtIdCliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            txtIdCliente.Location = new Point(108, 53);
+            txtIdCliente.Location = new Point(108, 36);
             txtIdCliente.Margin = new Padding(4, 3, 4, 3);
             txtIdCliente.Name = "txtIdCliente";
             txtIdCliente.Size = new Size(74, 23);
@@ -328,9 +354,11 @@
             // 
             // groupBoxCliente
             // 
+            groupBoxCliente.BackColor = Color.Black;
             groupBoxCliente.Controls.Add(lblNombreCliente);
             groupBoxCliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            groupBoxCliente.Location = new Point(56, 82);
+            groupBoxCliente.ForeColor = Color.LightGray;
+            groupBoxCliente.Location = new Point(56, 75);
             groupBoxCliente.Margin = new Padding(4, 3, 4, 3);
             groupBoxCliente.Name = "groupBoxCliente";
             groupBoxCliente.Padding = new Padding(4, 3, 4, 3);
@@ -353,7 +381,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(38, 57);
+            label1.ForeColor = Color.LightGray;
+            label1.Location = new Point(38, 40);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(63, 15);
@@ -362,16 +391,19 @@
             // 
             // btnGenerarComprobante
             // 
+            btnGenerarComprobante.BackColor = Color.Black;
             btnGenerarComprobante.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnGenerarComprobante.ForeColor = Color.LightGray;
             btnGenerarComprobante.Image = (Image)resources.GetObject("btnGenerarComprobante.Image");
             btnGenerarComprobante.ImageAlign = ContentAlignment.MiddleRight;
-            btnGenerarComprobante.Location = new Point(769, 478);
+            btnGenerarComprobante.Location = new Point(766, 478);
             btnGenerarComprobante.Margin = new Padding(4, 3, 4, 3);
             btnGenerarComprobante.Name = "btnGenerarComprobante";
-            btnGenerarComprobante.Size = new Size(136, 56);
+            btnGenerarComprobante.Size = new Size(160, 56);
             btnGenerarComprobante.TabIndex = 14;
             btnGenerarComprobante.Text = "Generar Comprobante   ";
-            btnGenerarComprobante.UseVisualStyleBackColor = true;
+            btnGenerarComprobante.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnGenerarComprobante.UseVisualStyleBackColor = false;
             btnGenerarComprobante.Click += btnGenerarComprobante_Click;
             // 
             // comboBoxTipoPago
@@ -393,6 +425,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.ForeColor = Color.LightGray;
             label4.Location = new Point(766, 379);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
@@ -415,8 +448,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.GradientInactiveCaption;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.FromArgb(4, 41, 68);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1050, 577);
             Controls.Add(btnQR);
@@ -437,6 +469,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Pedidos";
+            Opacity = 0.9D;
             Text = "Pedidos";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();

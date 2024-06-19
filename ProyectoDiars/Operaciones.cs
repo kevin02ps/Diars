@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,11 +17,15 @@ namespace InversionesHermanos
         ApiDni_Ruc ApisPeru = new ApiDni_Ruc();
 
         private Login Login;
+        private bool isMaximized = false; // Estado de la ventana
+        private Size originalSize; // Tamaño original de la ventana
+        private Point originalLocation; // Ubicación original de la ventana
+        private int borderSize = 2;
         public Operaciones(Login login)
         {
-            InitializeComponent();  
+            InitializeComponent();
             this.Login = login;
-            if(Login.cargo == "admin")
+            if (Login.cargo == "admin")
             {
                 lblEmpleado.Text = Login.cargo;
             }
@@ -28,6 +33,10 @@ namespace InversionesHermanos
             {
                 lblEmpleado.Text = Login.cargo + ", " + consultarClientePorDni(Convert.ToString(Login.dni));
             }
+
+            /////tal vez no tenga efecto
+            this.Padding = new Padding(borderSize);//Border size
+            this.BackColor = Color.FromArgb(98, 102, 244);//Border color
         }
 
         private string consultarClientePorDni(string dni)
@@ -40,7 +49,7 @@ namespace InversionesHermanos
                     return respuesta.nombres.ToString() + " " + respuesta.apellidoPaterno.ToString() + " " + respuesta.apellidoMaterno.ToString();
                 }
             }
-            catch 
+            catch
             {
                 return Login.dni;
             }
@@ -125,6 +134,92 @@ namespace InversionesHermanos
             productos.TopLevel = false;
             panel.Controls.Add(productos);
             productos.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmpleado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        //Barra manipulable personalizada
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+        //Acoplamiento
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_NCCALCSIZE = 0X0083;
+            if (m.Msg == WM_NCCALCSIZE && m.WParam.ToInt32() == 1)
+            {
+                return;
+            }
+            base.WndProc(ref m);
+        }
+        //ajustar formulario
+        private void Operaciones_Resize(object sender, EventArgs e)
+        {
+            AdjustForm();
+        }
+        private void AdjustForm()
+        {
+            switch (this.WindowState)
+            {
+                case FormWindowState.Maximized: //Maximized form (After)
+                    this.Padding = new Padding(8, 8, 8, 0);
+                    break;
+                case FormWindowState.Normal: //Restored form (After)
+                    if (this.Padding.Top != borderSize)
+                        this.Padding = new Padding(borderSize);
+                    break;
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (isMaximized)
+            {
+                // Restaurar la ventana al tamaño y ubicación originales
+                this.Size = originalSize;
+                this.Location = originalLocation;
+                isMaximized = false;
+            }
+            else
+            {
+                // Maximizar la ventana
+                originalSize = this.Size;
+                originalLocation = this.Location;
+                this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+                this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+                isMaximized = true;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

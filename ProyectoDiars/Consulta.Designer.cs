@@ -66,9 +66,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(819, 10);
+            button1.Location = new Point(765, 8);
             button1.Name = "button1";
-            button1.Size = new Size(97, 23);
+            button1.Size = new Size(161, 34);
             button1.TabIndex = 3;
             button1.Text = "Confirmar";
             button1.UseVisualStyleBackColor = true;

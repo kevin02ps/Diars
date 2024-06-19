@@ -37,27 +37,32 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label1.Location = new Point(89, 51);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(252, 15);
+            label1.Size = new Size(283, 16);
             label1.TabIndex = 0;
             label1.Text = "Ubicacion donde se guarda los comprobantes:";
             // 
             // txtUbiComprobantes
             // 
+            txtUbiComprobantes.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             txtUbiComprobantes.Location = new Point(89, 81);
             txtUbiComprobantes.Margin = new Padding(4, 3, 4, 3);
             txtUbiComprobantes.Name = "txtUbiComprobantes";
-            txtUbiComprobantes.Size = new Size(480, 23);
+            txtUbiComprobantes.Size = new Size(480, 22);
             txtUbiComprobantes.TabIndex = 1;
             // 
             // btnUbiComprobante
             // 
-            btnUbiComprobante.Location = new Point(594, 78);
+            btnUbiComprobante.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            btnUbiComprobante.Image = (Image)resources.GetObject("btnUbiComprobante.Image");
+            btnUbiComprobante.ImageAlign = ContentAlignment.MiddleRight;
+            btnUbiComprobante.Location = new Point(594, 71);
             btnUbiComprobante.Margin = new Padding(4, 3, 4, 3);
             btnUbiComprobante.Name = "btnUbiComprobante";
-            btnUbiComprobante.Size = new Size(120, 27);
+            btnUbiComprobante.Size = new Size(142, 42);
             btnUbiComprobante.TabIndex = 2;
             btnUbiComprobante.Text = "CONFIRMAR";
             btnUbiComprobante.UseVisualStyleBackColor = true;

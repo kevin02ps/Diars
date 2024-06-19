@@ -43,11 +43,13 @@
             btnConfiguracion = new Button();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
             panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // btnVentas
@@ -126,7 +128,7 @@
             btnConsultas.ForeColor = SystemColors.ActiveCaptionText;
             btnConsultas.Image = (Image)resources.GetObject("btnConsultas.Image");
             btnConsultas.ImageAlign = ContentAlignment.MiddleRight;
-            btnConsultas.Location = new Point(0, 346);
+            btnConsultas.Location = new Point(0, 342);
             btnConsultas.Margin = new Padding(4, 3, 4, 3);
             btnConsultas.Name = "btnConsultas";
             btnConsultas.Size = new Size(233, 46);
@@ -186,6 +188,8 @@
             // panel1
             // 
             panel1.BackColor = Color.PaleTurquoise;
+            panel1.BackgroundImageLayout = ImageLayout.None;
+            panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(btnSalir);
             panel1.Controls.Add(btnProveedores);
             panel1.Controls.Add(btnPedido);
@@ -258,6 +262,16 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(41, 394);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(159, 119);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 5;
+            pictureBox3.TabStop = false;
+            // 
             // Operaciones
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -278,6 +292,7 @@
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -298,5 +313,6 @@
         private System.Windows.Forms.Button btnConfiguracion;
         private System.Windows.Forms.Button btnSalir;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

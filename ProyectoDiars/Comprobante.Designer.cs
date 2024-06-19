@@ -185,21 +185,21 @@
             // lblMontoTotal
             // 
             lblMontoTotal.AutoSize = true;
-            lblMontoTotal.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMontoTotal.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             lblMontoTotal.Location = new Point(656, 414);
             lblMontoTotal.Margin = new Padding(4, 0, 4, 0);
             lblMontoTotal.Name = "lblMontoTotal";
-            lblMontoTotal.Size = new Size(93, 16);
+            lblMontoTotal.Size = new Size(72, 15);
             lblMontoTotal.TabIndex = 13;
             lblMontoTotal.Text = "Monto Total:";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(68, 55);
+            pictureBox1.Location = new Point(13, 14);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(192, 92);
+            pictureBox1.Size = new Size(247, 133);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
@@ -260,6 +260,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.PowderBlue;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(875, 462);
             Controls.Add(label1);
             Controls.Add(lblTipoDePago);

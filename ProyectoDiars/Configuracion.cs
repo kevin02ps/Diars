@@ -29,6 +29,8 @@ namespace InversionesHermanos
         private void btnUbiComprobante_Click(object sender, EventArgs e)
         {
             UbiComprobante = txtUbiComprobantes.Text;
+            MessageBox.Show("Ubicación Guardada Exitosamente.");
+            
         }
 
         private void Configuracion_Load(object sender, EventArgs e)

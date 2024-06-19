@@ -51,7 +51,7 @@
             txtUsuario.BorderStyle = BorderStyle.None;
             txtUsuario.Font = new Font("Century Gothic", 10.8F);
             txtUsuario.ForeColor = Color.DimGray;
-            txtUsuario.Location = new Point(78, 67);
+            txtUsuario.Location = new Point(78, 66);
             txtUsuario.Multiline = true;
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(228, 18);
@@ -66,7 +66,7 @@
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Century Gothic", 10.8F);
             txtPassword.ForeColor = Color.DimGray;
-            txtPassword.Location = new Point(79, 105);
+            txtPassword.Location = new Point(79, 104);
             txtPassword.MaxLength = 30;
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(228, 18);

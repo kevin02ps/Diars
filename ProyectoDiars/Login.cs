@@ -81,7 +81,7 @@ namespace InversionesHermanos
 
         private void txtUserID_Enter(object sender, EventArgs e)
         {
-            txtUsuario.ForeColor = Color.Black;
+            txtUsuario.ForeColor = Color.White;
 
             if (txtUsuario.Text == "Usuario")
             {
@@ -92,18 +92,18 @@ namespace InversionesHermanos
         {
             if (txtUsuario.Text == "" || txtUsuario.Text == "Usuario")
             {
-                txtUsuario.ForeColor = Color.Gray;
+                txtUsuario.ForeColor = Color.White;
                 txtUsuario.Text = "Usuario";
             }
             else
             {
-                txtUsuario.ForeColor = Color.Black;
+                txtUsuario.ForeColor = Color.White;
             }
         }
         private void txtPassword_Enter(object sender, EventArgs e)
         {
             txtPassword.UseSystemPasswordChar = true;
-            txtPassword.ForeColor = Color.Black;
+            txtPassword.ForeColor = Color.White;
 
             if (txtPassword.Text == "Contraseña")
             {
@@ -114,13 +114,13 @@ namespace InversionesHermanos
         {
             if (txtPassword.Text == "" || txtPassword.Text == "Contraseña")
             {
-                txtPassword.ForeColor = Color.Gray;
+                txtPassword.ForeColor = Color.White;
                 txtPassword.UseSystemPasswordChar = false;
                 txtPassword.Text = "Contraseña";
             }
             else
             {
-                txtPassword.ForeColor = Color.Black;
+                txtPassword.ForeColor = Color.White;
                 txtPassword.UseSystemPasswordChar = true;
             }
         }

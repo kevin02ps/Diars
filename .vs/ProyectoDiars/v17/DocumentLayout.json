@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\franc\\downloads\\francitocambiodiars2\\diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\franc\\downloads\\francitocambiodiars2\\diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -33,18 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\proyectodiars\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -150,44 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Operaciones.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Operaciones.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Operaciones.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T17:40:36.159Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Consulta.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Consulta.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Consulta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Consulta.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T22:20:49.51Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Login.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Login.cs",
-              "RelativeToolTip": "ProyectoDiars\\Login.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAAwI8AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T02:27:32.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Empleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Empleado.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Empleado.cs",
@@ -199,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Pedidos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Pedidos.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Pedidos.cs",
@@ -211,55 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Producto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Producto.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Producto.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Producto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Producto.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T18:06:03.635Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Proveedores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Proveedores.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Proveedores.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T16:24:12.598Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Clientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Clientes.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Clientes.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T15:40:29.655Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Configuracion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Configuracion.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Configuracion.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T19:02:04.861Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Comprobante.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Comprobante.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Comprobante.cs",
@@ -271,7 +182,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Operaciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Operaciones.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Operaciones.cs",
+              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:40:36.159Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Login.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
+              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Login.cs",
+              "RelativeToolTip": "ProyectoDiars\\Login.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAqwDgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T21:03:12.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Producto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Producto.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Producto.cs",
+              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Producto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Producto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T18:06:03.635Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Proveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Proveedores.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Proveedores.cs",
+              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T16:24:12.598Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Clientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Clientes.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Clientes.cs",
+              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:40:29.655Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Login.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
@@ -279,6 +251,30 @@
               "RelativeToolTip": "ProyectoDiars\\Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T02:09:43.288Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Consulta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Consulta.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
+              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Consulta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Consulta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T22:20:49.51Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Configuracion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Configuracion.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Configuracion.cs",
+              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T19:02:04.861Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
@@ -369,19 +365,6 @@
               "ViewState": "AQIAAB0AAAAAAAAAAAAgwEQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-06-15T20:41:42.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Login.Designer.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Login.Designer.cs",
-              "RelativeToolTip": "ProyectoDiars\\Login.Designer.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAawBYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T15:21:11.184Z",
               "EditorCaption": ""
             },
             {

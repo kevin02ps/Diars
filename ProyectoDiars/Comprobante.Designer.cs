@@ -64,7 +64,7 @@
             lblFoB.BackColor = Color.Black;
             lblFoB.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             lblFoB.ForeColor = Color.LightGray;
-            lblFoB.Location = new Point(639, 69);
+            lblFoB.Location = new Point(566, 78);
             lblFoB.Margin = new Padding(4, 0, 4, 0);
             lblFoB.Name = "lblFoB";
             lblFoB.Size = new Size(56, 15);
@@ -77,7 +77,7 @@
             label2.BackColor = Color.Black;
             label2.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             label2.ForeColor = Color.LightGray;
-            label2.Location = new Point(272, 96);
+            label2.Location = new Point(240, 99);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(203, 15);
@@ -90,7 +90,7 @@
             lblNumeroFactura.BackColor = Color.Black;
             lblNumeroFactura.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             lblNumeroFactura.ForeColor = Color.LightGray;
-            lblNumeroFactura.Location = new Point(622, 121);
+            lblNumeroFactura.Location = new Point(549, 124);
             lblNumeroFactura.Margin = new Padding(4, 0, 4, 0);
             lblNumeroFactura.Name = "lblNumeroFactura";
             lblNumeroFactura.Size = new Size(75, 15);
@@ -114,7 +114,7 @@
             label5.BackColor = Color.Black;
             label5.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             label5.ForeColor = Color.LightGray;
-            label5.Location = new Point(622, 156);
+            label5.Location = new Point(549, 159);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(101, 15);
@@ -149,7 +149,7 @@
             label8.BackColor = Color.Black;
             label8.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             label8.ForeColor = Color.LightGray;
-            label8.Location = new Point(273, 121);
+            label8.Location = new Point(241, 124);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
             label8.Size = new Size(283, 15);
@@ -162,7 +162,7 @@
             label9.BackColor = Color.Black;
             label9.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             label9.ForeColor = Color.LightGray;
-            label9.Location = new Point(272, 142);
+            label9.Location = new Point(240, 145);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
             label9.Size = new Size(61, 15);
@@ -217,10 +217,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 55);
+            pictureBox1.Location = new Point(1, 69);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(247, 133);
+            pictureBox1.Size = new Size(225, 119);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
@@ -236,7 +236,7 @@
             buttonConfirmar.ForeColor = Color.LightGray;
             buttonConfirmar.Image = (Image)resources.GetObject("buttonConfirmar.Image");
             buttonConfirmar.ImageAlign = ContentAlignment.MiddleRight;
-            buttonConfirmar.Location = new Point(78, 378);
+            buttonConfirmar.Location = new Point(17, 333);
             buttonConfirmar.Margin = new Padding(4, 3, 4, 3);
             buttonConfirmar.Name = "buttonConfirmar";
             buttonConfirmar.Size = new Size(200, 51);
@@ -255,7 +255,7 @@
             btnCerrar.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
             btnCerrar.ImageAlign = ContentAlignment.MiddleRight;
-            btnCerrar.Location = new Point(839, 1);
+            btnCerrar.Location = new Point(731, 1);
             btnCerrar.Margin = new Padding(4, 3, 4, 3);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(34, 39);
@@ -296,7 +296,7 @@
             panel1.Controls.Add(lblCliente);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label11);
-            panel1.Location = new Point(78, 208);
+            panel1.Location = new Point(17, 203);
             panel1.Name = "panel1";
             panel1.Size = new Size(730, 124);
             panel1.TabIndex = 19;
@@ -305,7 +305,7 @@
             // 
             panel2.BackColor = Color.Black;
             panel2.Controls.Add(lblMontoTotal);
-            panel2.Location = new Point(639, 380);
+            panel2.Location = new Point(578, 333);
             panel2.Name = "panel2";
             panel2.Size = new Size(169, 51);
             panel2.TabIndex = 20;
@@ -313,9 +313,9 @@
             // panel3
             // 
             panel3.BackColor = Color.Black;
-            panel3.Location = new Point(245, 55);
+            panel3.Location = new Point(226, 69);
             panel3.Name = "panel3";
-            panel3.Size = new Size(631, 133);
+            panel3.Size = new Size(544, 119);
             panel3.TabIndex = 21;
             // 
             // panel4
@@ -325,7 +325,7 @@
             panel4.Controls.Add(btnCerrar);
             panel4.Location = new Point(1, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(875, 41);
+            panel4.Size = new Size(818, 41);
             panel4.TabIndex = 22;
             panel4.MouseDown += panel4_MouseDown;
             // 
@@ -338,7 +338,7 @@
             button1.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleRight;
-            button1.Location = new Point(797, 0);
+            button1.Location = new Point(689, 0);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(34, 39);
@@ -353,7 +353,7 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.FromArgb(4, 41, 68);
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(875, 462);
+            ClientSize = new Size(771, 429);
             Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(panel1);

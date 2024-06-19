@@ -32,8 +32,6 @@
             label1 = new Label();
             txtUbiComprobantes = new TextBox();
             btnUbiComprobante = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -78,24 +76,14 @@
             btnUbiComprobante.UseVisualStyleBackColor = false;
             btnUbiComprobante.Click += btnUbiComprobante_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(153, 143);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(381, 189);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            // 
             // Configuracion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(4, 41, 68);
-            BackgroundImageLayout = ImageLayout.Center;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(787, 415);
-            Controls.Add(pictureBox1);
             Controls.Add(btnUbiComprobante);
             Controls.Add(txtUbiComprobantes);
             Controls.Add(label1);
@@ -106,7 +94,6 @@
             Opacity = 0.9D;
             Text = "Configuracion";
             Load += Configuracion_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -116,6 +103,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUbiComprobantes;
         private System.Windows.Forms.Button btnUbiComprobante;
-        private PictureBox pictureBox1;
     }
 }

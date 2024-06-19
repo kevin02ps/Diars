@@ -40,7 +40,7 @@
             // 
             txtUsuario.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtUsuario.ForeColor = Color.Gray;
-            txtUsuario.Location = new Point(98, 192);
+            txtUsuario.Location = new Point(100, 148);
             txtUsuario.Multiline = true;
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(228, 31);
@@ -54,7 +54,7 @@
             txtPassword.AccessibleName = "";
             txtPassword.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtPassword.ForeColor = Color.Gray;
-            txtPassword.Location = new Point(98, 241);
+            txtPassword.Location = new Point(100, 197);
             txtPassword.MaxLength = 30;
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(228, 24);
@@ -65,9 +65,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(143, 30);
+            pictureBox1.Location = new Point(137, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(133, 122);
+            pictureBox1.Size = new Size(135, 99);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -80,7 +80,7 @@
             btnIniciarSesion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnIniciarSesion.Image = (Image)resources.GetObject("btnIniciarSesion.Image");
             btnIniciarSesion.ImageAlign = ContentAlignment.MiddleRight;
-            btnIniciarSesion.Location = new Point(116, 297);
+            btnIniciarSesion.Location = new Point(118, 253);
             btnIniciarSesion.Margin = new Padding(4, 3, 4, 3);
             btnIniciarSesion.Name = "btnIniciarSesion";
             btnIniciarSesion.Size = new Size(172, 43);
@@ -95,7 +95,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(404, 415);
+            ClientSize = new Size(412, 339);
             Controls.Add(pictureBox1);
             Controls.Add(txtPassword);
             Controls.Add(txtUsuario);

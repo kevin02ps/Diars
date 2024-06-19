@@ -75,10 +75,11 @@
             BackColor = SystemColors.ButtonHighlight;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(749, 421);
+            ClientSize = new Size(1069, 555);
             Controls.Add(btnUbiComprobante);
             Controls.Add(txtUbiComprobantes);
             Controls.Add(label1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Configuracion";

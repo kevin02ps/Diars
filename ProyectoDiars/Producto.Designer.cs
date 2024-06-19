@@ -115,6 +115,7 @@
             // 
             // btnEliminarProducto
             // 
+            btnEliminarProducto.BackColor = SystemColors.Control;
             btnEliminarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnEliminarProducto.Image = (Image)resources.GetObject("btnEliminarProducto.Image");
             btnEliminarProducto.ImageAlign = ContentAlignment.MiddleRight;
@@ -124,11 +125,12 @@
             btnEliminarProducto.Size = new Size(129, 53);
             btnEliminarProducto.TabIndex = 18;
             btnEliminarProducto.Text = "Eliminar";
-            btnEliminarProducto.UseVisualStyleBackColor = true;
+            btnEliminarProducto.UseVisualStyleBackColor = false;
             btnEliminarProducto.Click += btnEliminarProducto_Click;
             // 
             // btnModificarProducto
             // 
+            btnModificarProducto.BackColor = SystemColors.Control;
             btnModificarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnModificarProducto.Image = (Image)resources.GetObject("btnModificarProducto.Image");
             btnModificarProducto.ImageAlign = ContentAlignment.MiddleRight;
@@ -138,11 +140,12 @@
             btnModificarProducto.Size = new Size(120, 53);
             btnModificarProducto.TabIndex = 17;
             btnModificarProducto.Text = "Modificar";
-            btnModificarProducto.UseVisualStyleBackColor = true;
+            btnModificarProducto.UseVisualStyleBackColor = false;
             btnModificarProducto.Click += btnModificarProducto_Click;
             // 
             // btnAgregarProducto
             // 
+            btnAgregarProducto.BackColor = SystemColors.Control;
             btnAgregarProducto.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnAgregarProducto.Image = (Image)resources.GetObject("btnAgregarProducto.Image");
             btnAgregarProducto.ImageAlign = ContentAlignment.MiddleRight;
@@ -152,7 +155,7 @@
             btnAgregarProducto.Size = new Size(125, 53);
             btnAgregarProducto.TabIndex = 16;
             btnAgregarProducto.Text = "Agregar";
-            btnAgregarProducto.UseVisualStyleBackColor = true;
+            btnAgregarProducto.UseVisualStyleBackColor = false;
             btnAgregarProducto.Click += btnAgregarProducto_Click;
             // 
             // groupBoxModificar
@@ -173,6 +176,7 @@
             // 
             // btnBuscarM
             // 
+            btnBuscarM.BackColor = SystemColors.Control;
             btnBuscarM.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnBuscarM.Image = (Image)resources.GetObject("btnBuscarM.Image");
             btnBuscarM.ImageAlign = ContentAlignment.BottomRight;
@@ -182,7 +186,7 @@
             btnBuscarM.Size = new Size(131, 49);
             btnBuscarM.TabIndex = 13;
             btnBuscarM.Text = "Buscar";
-            btnBuscarM.UseVisualStyleBackColor = true;
+            btnBuscarM.UseVisualStyleBackColor = false;
             btnBuscarM.Click += btnBuscarM_Click_1;
             // 
             // txtIDM
@@ -206,6 +210,7 @@
             // 
             // btnModificar
             // 
+            btnModificar.BackColor = SystemColors.Control;
             btnModificar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
             btnModificar.ImageAlign = ContentAlignment.MiddleRight;
@@ -215,7 +220,7 @@
             btnModificar.Size = new Size(150, 66);
             btnModificar.TabIndex = 10;
             btnModificar.Text = "MODIFICAR";
-            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.UseVisualStyleBackColor = false;
             btnModificar.Click += btnModificar_Click_1;
             // 
             // groupBoxdatosM
@@ -357,6 +362,7 @@
             // 
             // btnAceptarA
             // 
+            btnAceptarA.BackColor = SystemColors.Control;
             btnAceptarA.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
             btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
@@ -366,7 +372,7 @@
             btnAceptarA.Size = new Size(139, 45);
             btnAceptarA.TabIndex = 10;
             btnAceptarA.Text = "AGREGAR";
-            btnAceptarA.UseVisualStyleBackColor = true;
+            btnAceptarA.UseVisualStyleBackColor = false;
             btnAceptarA.Click += btnAceptarA_Click_1;
             // 
             // txtCantStockA
@@ -485,6 +491,7 @@
             // 
             // btnEliminarE
             // 
+            btnEliminarE.BackColor = SystemColors.Control;
             btnEliminarE.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
             btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
@@ -494,7 +501,7 @@
             btnEliminarE.Size = new Size(136, 41);
             btnEliminarE.TabIndex = 10;
             btnEliminarE.Text = "ELIMINAR";
-            btnEliminarE.UseVisualStyleBackColor = true;
+            btnEliminarE.UseVisualStyleBackColor = false;
             btnEliminarE.Click += btnEliminarE_Click_1;
             // 
             // Producto
@@ -508,9 +515,9 @@
             Controls.Add(btnModificarProducto);
             Controls.Add(btnAgregarProducto);
             Controls.Add(dataGridView1);
+            Controls.Add(groupBoxEliminar);
             Controls.Add(groupBoxModificar);
             Controls.Add(groupBoxAgregarProducto);
-            Controls.Add(groupBoxEliminar);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Producto";

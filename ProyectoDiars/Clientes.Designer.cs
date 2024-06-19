@@ -108,6 +108,7 @@
             // 
             // groupBoxAgregarCliente
             // 
+            groupBoxAgregarCliente.BackColor = Color.Transparent;
             groupBoxAgregarCliente.Controls.Add(btnAceptarA);
             groupBoxAgregarCliente.Controls.Add(txtCorreoA);
             groupBoxAgregarCliente.Controls.Add(label5);
@@ -128,6 +129,7 @@
             // 
             // btnAceptarA
             // 
+            btnAceptarA.BackColor = Color.Azure;
             btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
             btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
             btnAceptarA.Location = new Point(142, 338);
@@ -136,7 +138,7 @@
             btnAceptarA.Size = new Size(129, 45);
             btnAceptarA.TabIndex = 10;
             btnAceptarA.Text = "AGREGAR";
-            btnAceptarA.UseVisualStyleBackColor = true;
+            btnAceptarA.UseVisualStyleBackColor = false;
             btnAceptarA.Click += btnAceptarA_Click;
             // 
             // txtCorreoA
@@ -241,6 +243,7 @@
             // 
             // groupBoxModificar
             // 
+            groupBoxModificar.BackColor = Color.Transparent;
             groupBoxModificar.Controls.Add(btnBuscarM);
             groupBoxModificar.Controls.Add(txtIDM);
             groupBoxModificar.Controls.Add(label11);
@@ -288,6 +291,7 @@
             // 
             // btnModificar
             // 
+            btnModificar.BackColor = Color.Azure;
             btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
             btnModificar.ImageAlign = ContentAlignment.MiddleRight;
             btnModificar.Location = new Point(144, 354);
@@ -296,7 +300,7 @@
             btnModificar.Size = new Size(127, 45);
             btnModificar.TabIndex = 10;
             btnModificar.Text = "MODIFICAR";
-            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.UseVisualStyleBackColor = false;
             btnModificar.Click += btnModificar_Click;
             // 
             // groupBoxdatosM
@@ -394,6 +398,7 @@
             // 
             // groupBoxEliminar
             // 
+            groupBoxEliminar.BackColor = Color.Transparent;
             groupBoxEliminar.Controls.Add(txtIDE);
             groupBoxEliminar.Controls.Add(label17);
             groupBoxEliminar.Controls.Add(btnEliminarE);
@@ -426,6 +431,7 @@
             // 
             // btnEliminarE
             // 
+            btnEliminarE.BackColor = Color.Azure;
             btnEliminarE.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
             btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
@@ -435,7 +441,7 @@
             btnEliminarE.Size = new Size(127, 45);
             btnEliminarE.TabIndex = 10;
             btnEliminarE.Text = "ELIMINAR";
-            btnEliminarE.UseVisualStyleBackColor = true;
+            btnEliminarE.UseVisualStyleBackColor = false;
             btnEliminarE.Click += btnEliminarE_Click;
             // 
             // btnEliminar
@@ -457,6 +463,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1050, 577);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificarCliente);

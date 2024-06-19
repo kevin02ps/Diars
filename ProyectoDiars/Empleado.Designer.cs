@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleado));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             btnEliminar = new Button();
             btnModificarCliente = new Button();
             btnAgregarCliente = new Button();
@@ -73,6 +73,7 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.BackColor = SystemColors.Control;
             btnEliminar.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnEliminar.Image = (Image)resources.GetObject("btnEliminar.Image");
             btnEliminar.ImageAlign = ContentAlignment.MiddleRight;
@@ -82,11 +83,12 @@
             btnEliminar.Size = new Size(126, 36);
             btnEliminar.TabIndex = 19;
             btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.UseVisualStyleBackColor = false;
             btnEliminar.Click += btnEliminar_Click_1;
             // 
             // btnModificarCliente
             // 
+            btnModificarCliente.BackColor = SystemColors.Control;
             btnModificarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnModificarCliente.Image = (Image)resources.GetObject("btnModificarCliente.Image");
             btnModificarCliente.ImageAlign = ContentAlignment.MiddleRight;
@@ -96,11 +98,12 @@
             btnModificarCliente.Size = new Size(130, 36);
             btnModificarCliente.TabIndex = 18;
             btnModificarCliente.Text = "Modificar";
-            btnModificarCliente.UseVisualStyleBackColor = true;
+            btnModificarCliente.UseVisualStyleBackColor = false;
             btnModificarCliente.Click += btnModificarEmpleado_Click_1;
             // 
             // btnAgregarCliente
             // 
+            btnAgregarCliente.BackColor = SystemColors.Control;
             btnAgregarCliente.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnAgregarCliente.Image = (Image)resources.GetObject("btnAgregarCliente.Image");
             btnAgregarCliente.ImageAlign = ContentAlignment.MiddleRight;
@@ -110,21 +113,21 @@
             btnAgregarCliente.Size = new Size(127, 36);
             btnAgregarCliente.TabIndex = 17;
             btnAgregarCliente.Text = "Agregar";
-            btnAgregarCliente.UseVisualStyleBackColor = true;
+            btnAgregarCliente.UseVisualStyleBackColor = false;
             btnAgregarCliente.Click += btnAgregarEmpleado_Click_1;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.FromArgb(45, 66, 91);
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = SystemColors.HotTrack;
+            dataGridViewCellStyle4.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.SteelBlue;
@@ -132,26 +135,26 @@
             dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.RoyalBlue;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
-            dataGridViewCellStyle3.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = Color.White;
-            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.RoyalBlue;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle6.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.ForeColor = Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             dataGridView1.Size = new Size(581, 531);
             dataGridView1.TabIndex = 15;
             // 
             // groupBoxModificar
             // 
-            groupBoxModificar.BackColor = Color.LightBlue;
+            groupBoxModificar.BackColor = Color.Transparent;
             groupBoxModificar.Controls.Add(btnBuscarM);
             groupBoxModificar.Controls.Add(txtIDM);
             groupBoxModificar.Controls.Add(label11);
@@ -167,7 +170,7 @@
             // 
             // btnBuscarM
             // 
-            btnBuscarM.BackColor = Color.LightBlue;
+            btnBuscarM.BackColor = SystemColors.Control;
             btnBuscarM.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnBuscarM.Image = (Image)resources.GetObject("btnBuscarM.Image");
             btnBuscarM.ImageAlign = ContentAlignment.MiddleRight;
@@ -202,7 +205,7 @@
             // 
             // btnModificar
             // 
-            btnModificar.BackColor = Color.LightBlue;
+            btnModificar.BackColor = SystemColors.Control;
             btnModificar.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnModificar.Image = (Image)resources.GetObject("btnModificar.Image");
             btnModificar.ImageAlign = ContentAlignment.MiddleRight;
@@ -318,6 +321,7 @@
             // 
             // groupBoxAgregarCliente
             // 
+            groupBoxAgregarCliente.BackColor = Color.Transparent;
             groupBoxAgregarCliente.Controls.Add(comboBoxCargoA);
             groupBoxAgregarCliente.Controls.Add(label2);
             groupBoxAgregarCliente.Controls.Add(label10);
@@ -381,6 +385,7 @@
             // 
             // btnAceptarA
             // 
+            btnAceptarA.BackColor = SystemColors.Control;
             btnAceptarA.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnAceptarA.Image = (Image)resources.GetObject("btnAceptarA.Image");
             btnAceptarA.ImageAlign = ContentAlignment.MiddleRight;
@@ -390,7 +395,7 @@
             btnAceptarA.Size = new Size(137, 48);
             btnAceptarA.TabIndex = 10;
             btnAceptarA.Text = "AGREGAR";
-            btnAceptarA.UseVisualStyleBackColor = true;
+            btnAceptarA.UseVisualStyleBackColor = false;
             btnAceptarA.Click += btnAceptarA_Click_1;
             // 
             // txtContraseñaA
@@ -433,6 +438,7 @@
             // 
             // groupBoxEliminar
             // 
+            groupBoxEliminar.BackColor = Color.Transparent;
             groupBoxEliminar.Controls.Add(txtIDE);
             groupBoxEliminar.Controls.Add(label17);
             groupBoxEliminar.Controls.Add(btnEliminarE);
@@ -466,6 +472,7 @@
             // 
             // btnEliminarE
             // 
+            btnEliminarE.BackColor = SystemColors.Control;
             btnEliminarE.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             btnEliminarE.Image = (Image)resources.GetObject("btnEliminarE.Image");
             btnEliminarE.ImageAlign = ContentAlignment.MiddleRight;
@@ -475,7 +482,7 @@
             btnEliminarE.Size = new Size(127, 45);
             btnEliminarE.TabIndex = 10;
             btnEliminarE.Text = "ELIMINAR";
-            btnEliminarE.UseVisualStyleBackColor = true;
+            btnEliminarE.UseVisualStyleBackColor = false;
             btnEliminarE.Click += btnEliminarE_Click_1;
             // 
             // Empleado
@@ -485,15 +492,16 @@
             AutoSize = true;
             AutoValidate = AutoValidate.Disable;
             BackColor = Color.LightBlue;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1050, 577);
             ControlBox = false;
             Controls.Add(btnEliminar);
             Controls.Add(btnModificarCliente);
             Controls.Add(btnAgregarCliente);
             Controls.Add(dataGridView1);
-            Controls.Add(groupBoxModificar);
             Controls.Add(groupBoxAgregarCliente);
             Controls.Add(groupBoxEliminar);
+            Controls.Add(groupBoxModificar);
             FormBorderStyle = FormBorderStyle.None;
             HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");

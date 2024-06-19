@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consulta));
             chartControl1 = new DevExpress.XtraCharts.ChartControl();
             chartControl2 = new DevExpress.XtraCharts.ChartControl();
             comboBoxGrafico1 = new ComboBox();
@@ -57,18 +58,24 @@
             // 
             // comboBoxGrafico1
             // 
+            comboBoxGrafico1.BackColor = Color.RoyalBlue;
+            comboBoxGrafico1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            comboBoxGrafico1.ForeColor = Color.White;
             comboBoxGrafico1.FormattingEnabled = true;
             comboBoxGrafico1.Items.AddRange(new object[] { "Cantidad por producto", "Ventas totales" });
             comboBoxGrafico1.Location = new Point(12, 12);
             comboBoxGrafico1.Name = "comboBoxGrafico1";
-            comboBoxGrafico1.Size = new Size(245, 23);
+            comboBoxGrafico1.Size = new Size(245, 24);
             comboBoxGrafico1.TabIndex = 2;
             // 
             // button1
             // 
-            button1.Location = new Point(765, 8);
+            button1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleRight;
+            button1.Location = new Point(737, 5);
             button1.Name = "button1";
-            button1.Size = new Size(161, 34);
+            button1.Size = new Size(132, 39);
             button1.TabIndex = 3;
             button1.Text = "Confirmar";
             button1.UseVisualStyleBackColor = true;
@@ -76,52 +83,60 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(456, 10);
+            dateTimePicker1.Location = new Point(456, 14);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(84, 23);
+            dateTimePicker1.Size = new Size(95, 22);
             dateTimePicker1.TabIndex = 4;
             // 
             // dateTimePicker2
             // 
+            dateTimePicker2.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(595, 10);
+            dateTimePicker2.Location = new Point(611, 12);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(84, 23);
+            dateTimePicker2.Size = new Size(84, 22);
             dateTimePicker2.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             label1.Location = new Point(406, 16);
             label1.Name = "label1";
-            label1.Size = new Size(44, 15);
+            label1.Size = new Size(44, 16);
             label1.TabIndex = 6;
             label1.Text = "DESDE:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(546, 17);
+            label2.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label2.Location = new Point(557, 17);
             label2.Name = "label2";
-            label2.Size = new Size(46, 15);
+            label2.Size = new Size(48, 16);
             label2.TabIndex = 7;
             label2.Text = "HASTA:";
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = Color.RoyalBlue;
+            comboBox1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            comboBox1.ForeColor = Color.White;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Diario", "Mensual", "Anual" });
             comboBox1.Location = new Point(279, 11);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
+            comboBox1.Size = new Size(121, 24);
             comboBox1.TabIndex = 8;
             // 
             // Consulta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.White;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1031, 532);
             Controls.Add(comboBox1);
             Controls.Add(label2);

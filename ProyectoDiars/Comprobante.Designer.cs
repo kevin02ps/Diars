@@ -41,128 +41,101 @@
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
+            label13 = new Label();
             lblMontoTotal = new Label();
             pictureBox1 = new PictureBox();
             buttonConfirmar = new Button();
             btnCerrar = new Button();
-            lblTipoDePago = new Label();
-            label1 = new Label();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            button1 = new Button();
+            lblTipoPago = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // lblFoB
             // 
             lblFoB.AutoSize = true;
-            lblFoB.BackColor = Color.Black;
-            lblFoB.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblFoB.ForeColor = Color.LightGray;
-            lblFoB.Location = new Point(566, 78);
+            lblFoB.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFoB.Location = new Point(601, 45);
             lblFoB.Margin = new Padding(4, 0, 4, 0);
             lblFoB.Name = "lblFoB";
-            lblFoB.Size = new Size(56, 15);
+            lblFoB.Size = new Size(132, 29);
             lblFoB.TabIndex = 0;
             lblFoB.Text = "FACTURA";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.Black;
-            label2.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label2.ForeColor = Color.LightGray;
-            label2.Location = new Point(240, 99);
+            label2.Location = new Point(273, 73);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(203, 15);
+            label2.Size = new Size(207, 15);
             label2.TabIndex = 1;
             label2.Text = "INVERSIONES HERMANOS M & R S.A.C.";
             // 
             // lblNumeroFactura
             // 
             lblNumeroFactura.AutoSize = true;
-            lblNumeroFactura.BackColor = Color.Black;
-            lblNumeroFactura.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblNumeroFactura.ForeColor = Color.LightGray;
-            lblNumeroFactura.Location = new Point(549, 124);
+            lblNumeroFactura.Location = new Point(601, 98);
             lblNumeroFactura.Margin = new Padding(4, 0, 4, 0);
             lblNumeroFactura.Name = "lblNumeroFactura";
-            lblNumeroFactura.Size = new Size(75, 15);
+            lblNumeroFactura.Size = new Size(77, 15);
             lblNumeroFactura.TabIndex = 2;
             lblNumeroFactura.Text = "N° FACTURA:";
             // 
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblFecha.Location = new Point(310, 43);
+            lblFecha.Location = new Point(369, 206);
             lblFecha.Margin = new Padding(4, 0, 4, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(44, 15);
+            lblFecha.Size = new Size(41, 15);
             lblFecha.TabIndex = 3;
             lblFecha.Text = "Fecha:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.Black;
-            label5.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label5.ForeColor = Color.LightGray;
-            label5.Location = new Point(549, 159);
+            label5.Location = new Point(607, 132);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(101, 15);
+            label5.Size = new Size(102, 15);
             label5.TabIndex = 4;
             label5.Text = "RUC: 20610265023";
             // 
             // lblRuc
             // 
             lblRuc.AutoSize = true;
-            lblRuc.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblRuc.Location = new Point(555, 43);
+            lblRuc.Location = new Point(626, 206);
             lblRuc.Margin = new Padding(4, 0, 4, 0);
             lblRuc.Name = "lblRuc";
-            lblRuc.Size = new Size(31, 15);
+            lblRuc.Size = new Size(30, 15);
             lblRuc.TabIndex = 5;
             lblRuc.Text = "Ruc:";
             // 
             // lblCliente
             // 
             lblCliente.AutoSize = true;
-            lblCliente.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblCliente.Location = new Point(18, 43);
+            lblCliente.Location = new Point(64, 206);
             lblCliente.Margin = new Padding(4, 0, 4, 0);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(48, 15);
+            lblCliente.Size = new Size(47, 15);
             lblCliente.TabIndex = 6;
             lblCliente.Text = "Cliente:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.BackColor = Color.Black;
-            label8.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label8.ForeColor = Color.LightGray;
-            label8.Location = new Point(241, 124);
+            label8.Font = new Font("Microsoft Sans Serif", 6F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(274, 98);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(283, 15);
+            label8.Size = new Size(206, 9);
             label8.TabIndex = 7;
             label8.Text = "URB. PALMERAS RINCONADA CAL. LAS CASUARINAS";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.BackColor = Color.Black;
-            label9.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label9.ForeColor = Color.LightGray;
-            label9.Location = new Point(240, 145);
+            label9.Location = new Point(273, 119);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
             label9.Size = new Size(61, 15);
@@ -172,8 +145,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label10.Location = new Point(133, 74);
+            label10.Location = new Point(194, 240);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
             label10.Size = new Size(56, 15);
@@ -183,208 +155,122 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label11.Location = new Point(18, 74);
+            label11.Location = new Point(64, 240);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(56, 15);
+            label11.Size = new Size(55, 15);
             label11.TabIndex = 10;
             label11.Text = "Cantidad";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label12.Location = new Point(362, 74);
+            label12.Location = new Point(495, 240);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
-            label12.Size = new Size(42, 15);
+            label12.Size = new Size(40, 15);
             label12.TabIndex = 11;
             label12.Text = "Precio";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(626, 240);
+            label13.Margin = new Padding(4, 0, 4, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(32, 15);
+            label13.TabIndex = 12;
+            label13.Text = "Total";
             // 
             // lblMontoTotal
             // 
             lblMontoTotal.AutoSize = true;
-            lblMontoTotal.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblMontoTotal.ForeColor = Color.LightGray;
-            lblMontoTotal.Location = new Point(16, 16);
+            lblMontoTotal.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMontoTotal.Location = new Point(585, 335);
             lblMontoTotal.Margin = new Padding(4, 0, 4, 0);
             lblMontoTotal.Name = "lblMontoTotal";
-            lblMontoTotal.Size = new Size(72, 15);
+            lblMontoTotal.Size = new Size(93, 16);
             lblMontoTotal.TabIndex = 13;
             lblMontoTotal.Text = "Monto Total:";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 69);
+            pictureBox1.Location = new Point(68, 55);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(225, 119);
+            pictureBox1.Size = new Size(192, 92);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
             // 
             // buttonConfirmar
             // 
-            buttonConfirmar.BackColor = Color.Black;
-            buttonConfirmar.FlatAppearance.BorderSize = 0;
-            buttonConfirmar.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
-            buttonConfirmar.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            buttonConfirmar.FlatStyle = FlatStyle.Flat;
-            buttonConfirmar.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            buttonConfirmar.ForeColor = Color.LightGray;
-            buttonConfirmar.Image = (Image)resources.GetObject("buttonConfirmar.Image");
-            buttonConfirmar.ImageAlign = ContentAlignment.MiddleRight;
-            buttonConfirmar.Location = new Point(17, 333);
+            buttonConfirmar.Location = new Point(432, 14);
             buttonConfirmar.Margin = new Padding(4, 3, 4, 3);
             buttonConfirmar.Name = "buttonConfirmar";
-            buttonConfirmar.Size = new Size(200, 51);
+            buttonConfirmar.Size = new Size(183, 39);
             buttonConfirmar.TabIndex = 15;
             buttonConfirmar.Text = "IMPRIMIR Y GUARDAR";
-            buttonConfirmar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonConfirmar.UseVisualStyleBackColor = false;
+            buttonConfirmar.UseVisualStyleBackColor = true;
             buttonConfirmar.Click += buttonConfirmar_Click;
             // 
             // btnCerrar
             // 
-            btnCerrar.FlatAppearance.BorderSize = 0;
-            btnCerrar.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
-            btnCerrar.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 128);
-            btnCerrar.FlatStyle = FlatStyle.Flat;
-            btnCerrar.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
-            btnCerrar.ImageAlign = ContentAlignment.MiddleRight;
-            btnCerrar.Location = new Point(731, 1);
+            btnCerrar.Location = new Point(289, 14);
             btnCerrar.Margin = new Padding(4, 3, 4, 3);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(34, 39);
+            btnCerrar.Size = new Size(121, 39);
             btnCerrar.TabIndex = 16;
+            btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
             // 
-            // lblTipoDePago
+            // lblTipoPago
             // 
-            lblTipoDePago.AutoSize = true;
-            lblTipoDePago.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblTipoDePago.Location = new Point(18, 16);
-            lblTipoDePago.Margin = new Padding(4, 0, 4, 0);
-            lblTipoDePago.Name = "lblTipoDePago";
-            lblTipoDePago.Size = new Size(80, 15);
-            lblTipoDePago.TabIndex = 17;
-            lblTipoDePago.Text = "Tipo de Pago:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label1.Location = new Point(544, 74);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(32, 15);
-            label1.TabIndex = 18;
-            label1.Text = "Total";
-            // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Controls.Add(label12);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(lblFecha);
-            panel1.Controls.Add(lblTipoDePago);
-            panel1.Controls.Add(lblRuc);
-            panel1.Controls.Add(lblCliente);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(label11);
-            panel1.Location = new Point(17, 203);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(730, 124);
-            panel1.TabIndex = 19;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Black;
-            panel2.Controls.Add(lblMontoTotal);
-            panel2.Location = new Point(578, 333);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(169, 51);
-            panel2.TabIndex = 20;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Black;
-            panel3.Location = new Point(226, 69);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(544, 119);
-            panel3.TabIndex = 21;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(13, 93, 142);
-            panel4.Controls.Add(button1);
-            panel4.Controls.Add(btnCerrar);
-            panel4.Location = new Point(1, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(818, 41);
-            panel4.TabIndex = 22;
-            panel4.MouseDown += panel4_MouseDown;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleRight;
-            button1.Location = new Point(689, 0);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(34, 39);
-            button1.TabIndex = 17;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            lblTipoPago.AutoSize = true;
+            lblTipoPago.Location = new Point(64, 178);
+            lblTipoPago.Name = "lblTipoPago";
+            lblTipoPago.Size = new Size(79, 15);
+            lblTipoPago.TabIndex = 17;
+            lblTipoPago.Text = "Tipo de Pago:";
             // 
             // Comprobante
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
-            BackColor = Color.FromArgb(4, 41, 68);
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(771, 429);
-            Controls.Add(panel4);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            BackColor = Color.White;
+            ClientSize = new Size(875, 462);
+            Controls.Add(lblTipoPago);
+            Controls.Add(btnCerrar);
             Controls.Add(buttonConfirmar);
+            Controls.Add(lblMontoTotal);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
+            Controls.Add(lblCliente);
+            Controls.Add(lblRuc);
             Controls.Add(label5);
+            Controls.Add(lblFecha);
             Controls.Add(lblNumeroFactura);
             Controls.Add(label2);
             Controls.Add(lblFoB);
             Controls.Add(pictureBox1);
-            Controls.Add(panel3);
-            DoubleBuffered = true;
-            Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Comprobante";
-            Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Comprobante";
             Paint += Comprobante_Paint;
             MouseDown += Comprobante_MouseDown;
             MouseMove += Comprobante_MouseMove;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel4.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -403,16 +289,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblMontoTotal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Button btnCerrar;
-        private Label lblTipoDePago;
-        private Label label1;
-        private Panel panel1;
-        private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
-        private Button button1;
+        private Label lblTipoPago;
     }
 }

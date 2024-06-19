@@ -57,7 +57,23 @@ namespace InversionesHermanos
                 {
                     if (Convert.ToInt32(usuario[4]) == 1)
                     {
-                        MessageBox.Show("Se ha detectado que este usuario esta abierto");
+                        // Muestra un MessageBox con las opciones Sí y No
+                        DialogResult result = MessageBox.Show("Se ha detectado que este usuario se encuentra activo. ¿Desea iniciar sesion qui?", "Sesion iniciada", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        // Maneja la respuesta del usuario
+                        if (result == DialogResult.Yes)
+                        {
+                            // Código para cuando el usuario selecciona 'Sí'
+                            conexion.CambiarEstadoUsuario(Convert.ToInt32(usuario[3]), 2);
+                            this.id_empleado = Convert.ToInt32(usuario[0]);
+                            this.dni = Convert.ToString(usuario[1]);
+                            this.cargo = Convert.ToString(usuario[2]);
+                            this.id_usuario = Convert.ToInt32(usuario[3]);
+                            conexion.CambiarEstadoUsuario(Convert.ToInt32(usuario[3]), 1);
+                            Operaciones operaciones = new Operaciones(this);
+                            operaciones.Show();
+                            this.Close();
+                        }                      
                     }
                     else
                     {

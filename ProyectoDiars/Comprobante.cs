@@ -15,7 +15,6 @@ using System.Xml.Linq;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Runtime.InteropServices;
-using System.Net.Http;
 
 namespace InversionesHermanos
 {
@@ -28,7 +27,7 @@ namespace InversionesHermanos
         int MontoTotal { get; set; }
         int id_pedido { get; set; }
         private Point _mouseStartPoint;
-        int alto { get; set; }
+        int alto {  get; set; }
 
         int XPDF = 500;
         int YPDF = 300;
@@ -68,15 +67,15 @@ namespace InversionesHermanos
             catch
             {
                 return dni;
-            }
+            }           
         }
 
-        public void CargarDatos()
+        public void CargarDatos( )
         {
             ArrayList cliente = conexion.ObtenerClientePorId(pedido.id_cliente);
             lblCliente.Text = "Cliente:  " + consultarClientePorDni(Convert.ToString(cliente[0]));
             lblFecha.Text = "Fecha: " + DateTime.Today.ToString("dddd dd 'de' MMMM 'del' yyyy");
-            lblTipoDePago.Text = "Tipo de pago: " + pedido.TipoPagoText;
+            lblTipoPago.Text = "Tipo de pago: " + pedido.TipoPagoText;
             this.alto = 270;
 
 
@@ -87,36 +86,36 @@ namespace InversionesHermanos
                 string producto = fila[1].ToString();
                 string precio = fila[3].ToString();
                 string precioT = fila[4].ToString();
-
+                
                 // Crear Labels para mostrar los datos
                 Label labelCantidad = new Label();
                 labelCantidad.Text = cantidad;
                 labelCantidad.AutoSize = true; // Ajustar automáticamente el tamaño
                 labelCantidad.Location = new System.Drawing.Point(65, this.alto); // Posición en el formulario
                 this.Controls.Add(labelCantidad);
-
+        
                 Label labelProducto = new Label();
-                labelProducto.Text = producto;
+                labelProducto.Text =  producto;
                 labelProducto.AutoSize = true; // Ajustar automáticamente el tamaño
-                labelProducto.Location = new System.Drawing.Point(175, this.alto); // Posición en el formulario
+                labelProducto.Location = new System.Drawing.Point(195, this.alto); // Posición en el formulario
                 this.Controls.Add(labelProducto);
 
                 Label labelPrecio = new Label();
                 labelPrecio.Text = precio;
                 labelPrecio.AutoSize = true; // Ajustar automáticamente el tamaño
-                labelPrecio.Location = new System.Drawing.Point(435, alto); // Posición en el formulario
+                labelPrecio.Location = new System.Drawing.Point(495, alto); // Posición en el formulario
                 this.Controls.Add(labelPrecio);
 
                 Label labelPrecioT = new Label();
-                labelPrecioT.Text = precioT;
+                labelPrecioT.Text =  precioT;
                 labelPrecioT.AutoSize = true; // Ajustar automáticamente el tamaño
-                labelPrecioT.Location = new System.Drawing.Point(595, this.alto); // Posición en el formulario              
+                labelPrecioT.Location = new System.Drawing.Point(625, this.alto); // Posición en el formulario              
                 this.Controls.Add(labelPrecioT);
 
                 this.alto += 20;
                 this.YPDF += 20;
 
-                lblMontoTotal.Location = new System.Drawing.Point(515, this.alto + 20);
+                lblMontoTotal.Location = new System.Drawing.Point(585, this.alto + 20);
                 this.Size = new System.Drawing.Size(750, 130 + this.alto);
             }
             // Calcular la suma de la columna "MiColumna" usando LINQ
@@ -132,7 +131,7 @@ namespace InversionesHermanos
             string fecha = DateTime.Today.ToString("yyyy-MM-dd");
 
             //Agregar Pedido
-            this.id_pedido = conexion.AgregarNuevoPedido(pedido.id_cliente, fecha, Login.id_empleado, this.MontoTotal, pedido.TipoPago);
+            this.id_pedido =  conexion.AgregarNuevoPedido(pedido.id_cliente, fecha, Login.id_empleado, this.MontoTotal, pedido.TipoPago);
             conexion.InsertarBoleta(fecha, true, this.id_pedido);
 
             //Agregar DetallePedido
@@ -156,7 +155,7 @@ namespace InversionesHermanos
         }
 
         public void ObtenerPdf()
-        {
+        {               
             // Crear un bitmap con el tamaño de la ventana del formulario
             Bitmap screenshot = new Bitmap(this.Width, this.Height);
 
@@ -165,9 +164,9 @@ namespace InversionesHermanos
 
             // Ruta donde se guardará el archivo PDF
             string ruta = "";
-            if (Configuracion.UbiComprobante != null)
+            string ubi = Configuracion.UbiComprobante.Replace('\\', '/');
+            if (Configuracion.UbiComprobante != "")
             {
-                string ubi = Configuracion.UbiComprobante.Replace('\\', '/');
                 ruta = ubi + "/Comprobante" + this.id_pedido + ".pdf";
             }
             else
@@ -217,9 +216,10 @@ namespace InversionesHermanos
             Pen pen = new Pen(Color.DarkGray, 1);
 
             // Dibujar una línea desde (x1, y1) a (x2, y2)
-            e.Graphics.DrawLine(pen, 55, 230, 665, 230);
-            e.Graphics.DrawLine(pen, 55, 260, 665, 260);
-            e.Graphics.DrawLine(pen, 55, 10 + this.alto, 665, 10 + this.alto);
+            e.Graphics.DrawLine(pen, 55, 170, 700, 170);
+            e.Graphics.DrawLine(pen, 55, 230, 700, 230);
+            e.Graphics.DrawLine(pen, 55, 265, 700, 265);
+            e.Graphics.DrawLine(pen, 55, 10 + this.alto, 740, 10 + this.alto);
 
             // Liberar los recursos del objeto Pen
             pen.Dispose();
@@ -244,21 +244,6 @@ namespace InversionesHermanos
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-        //Barra manipulable personalizada
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void panel4_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

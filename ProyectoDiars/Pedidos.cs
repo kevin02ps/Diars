@@ -1,4 +1,5 @@
 ﻿using InversionesHermanos.Conexion;
+using ProyectoDiars;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,15 +25,16 @@ namespace InversionesHermanos
         public DataTable tabla { get; set; }
 
         public int TipoPago;
-        public int StockProducto ;
+        public string TipoPagoText;
+        public int StockProducto;
 
         private Login Login;
-        public Pedidos( Login login)
+        public Pedidos(Login login)
         {
             InitializeComponent();
             this.Login = login;
         }
-      
+
         private void txtIdCliente_MouseEnter_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = conexion.CargarTabla("Clientes");
@@ -47,14 +49,14 @@ namespace InversionesHermanos
 
         private void btnBuscarCliente_Click_1(object sender, EventArgs e)
         {
-            if(txtIdCliente.Text == "")
+            if (txtIdCliente.Text == "")
             {
                 MessageBox.Show("Llene los campos");
             }
             else if (conexion.ObtenerClientePorId(Convert.ToInt32(txtIdCliente.Text)) == null)
             {
                 MessageBox.Show("Cliente no encontrado");
-            }            
+            }
             else
             {
                 ArrayList cliente = conexion.ObtenerClientePorId(Convert.ToInt32(txtIdCliente.Text));
@@ -80,9 +82,9 @@ namespace InversionesHermanos
                     lblNombreCliente.Text = respuesta.nombres.ToString() + " " + respuesta.apellidoPaterno.ToString() + " " + respuesta.apellidoMaterno.ToString();
                 }
             }
-            catch 
+            catch
             {
-                lblNombreCliente.Text = dni;    
+                lblNombreCliente.Text = dni;
             }
         }
         private void btnBuscarProductoAgregar_Click_1(object sender, EventArgs e)
@@ -110,7 +112,7 @@ namespace InversionesHermanos
 
         private void btnAceptarAgregar_Click_1(object sender, EventArgs e)
         {
-            if(Convert.ToInt32(txtCantidadAgregar.Text) > StockProducto)
+            if (Convert.ToInt32(txtCantidadAgregar.Text) > StockProducto)
             {
                 MessageBox.Show("Cantidad no disponible");
             }
@@ -131,7 +133,7 @@ namespace InversionesHermanos
                     {
                         if (fila.Cells[0].Value != null && fila.Cells[0].Value.ToString() == ID)
                         {
-                            if((Convert.ToInt32(fila.Cells[2].Value) + Convert.ToInt32(txtCantidadAgregar.Text)) > StockProducto)
+                            if ((Convert.ToInt32(fila.Cells[2].Value) + Convert.ToInt32(txtCantidadAgregar.Text)) > StockProducto)
                             {
                                 MessageBox.Show("Cantidad no disponible");
                                 return;
@@ -147,8 +149,8 @@ namespace InversionesHermanos
                         dataGridView.Rows.Add(txtIdProducto.Text, lblDescripcionProducto.Text, cantidad, precio, cantidad * precio);
                     }
                 }
-            }           
-        } 
+            }
+        }
 
         private void btnGenerarComprobante_Click(object sender, EventArgs e)
         {
@@ -209,11 +211,12 @@ namespace InversionesHermanos
                     }
                     id_cliente = Convert.ToInt32(txtIdCliente.Text);
                     this.tabla = tabla;
+                    this.TipoPagoText = comboBoxTipoPago.Text;
 
                     Comprobante formulario = new Comprobante(this, Login);
                     formulario.Show();
                 }
-            }          
+            }
         }
 
         private void txtIdCliente_KeyPress(object sender, KeyPressEventArgs e)
@@ -246,6 +249,29 @@ namespace InversionesHermanos
             groupBoxPedidoPedido.Enabled = false;
             txtCantidadAgregar.Text = "";
             txtPrecioAgregar.Text = "";
+        }
+
+        private void comboBoxTipoPago_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnQR_Click(object sender, EventArgs e)
+        {
+            FormQR formulario = new FormQR();
+            formulario.Show();
+        }
+
+        private void comboBoxTipoPago_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBoxTipoPago.Text == "Billetera Electrónica")
+            {
+                btnQR.Visible = true;
+            }
+            else
+            {
+                btnQR.Visible = false;
+            }
         }
     }
 }

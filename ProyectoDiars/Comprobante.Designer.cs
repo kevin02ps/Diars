@@ -45,6 +45,8 @@
             pictureBox1 = new PictureBox();
             buttonConfirmar = new Button();
             btnCerrar = new Button();
+            lblTipoDePago = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -85,7 +87,7 @@
             // 
             lblFecha.AutoSize = true;
             lblFecha.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblFecha.Location = new Point(387, 218);
+            lblFecha.Location = new Point(356, 204);
             lblFecha.Margin = new Padding(4, 0, 4, 0);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(44, 15);
@@ -107,7 +109,7 @@
             // 
             lblRuc.AutoSize = true;
             lblRuc.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblRuc.Location = new Point(656, 218);
+            lblRuc.Location = new Point(601, 204);
             lblRuc.Margin = new Padding(4, 0, 4, 0);
             lblRuc.Name = "lblRuc";
             lblRuc.Size = new Size(31, 15);
@@ -118,7 +120,7 @@
             // 
             lblCliente.AutoSize = true;
             lblCliente.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            lblCliente.Location = new Point(64, 218);
+            lblCliente.Location = new Point(64, 204);
             lblCliente.Margin = new Padding(4, 0, 4, 0);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(48, 15);
@@ -151,7 +153,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label10.Location = new Point(195, 243);
+            label10.Location = new Point(179, 235);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
             label10.Size = new Size(56, 15);
@@ -162,7 +164,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label11.Location = new Point(64, 243);
+            label11.Location = new Point(64, 235);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(56, 15);
@@ -173,7 +175,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
-            label12.Location = new Point(388, 243);
+            label12.Location = new Point(408, 235);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(42, 15);
@@ -230,6 +232,28 @@
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
             // 
+            // lblTipoDePago
+            // 
+            lblTipoDePago.AutoSize = true;
+            lblTipoDePago.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            lblTipoDePago.Location = new Point(64, 177);
+            lblTipoDePago.Margin = new Padding(4, 0, 4, 0);
+            lblTipoDePago.Name = "lblTipoDePago";
+            lblTipoDePago.Size = new Size(80, 15);
+            lblTipoDePago.TabIndex = 17;
+            lblTipoDePago.Text = "Tipo de Pago:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold);
+            label1.Location = new Point(590, 235);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(32, 15);
+            label1.TabIndex = 18;
+            label1.Text = "Total";
+            // 
             // Comprobante
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -237,6 +261,8 @@
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.PowderBlue;
             ClientSize = new Size(875, 462);
+            Controls.Add(label1);
+            Controls.Add(lblTipoDePago);
             Controls.Add(btnCerrar);
             Controls.Add(buttonConfirmar);
             Controls.Add(lblMontoTotal);
@@ -287,5 +313,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Button btnCerrar;
+        private Label lblTipoDePago;
+        private Label label1;
     }
 }

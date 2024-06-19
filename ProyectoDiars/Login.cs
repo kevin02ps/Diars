@@ -16,10 +16,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace InversionesHermanos
 {
-    
+
     public partial class Login : Form
-    {   
-       
+    {
+
         Conexion.Conexion conexion = new Conexion.Conexion();
 
         public int id_empleado;
@@ -76,7 +76,7 @@ namespace InversionesHermanos
                     MessageBox.Show("Usuario o contraseña incorrecta");
                 }
             }
-        }   
+        }
 
         private void txtUserID_Enter(object sender, EventArgs e)
         {
@@ -102,7 +102,7 @@ namespace InversionesHermanos
         private void txtPassword_Enter(object sender, EventArgs e)
         {
             txtPassword.UseSystemPasswordChar = true;
-            txtPassword.ForeColor = Color.Black; 
+            txtPassword.ForeColor = Color.Black;
 
             if (txtPassword.Text == "Contraseña")
             {
@@ -113,7 +113,7 @@ namespace InversionesHermanos
         {
             if (txtPassword.Text == "" || txtPassword.Text == "Contraseña")
             {
-                txtPassword.ForeColor = Color.Gray; 
+                txtPassword.ForeColor = Color.Gray;
                 txtPassword.UseSystemPasswordChar = false;
                 txtPassword.Text = "Contraseña";
             }
@@ -122,6 +122,11 @@ namespace InversionesHermanos
                 txtPassword.ForeColor = Color.Black;
                 txtPassword.UseSystemPasswordChar = true;
             }
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

@@ -573,7 +573,7 @@ namespace InversionesHermanos.Conexion
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@id_cliente", id_cliente);
-                    command.Parameters.AddWithValue("@Fecha", "2023-09-12");
+                    command.Parameters.AddWithValue("@Fecha", Fecha);
                     command.Parameters.AddWithValue("@id_empleado", id_empleado);
                     command.Parameters.AddWithValue("@MontoTotal", MontoTotal);
                     command.Parameters.AddWithValue("@Id_TipoPago", Id_TipoPago);
@@ -637,7 +637,7 @@ namespace InversionesHermanos.Conexion
                 string query = "INSERT INTO Boleta (Fecha, EstadoPedido, Id_Pedido) VALUES (@Fecha, @EstadoPedido, @IdPedido)";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Fecha", "2023-09-12");
+                    command.Parameters.AddWithValue("@Fecha", fecha);
                     command.Parameters.AddWithValue("@EstadoPedido", estadoPedido);
                     command.Parameters.AddWithValue("@IdPedido", idPedido);
                     command.ExecuteNonQuery();

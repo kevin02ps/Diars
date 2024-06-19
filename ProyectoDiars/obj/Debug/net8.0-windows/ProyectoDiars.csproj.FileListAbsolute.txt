@@ -261,3 +261,4 @@ C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Debug\net8.0-windows\run
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Debug\net8.0-windows\Proyecto.ED99599F.Up2Date
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Debug\net8.0-windows\ProyectoDiars.genruntimeconfig.cache
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Debug\net8.0-windows\ref\ProyectoDiars.dll
+C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Debug\net8.0-windows\ProyectoDiars.FormQR.resources

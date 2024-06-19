@@ -15,6 +15,7 @@ using System.Xml.Linq;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Runtime.InteropServices;
+using System.Net.Http;
 
 namespace InversionesHermanos
 {
@@ -75,6 +76,7 @@ namespace InversionesHermanos
             ArrayList cliente = conexion.ObtenerClientePorId(pedido.id_cliente);
             lblCliente.Text = "Cliente:  " + consultarClientePorDni(Convert.ToString(cliente[0]));
             lblFecha.Text = "Fecha: " + DateTime.Today.ToString("dddd dd 'de' MMMM 'del' yyyy");
+            lblTipoDePago.Text = "Tipo de pago: " + pedido.TipoPagoText;
             this.alto = 270;
 
 
@@ -215,7 +217,7 @@ namespace InversionesHermanos
             Pen pen = new Pen(Color.DarkGray, 1);
 
             // Dibujar una línea desde (x1, y1) a (x2, y2)
-            e.Graphics.DrawLine(pen, 55, 210, 665, 210);
+            e.Graphics.DrawLine(pen, 55, 230, 665, 230);
             e.Graphics.DrawLine(pen, 55, 260, 665, 260);
             e.Graphics.DrawLine(pen, 55, 10 + this.alto, 665, 10 + this.alto);
 
@@ -243,5 +245,6 @@ namespace InversionesHermanos
         {
             this.Close();
         }
+
     }
 }

@@ -108,6 +108,7 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inversiones Hermanos";
+            FormClosing += Login_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

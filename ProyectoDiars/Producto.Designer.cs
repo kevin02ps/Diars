@@ -157,6 +157,7 @@
             // 
             // groupBoxModificar
             // 
+            groupBoxModificar.BackColor = Color.Transparent;
             groupBoxModificar.Controls.Add(btnBuscarM);
             groupBoxModificar.Controls.Add(txtIDM);
             groupBoxModificar.Controls.Add(label11);
@@ -314,6 +315,7 @@
             // 
             // groupBoxAgregarProducto
             // 
+            groupBoxAgregarProducto.BackColor = Color.Transparent;
             groupBoxAgregarProducto.Controls.Add(txtIdProveedorA);
             groupBoxAgregarProducto.Controls.Add(label2);
             groupBoxAgregarProducto.Controls.Add(btnAceptarA);
@@ -449,6 +451,7 @@
             // 
             // groupBoxEliminar
             // 
+            groupBoxEliminar.BackColor = Color.Transparent;
             groupBoxEliminar.Controls.Add(txtIDE);
             groupBoxEliminar.Controls.Add(label17);
             groupBoxEliminar.Controls.Add(btnEliminarE);
@@ -499,14 +502,15 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1050, 577);
             Controls.Add(btnEliminarProducto);
             Controls.Add(btnModificarProducto);
             Controls.Add(btnAgregarProducto);
             Controls.Add(dataGridView1);
+            Controls.Add(groupBoxModificar);
             Controls.Add(groupBoxAgregarProducto);
             Controls.Add(groupBoxEliminar);
-            Controls.Add(groupBoxModificar);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Producto";

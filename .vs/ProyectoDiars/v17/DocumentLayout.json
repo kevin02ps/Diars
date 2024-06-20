@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,44 +23,63 @@
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\formqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\formqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\kevin\\documents\\github\\diars\\proyectodiars\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -94,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1655,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,81 +137,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Operaciones.cs",
+              "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Operaciones.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Operaciones.cs",
+              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Operaciones.cs*",
+              "RelativeToolTip": "ProyectoDiars\\Operaciones.cs*",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwBkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T19:43:22.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAJwSAAAAAAAAAAAswMUSAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-06-20T00:16:50.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Consulta.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
+              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Consulta.cs",
+              "RelativeToolTip": "ProyectoDiars\\Consulta.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T21:16:29.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Empleado.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Empleado.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Empleado.cs",
               "RelativeToolTip": "ProyectoDiars\\Empleado.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFcAAAAlAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFcAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T22:26:44.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Empleado.cs [Dise\u00F1o]",
+              "DocumentIndex": 9,
+              "Title": "Empleado.cs [Design]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Empleado.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Empleado.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Empleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Empleado.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Empleado.cs [Design]",
+              "RelativeToolTip": "ProyectoDiars\\Empleado.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:27:32.86Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-15T17:27:32.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Pedidos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Pedidos.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Pedidos.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Pedidos.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoDiars\\Pedidos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T19:08:00.387Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-14T19:08:00.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Comprobante.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Comprobante.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Comprobante.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Comprobante.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoDiars\\Comprobante.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T18:05:24.02Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-14T18:05:24.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Operaciones.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Operaciones.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Operaciones.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Operaciones.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Operaciones.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoDiars\\Operaciones.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-14T17:40:36.159Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Login.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Login.cs",
               "RelativeToolTip": "ProyectoDiars\\Login.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAEIAAABVAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAEEAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T21:03:12.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Producto.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Producto.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Producto.cs",
@@ -219,18 +257,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Proveedores.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Proveedores.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Proveedores.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T16:24:12.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Clientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Clientes.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Clientes.cs",
@@ -241,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Login.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
@@ -254,103 +292,76 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Consulta.cs [Dise\u00F1o]",
+              "Title": "Consulta.cs [Design]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Consulta.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Consulta.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Consulta.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Consulta.cs [Design]",
+              "RelativeToolTip": "ProyectoDiars\\Consulta.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T22:20:49.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "Configuracion.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Configuracion.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Configuracion.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T19:02:04.861Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-14T19:02:04.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Comprobante.cs",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Comprobante.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Comprobante.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Comprobante.cs",
               "RelativeToolTip": "ProyectoDiars\\Comprobante.cs",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAAAN0AAABIAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAN0AAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T00:45:56.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T00:45:56.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Operaciones.cs",
-              "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Operaciones.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Operaciones.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Operaciones.cs",
-              "RelativeToolTip": "ProyectoDiars\\Operaciones.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAAAHwAAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T19:43:22.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "FormQR.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\FormQR.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\FormQR.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T00:24:52.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "Pedidos.cs",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Pedidos.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Pedidos.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Pedidos.cs",
               "RelativeToolTip": "ProyectoDiars\\Pedidos.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAABoAAAAcAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T00:32:28.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Consulta.cs",
-              "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Consulta.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Consulta.cs",
-              "RelativeToolTip": "ProyectoDiars\\Consulta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPsAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T21:16:29.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Conexion.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Conexion.cs",
               "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Conexion.cs",
               "RelativeToolTip": "ProyectoDiars\\Conexion.cs",
-              "ViewState": "AQIAAC8DAAAAAAAAAAAhwEMDAABPAAAA",
+              "ViewState": "AQIAAOkBAAAAAAAAAAAAAK4DAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T20:53:48.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\App.config",
               "RelativeDocumentMoniker": "ProyectoDiars\\App.config",
@@ -362,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Configuracion.cs",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Configuracion.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Configuracion.cs",
@@ -370,12 +381,11 @@
               "RelativeToolTip": "ProyectoDiars\\Configuracion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T15:30:58.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T15:30:58.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Clientes.cs",
               "DocumentMoniker": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Clientes.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Clientes.cs",

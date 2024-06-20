@@ -25,8 +25,15 @@ namespace InversionesHermanos
             InitializeComponent();
             comboBoxGrafico1.Text = "Ventas totales";
             comboBox1.Text = "Diario";
-            CargarDatos1(1);
-            CargarDatos2();
+            try
+            {
+                CargarDatos1(1);
+                CargarDatos2();
+            }
+            catch
+            {
+                MessageBox.Show("Base de datos vacia");
+            }
         }
         private void CargarDatos1(int llamado)
         {

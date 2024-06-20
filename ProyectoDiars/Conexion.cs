@@ -901,6 +901,47 @@ namespace InversionesHermanos.Conexion
             connection.Close();
             return empleado;
         }
+
+        public int ObtneerEstadoUsuario(int Id_usuario)
+        {
+
+            int estado = 0;  // Variable para almacenar el estado
+
+            try
+            {
+                connection.Open();
+                string query = "SELECT Id_TipoEstado FROM Usuarios WHERE Id_usuario = @Id_usuario";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    // Agrega el parámetro para el ID del usuario
+                    command.Parameters.AddWithValue("@Id_usuario", Id_usuario);
+
+                    // Ejecuta el comando y obtiene el valor del estado
+                    var result = command.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        estado = Convert.ToInt32(result);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al obtener el Estado: " + ex.Message);
+            }
+            finally
+            {
+                // Asegúrate de cerrar la conexión en cualquier caso
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+
+            return estado;
+
+        }
     }
 }
 

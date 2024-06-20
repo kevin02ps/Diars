@@ -8,6 +8,12 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using DevExpress.Diagram.Core.Layout;
+using System.Collections;
+using DevExpress.CodeParser;
+using System.Timers;
+
 
 namespace InversionesHermanos
 {
@@ -16,14 +22,20 @@ namespace InversionesHermanos
         Conexion.Conexion conexion = new Conexion.Conexion();
         ApiDni_Ruc ApisPeru = new ApiDni_Ruc();
 
+        private static System.Threading.Timer _timer;
+        public System.Threading.Timer timer;
         private Login Login;
         private bool isMaximized = false; // Estado de la ventana
         private Size originalSize; // Tamaño original de la ventana
         private Point originalLocation; // Ubicación original de la ventana
         private int borderSize = 2;
+        public int id_usuario;
         public Operaciones(Login login)
         {
             InitializeComponent();
+            this.id_usuario = login.id_usuario;
+            timer = new System.Threading.Timer(TimerCallback, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
+
             this.Login = login;
             if (Login.cargo == "admin")
             {
@@ -37,6 +49,36 @@ namespace InversionesHermanos
             /////tal vez no tenga efecto
             this.Padding = new Padding(borderSize);//Border size
             this.BackColor = Color.FromArgb(98, 102, 244);//Border color
+        }
+
+        public void TimerCallback(object state)
+        {
+            if (conexion.ObtneerEstadoUsuario(id_usuario) == 2)
+            {
+                // Obtener el formulario de tipo Operaciones que está activo
+                Operaciones operacionesForm = Application.OpenForms.OfType<Operaciones>().FirstOrDefault();
+
+                if (operacionesForm != null)
+                {
+                    // Desactivar el formulario en el hilo de la interfaz de usuario
+                    operacionesForm.Invoke((MethodInvoker)delegate {
+                        operacionesForm.Enabled = false;
+                    });
+                }
+                // Detener el temporizador cambiando su intervalo a Timeout.Infinite
+                timer?.Change(Timeout.Infinite, Timeout.Infinite);
+                MessageBox.Show("Se ha iniciado sesión en otro dispositivo. Se cerrará la sesión actual.");
+
+                if (operacionesForm != null)
+                {
+                    // Activar el formulario en el hilo de la interfaz de usuario
+                    operacionesForm.Invoke((MethodInvoker)delegate {
+                        operacionesForm.Enabled = true;
+                    });
+                }
+
+                Application.Exit();
+            }
         }
 
         private string consultarClientePorDni(string dni)
@@ -221,5 +263,7 @@ namespace InversionesHermanos
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+
     }
 }

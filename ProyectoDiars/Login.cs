@@ -63,6 +63,8 @@ namespace InversionesHermanos
                         // Maneja la respuesta del usuario
                         if (result == DialogResult.Yes)
                         {
+                            conexion.CambiarEstadoUsuario(Convert.ToInt32(usuario[3]), 2);
+                            Thread.Sleep(7000);
                             // Código para cuando el usuario selecciona 'Sí'
                             conexion.CambiarEstadoUsuario(Convert.ToInt32(usuario[3]), 2);
                             this.id_empleado = Convert.ToInt32(usuario[0]);

@@ -202,11 +202,8 @@ namespace InversionesHermanos
                         case "Transferencia Bancaria":
                             this.TipoPago = 3;
                             break;
-                        case "Cheque":
-                            this.TipoPago = 4;
-                            break;
                         case "Billetera Electrónica":
-                            this.TipoPago = 5;
+                            this.TipoPago = 4;
                             break;
                     }
                     id_cliente = Convert.ToInt32(txtIdCliente.Text);

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\ProyectoDiars.csproj": {}
+    "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\ProyectoDiars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\ProyectoDiars.csproj": {
+    "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\ProyectoDiars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\ProyectoDiars.csproj",
+        "projectUniqueName": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\ProyectoDiars.csproj",
         "projectName": "ProyectoDiars",
-        "projectPath": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\ProyectoDiars.csproj",
-        "packagesPath": "C:\\Users\\KEVIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\obj\\",
+        "projectPath": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\ProyectoDiars.csproj",
+        "packagesPath": "C:\\Users\\JeanN - G\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\KEVIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JeanN - G\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

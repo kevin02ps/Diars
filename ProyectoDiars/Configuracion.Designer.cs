@@ -83,7 +83,7 @@
             BackColor = Color.FromArgb(4, 41, 68);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(787, 415);
+            ClientSize = new Size(1062, 548);
             Controls.Add(btnUbiComprobante);
             Controls.Add(txtUbiComprobantes);
             Controls.Add(label1);

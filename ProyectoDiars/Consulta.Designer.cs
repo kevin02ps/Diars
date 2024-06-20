@@ -59,7 +59,7 @@
             // 
             // comboBoxGrafico1
             // 
-            comboBoxGrafico1.BackColor = Color.White;
+            comboBoxGrafico1.BackColor = Color.RoyalBlue;
             comboBoxGrafico1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             comboBoxGrafico1.ForeColor = Color.White;
             comboBoxGrafico1.FormattingEnabled = true;
@@ -131,7 +131,7 @@
             // 
             // comboBox1
             // 
-            comboBox1.BackColor = Color.White;
+            comboBox1.BackColor = Color.RoyalBlue;
             comboBox1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             comboBox1.ForeColor = Color.White;
             comboBox1.FormattingEnabled = true;

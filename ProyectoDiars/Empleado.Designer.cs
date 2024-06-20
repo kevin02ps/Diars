@@ -223,6 +223,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label11.ForeColor = Color.White;
             label11.Location = new Point(40, 44);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
@@ -297,6 +298,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label9.ForeColor = Color.White;
             label9.Location = new Point(37, 45);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
@@ -317,6 +319,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label6.ForeColor = Color.White;
             label6.Location = new Point(40, 194);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
@@ -328,6 +331,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
             label8.Location = new Point(40, 95);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
@@ -339,6 +343,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
             label7.Location = new Point(40, 145);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
@@ -500,6 +505,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label17.ForeColor = Color.White;
             label17.Location = new Point(92, 105);
             label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
@@ -535,9 +541,9 @@
             Controls.Add(btnModificarCliente);
             Controls.Add(btnAgregarCliente);
             Controls.Add(dataGridView1);
+            Controls.Add(groupBoxModificar);
             Controls.Add(groupBoxAgregarCliente);
             Controls.Add(groupBoxEliminar);
-            Controls.Add(groupBoxModificar);
             FormBorderStyle = FormBorderStyle.None;
             HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");

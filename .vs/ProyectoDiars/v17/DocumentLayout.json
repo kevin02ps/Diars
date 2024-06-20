@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\formqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\formqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -51,40 +19,76 @@
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\operaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\pedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\comprobante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\proyectodiars\\formqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\formqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|c:\\users\\jeann - g\\source\\repos\\diars-inversioneshermanos\\proyectodiars\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B0710011-8004-4764-9C65-CEC9C6159445}|ProyectoDiars\\ProyectoDiars.csproj|solutionrelative:proyectodiars\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1655,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 27,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,76 +154,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Operaciones.cs",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Operaciones.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Operaciones.cs",
               "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Operaciones.cs",
               "RelativeToolTip": "ProyectoDiars\\Operaciones.cs",
-              "ViewState": "AQIAAOMAAAAAAAAAAAAkwA0BAAAAAAAA",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAqwJEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T19:43:22.487Z",
+              "WhenOpened": "2024-06-20T07:57:52.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
+              "Title": "Proveedores.cs",
+              "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Proveedores.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Proveedores.cs",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Proveedores.cs*",
+              "RelativeToolTip": "ProyectoDiars\\Proveedores.cs*",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwCAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:57:35.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Producto.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Producto.cs",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Producto.cs*",
+              "RelativeToolTip": "ProyectoDiars\\Producto.cs*",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAQwC4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:53:04.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Consulta.cs",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Consulta.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
               "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Consulta.cs",
               "RelativeToolTip": "ProyectoDiars\\Consulta.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAACIAAAA3AAAA",
+              "ViewState": "AQIAADIBAAAAAAAAAAAmwFoBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T21:16:29.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Empleado.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Empleado.cs",
-              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Empleado.cs",
-              "RelativeToolTip": "ProyectoDiars\\Empleado.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAFcAAAAlAAAA",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Empleado.cs*",
+              "RelativeToolTip": "ProyectoDiars\\Empleado.cs*",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAmwFEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T22:26:44.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "Empleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Empleado.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Empleado.cs",
-              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Empleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoDiars\\Empleado.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Empleado.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoDiars\\Empleado.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T17:27:32.86Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "Pedidos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Pedidos.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Pedidos.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Pedidos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Pedidos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Pedidos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Pedidos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T19:08:00.387Z"
+              "WhenOpened": "2024-06-14T19:08:00.387Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Comprobante.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Comprobante.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Comprobante.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Comprobante.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Comprobante.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Comprobante.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Comprobante.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T18:05:24.02Z"
+              "WhenOpened": "2024-06-14T18:05:24.02Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -235,53 +267,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Login.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
-              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Login.cs",
-              "RelativeToolTip": "ProyectoDiars\\Login.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAAEEAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T21:03:12.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 10,
               "Title": "Producto.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Producto.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Producto.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Producto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Producto.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Producto.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoDiars\\Producto.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T18:06:03.635Z"
+              "WhenOpened": "2024-06-14T18:06:03.635Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Proveedores.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Proveedores.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Proveedores.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Proveedores.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoDiars\\Proveedores.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T16:24:12.598Z"
+              "WhenOpened": "2024-06-15T16:24:12.598Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "Clientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Clientes.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Clientes.cs",
-              "ToolTip": "C:\\Users\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\franc\\Downloads\\francitocambiodiars2\\Diars\\ProyectoDiars\\Clientes.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Clientes.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "ProyectoDiars\\Clientes.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T15:40:29.655Z"
+              "WhenOpened": "2024-06-19T15:40:29.655Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Login.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
@@ -294,6 +316,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Login.cs",
+              "RelativeDocumentMoniker": "ProyectoDiars\\Login.cs",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Login.cs",
+              "RelativeToolTip": "ProyectoDiars\\Login.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T21:03:12.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Consulta.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Consulta.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Consulta.cs",
@@ -305,66 +340,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
               "Title": "Configuracion.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Configuracion.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Configuracion.cs",
-              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Configuracion.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "ProyectoDiars\\Configuracion.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\Configuracion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-14T19:02:04.861Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Comprobante.cs",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Comprobante.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Comprobante.cs",
               "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Comprobante.cs",
               "RelativeToolTip": "ProyectoDiars\\Comprobante.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAN0AAABIAAAA",
+              "ViewState": "AQIAAJcAAAAAAAAAAADgv6oAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T00:45:56.273Z"
+              "WhenOpened": "2024-06-19T00:45:56.273Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "FormQR.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\FormQR.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\FormQR.cs",
-              "ToolTip": "C:\\Users\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\KEVIN\\Documents\\GitHub\\Diars\\ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoDiars\\FormQR.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T00:24:52.446Z"
+              "WhenOpened": "2024-06-19T00:24:52.446Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Pedidos.cs",
-              "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Pedidos.cs",
-              "RelativeDocumentMoniker": "ProyectoDiars\\Pedidos.cs",
-              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Pedidos.cs",
-              "RelativeToolTip": "ProyectoDiars\\Pedidos.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T00:32:28.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Conexion.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Conexion.cs",
               "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Conexion.cs",
               "RelativeToolTip": "ProyectoDiars\\Conexion.cs",
-              "ViewState": "AQIAAOkBAAAAAAAAAAAAAK4DAAAAAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T20:53:48.78Z"
+              "WhenOpened": "2024-06-15T20:53:48.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\App.config",
               "RelativeDocumentMoniker": "ProyectoDiars\\App.config",
@@ -383,21 +409,23 @@
               "RelativeDocumentMoniker": "ProyectoDiars\\Configuracion.cs",
               "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Configuracion.cs",
               "RelativeToolTip": "ProyectoDiars\\Configuracion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAwAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T15:30:58.202Z"
+              "WhenOpened": "2024-06-19T15:30:58.202Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 5,
               "Title": "Clientes.cs",
               "DocumentMoniker": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Clientes.cs",
               "RelativeDocumentMoniker": "ProyectoDiars\\Clientes.cs",
-              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Clientes.cs",
-              "RelativeToolTip": "ProyectoDiars\\Clientes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ToolTip": "C:\\Users\\JeanN - G\\source\\repos\\Diars-InversionesHermanos\\ProyectoDiars\\Clientes.cs*",
+              "RelativeToolTip": "ProyectoDiars\\Clientes.cs*",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAB8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T15:42:13.677Z"
+              "WhenOpened": "2024-06-19T15:42:13.677Z",
+              "EditorCaption": ""
             }
           ]
         },

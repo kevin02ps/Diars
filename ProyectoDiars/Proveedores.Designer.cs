@@ -206,6 +206,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = Color.White;
             label5.Location = new Point(30, 174);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -238,6 +239,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = Color.White;
             label4.Location = new Point(30, 220);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
@@ -256,6 +258,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(30, 130);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
@@ -274,6 +277,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(30, 81);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -396,6 +400,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(40, 194);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
@@ -422,6 +427,7 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.ForeColor = Color.White;
             label9.Location = new Point(37, 45);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
@@ -432,6 +438,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.ForeColor = Color.White;
             label8.Location = new Point(40, 95);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
@@ -450,6 +457,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.ForeColor = Color.White;
             label7.Location = new Point(40, 145);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
@@ -468,6 +476,7 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.ForeColor = Color.White;
             label11.Location = new Point(40, 44);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";

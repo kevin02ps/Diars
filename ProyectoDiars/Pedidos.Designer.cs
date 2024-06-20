@@ -435,12 +435,13 @@
             // 
             // btnQR
             // 
+            btnQR.BackColor = Color.WhiteSmoke;
             btnQR.Image = (Image)resources.GetObject("btnQR.Image");
             btnQR.Location = new Point(804, 426);
             btnQR.Name = "btnQR";
             btnQR.Size = new Size(81, 46);
             btnQR.TabIndex = 17;
-            btnQR.UseVisualStyleBackColor = true;
+            btnQR.UseVisualStyleBackColor = false;
             btnQR.Visible = false;
             btnQR.Click += btnQR_Click;
             // 

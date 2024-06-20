@@ -219,6 +219,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label11.ForeColor = Color.White;
             label11.Location = new Point(40, 44);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
@@ -280,6 +281,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label9.ForeColor = Color.White;
             label9.Location = new Point(37, 45);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
@@ -299,6 +301,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.ForeColor = Color.White;
             label6.Location = new Point(40, 194);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
@@ -310,6 +313,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label8.ForeColor = Color.White;
             label8.Location = new Point(40, 95);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
@@ -329,6 +333,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label7.ForeColor = Color.White;
             label7.Location = new Point(40, 145);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
@@ -371,6 +376,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(30, 258);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
@@ -406,6 +412,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(30, 208);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -426,6 +433,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label4.ForeColor = Color.White;
             label4.Location = new Point(30, 159);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
@@ -446,6 +454,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(30, 108);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
@@ -466,6 +475,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(30, 51);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";

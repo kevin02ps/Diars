@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using RestSharp;
 using System.Threading;
 using System.Threading.Tasks;
+using MySqlX.XDevAPI;
 
 namespace InversionesHermanos.Conexion
 {
@@ -34,7 +35,7 @@ namespace InversionesHermanos.Conexion
             command.Parameters.AddWithValue("@Contraseña", contrasena);
 
             try
-            {              
+            {
                 using (MySqlDataReader reader = command.ExecuteReader())
                 {
                     if (reader.Read())
@@ -61,7 +62,7 @@ namespace InversionesHermanos.Conexion
                 return null;
             }
         }
-        
+
         public void CambiarEstadoUsuario(int Id_usuario, int estado)
         {
             {
@@ -76,7 +77,7 @@ namespace InversionesHermanos.Conexion
                         command.Parameters.AddWithValue("@Id_usuario", Id_usuario);
                         command.Parameters.AddWithValue("@estado", estado);
 
-                        command.ExecuteNonQuery();                     
+                        command.ExecuteNonQuery();
                     }
                 }
                 catch (Exception ex)
@@ -604,10 +605,10 @@ namespace InversionesHermanos.Conexion
             catch (Exception ex)
             {
                 System.Windows.MessageBox.Show("Error al agregar el nuevo Pedido: " + ex.Message);
-            }           
+            }
 
             connection.Close();
-            return ultimoNumero ;
+            return ultimoNumero;
         }
         public void AgregarNuevoDetallePedido(int id_pedido, int id_producto, int Cantidad, int PrecioUnitario, int PrecioTotal)
         {
@@ -646,7 +647,7 @@ namespace InversionesHermanos.Conexion
                     command.Parameters.AddWithValue("@EstadoPedido", estadoPedido);
                     command.Parameters.AddWithValue("@IdPedido", idPedido);
                     command.ExecuteNonQuery();
-                }          
+                }
             }
             catch (Exception ex)
             {
@@ -765,7 +766,7 @@ namespace InversionesHermanos.Conexion
             try
             {
                 connection.Open();
-                string query = "UPDATE Empleados SET Dni = @dni, Id_TipoCargo = @Id_TipoCargo WHERE Id_Empleado = @Id_Empleado;";                               
+                string query = "UPDATE Empleados SET Dni = @dni, Id_TipoCargo = @Id_TipoCargo WHERE Id_Empleado = @Id_Empleado;";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
@@ -833,13 +834,13 @@ namespace InversionesHermanos.Conexion
                         id_usuario = Convert.ToInt32(result);
                     }
                 }
-          
+
                 string query = "DELETE FROM Empleados WHERE Id_Empleado = @id_empleado;";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@id_empleado", id_empleado);
-                    command.ExecuteNonQuery();                  
+                    command.ExecuteNonQuery();
                 }
 
                 query = "DELETE FROM Usuarios WHERE Id_Usuario = @id_usuario";
@@ -888,7 +889,7 @@ namespace InversionesHermanos.Conexion
                         if (reader.Read())
                         {
                             empleado = new ArrayList
-                            { 
+                            {
                                 reader["Dni"],
                                 reader["TipoDeCargo"],
                                 reader["Usuario"],
@@ -974,99 +975,182 @@ namespace InversionesHermanos.Conexion
             Console.ReadLine();
         }
 
-
-        public static async Task EnviarFacturaDirecta()
+        static async Task SubirSunatBoleta(string[] args, ArrayList Lista)
         {
-            try
-            {
-                var client = new RestClient("https://facturaciondirecta.com");
+            string filename = Convert.ToString(Lista[1]);
 
-                var request = new RestRequest("/API_SUNAT/post.php", RestSharp.Method.Post);
-                request.AddHeader("Content-Type", "application/json");
+            var client = new RestClient("https://back.apisunat.com");
+            var request = new RestRequest("/personas/v1/sendBill", Method.Post);
+            request.AddHeader("Content-Type", "application/json");
 
-                var body = @"
-            {
-                ""empresa"":
-                {
-                    ""ruc"":""20610265023"",
-                    ""razon_social"":""INVERSIONES HERMANOS M & R S.A.C."",
-                    ""nombre_comercial"":"" AQUA MARC"",
-                    ""domicilio_fiscal"":""URB. PALMERAS RINCONADA CAL. LAS CASUARINAS"",
-                    ""ubigeo"":""120101"",
-                    ""urbanizacion"":""PALMERAS RINCONADA"",
-                    ""distrito"":""TRUJILLO"",
-                    ""provincia"":""TRUJILLO"",
-                    ""departamento"":""LA LIBERTAD"",
-                    ""modo"":""0"",
-                    ""usu_secundario_produccion_user"":""MODDATOS"",
-                    ""usu_secundario_produccion_password"":""MODDATOS""
+            var body = @"{
+            ""personaId"": ""6675be15cc112b0015cbe8bb"",
+            ""personaToken"": ""DEV_1vfTqfNwz5kGttXOCUS0Y4N9JCEDLoSDfedHORQ1ooOVs4lj8s0YGbKjfAxOu8Ht"",
+            ""fileName"": """ + Lista[1] + @""", //RUC  -  03  - B001 - N°BOLETA 
+            ""documentBody"": {
+                ""cbc:UBLVersionID"": { ""_text"": ""2.1"" },
+                ""cbc:CustomizationID"": { ""_text"": ""2.0"" },
+                ""cbc:ID"": { ""_text"": ""B001-00000001"" },
+                ""cbc:IssueDate"": { ""_text"": ""2024-06-21"" },
+                ""cbc:IssueTime"": { ""_text"": ""12:56:34"" },
+                ""cbc:InvoiceTypeCode"": {
+                    ""_attributes"": { ""listID"": ""0101"" },
+                    ""_text"": ""03""
                 },
-                ""cliente"":
-                {
-                    ""razon_social_nombres"":""Hector De La Cruz"",
-                    ""numero_documento"":""10407086274"",
-                    ""codigo_tipo_entidad"":""6"",
-                    ""cliente_direccion"": ""Av. Morales Duarez 168""
-                },
-                ""venta"":
-                {
-                    ""serie"":""FF03"",
-                    ""numero"":""53953"",
-                    ""fecha_emision"":""2023-01-26"",
-                    ""hora_emision"":""10:02:49"",
-                    ""fecha_vencimiento"":"""",
-                    ""moneda_id"":""2"",
-                    ""forma_pago_id"":""1"",
-                    ""total_gravada"":""500"",
-                    ""total_igv"":""90"",
-                    ""total_exonerada"":"""",
-                    ""total_inafecta"":"""",
-                    ""tipo_documento_codigo"":""01"",
-                    ""nota"":""notas o comentarios""
-                },
-                ""items"":
-                [
+                ""cbc:Note"": [
                     {
-                        ""producto"":""ALARMA PREMIUM 360 /AUTO C/ACC. 2 LLAV P/TY"",
-                        ""cantidad"":""1"",
-                        ""precio_base"":""100"",
-                        ""codigo_sunat"":""-"",
-                        ""codigo_producto"":""cc1"",
-                        ""codigo_unidad"":""ZZ"",
-                        ""tipo_igv_codigo"":""10""
+                        ""_text"": ""SIETE CON 08/100 SOLES"",
+                        ""_attributes"": { ""languageLocaleID"": ""1000"" }
+                    }
+                ],
+                ""cbc:DocumentCurrencyCode"": { ""_text"": ""PEN"" },
+                ""cac:AccountingSupplierParty"": {
+                    ""cac:Party"": {
+                        ""cac:PartyIdentification"": {
+                            ""cbc:ID"": {
+                                ""_attributes"": { ""schemeID"": ""6"" },
+                                ""_text"": ""20610265023""
+                            }
+                        },
+                        ""cac:PartyLegalEntity"": {
+                            ""cbc:RegistrationName"": { ""_text"": ""INVERSIONES HERMANOS M & R S.A.C."" },
+                            ""cac:RegistrationAddress"": {
+                                ""cbc:AddressTypeCode"": { ""_text"": ""0000"" },
+                                ""cac:AddressLine"": {
+                                    ""cbc:Line"": { ""_text"": ""CAL. LAS CASUARINAS MZ. A LT. 11 URB. PALMERAS RINCONADA TRUJILLO TRUJILLO LA LIBERTAD"" }
+                                }
+                            }
+                        }
+                    }
+                },
+                ""cac:AccountingCustomerParty"": {
+                    ""cac:Party"": {
+                        ""cac:PartyIdentification"": {
+                            ""cbc:ID"": {
+                                ""_attributes"": { ""schemeID"": ""1"" },
+                                ""_text"": ""74706258""
+                            }
+                        },
+                        ""cac:PartyLegalEntity"": {
+                            ""cbc:RegistrationName"": { ""_text"": ""KEVIN WILLIAMS GARCIA ALVAREZ"" },
+                            ""cac:RegistrationAddress"": {
+                                ""cac:AddressLine"": {
+                                    ""cbc:Line"": { ""_text"": ""AV. B SECTOR BARRIO VI A MZ. P LT. 10 EL PORVENIR TRUJILLO LA LIBERTAD"" }
+                                }
+                            }
+                        }
+                    }
+                },
+                ""cac:TaxTotal"": {
+                    ""cbc:TaxAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 1.08
                     },
+                    ""cac:TaxSubtotal"": [
+                        {
+                            ""cbc:TaxableAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 6
+                            },
+                            ""cbc:TaxAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 1.08
+                            },
+                            ""cac:TaxCategory"": {
+                                ""cac:TaxScheme"": {
+                                    ""cbc:ID"": { ""_text"": ""1000"" },
+                                    ""cbc:Name"": { ""_text"": ""IGV"" },
+                                    ""cbc:TaxTypeCode"": { ""_text"": ""VAT"" }
+                                }
+                            }
+                        }
+                    ]
+                },
+                ""cac:LegalMonetaryTotal"": {
+                    ""cbc:LineExtensionAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 6
+                    },
+                    ""cbc:TaxInclusiveAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 7.08
+                    },
+                    ""cbc:PayableAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 7.08
+                    }
+                },
+                ""cac:InvoiceLine"": [
                     {
-                        ""producto"":""CLAXON DE TRES CORNETAS PLASTICO ROJO 12V(600/765)"",
-                        ""cantidad"":""2"",
-                        ""precio_base"":""200"",
-                        ""codigo_sunat"":""46171606"",
-                        ""codigo_producto"":""H-003001981 22-10"",
-                        ""codigo_unidad"":""NIU"",
-                        ""tipo_igv_codigo"":""10""
+                        ""cbc:ID"": { ""_text"": 1 },
+                        ""cbc:InvoicedQuantity"": {
+                            ""_attributes"": { ""unitCode"": ""NIU"" },
+                            ""_text"": 2
+                        },
+                        ""cbc:LineExtensionAmount"": {
+                            ""_attributes"": { ""currencyID"": ""PEN"" },
+                            ""_text"": 6
+                        },
+                        ""cac:PricingReference"": {
+                            ""cac:AlternativeConditionPrice"": {
+                                ""cbc:PriceAmount"": {
+                                    ""_attributes"": { ""currencyID"": ""PEN"" },
+                                    ""_text"": 3.54
+                                },
+                                ""cbc:PriceTypeCode"": { ""_text"": ""01"" }
+                            }
+                        },
+                        ""cac:TaxTotal"": {
+                            ""cbc:TaxAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 1.08
+                            },
+                            ""cac:TaxSubtotal"": [
+                                {
+                                    ""cbc:TaxableAmount"": {
+                                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                                        ""_text"": 6
+                                    },
+                                    ""cbc:TaxAmount"": {
+                                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                                        ""_text"": 1.08
+                                    },
+                                    ""cac:TaxCategory"": {
+                                        ""cbc:Percent"": { ""_text"": 18 },
+                                        ""cbc:TaxExemptionReasonCode"": { ""_text"": ""10"" },
+                                        ""cac:TaxScheme"": {
+                                            ""cbc:ID"": { ""_text"": ""1000"" },
+                                            ""cbc:Name"": { ""_text"": ""IGV"" },
+                                            ""cbc:TaxTypeCode"": { ""_text"": ""VAT"" }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        ""cac:Item"": {
+                            ""cbc:Description"": { ""_text"": ""Agua"" }
+                        },
+                        ""cac:Price"": {
+                            ""cbc:PriceAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 3
+                            }
+                        }
                     }
                 ]
-            }";
-
-                request.AddParameter("application/json", body, ParameterType.RequestBody);
-
-                var response = await client.ExecuteAsync(request);
-
-                if (response.IsSuccessful)
-                {
-                    Console.WriteLine("Respuesta recibida del servidor:");
-                    Console.WriteLine(response.Content);
-                }
-                else
-                {
-                    Console.WriteLine("Error en la solicitud:");
-                    Console.WriteLine(response.ErrorMessage);
-                }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error al enviar la factura: {ex.Message}");
-            }
+        }";
+
+            request.AddStringBody(body, RestSharp.DataFormat.Json);
+            RestResponse response = await client.ExecuteAsync(request);
+            Console.WriteLine(response.Content);
         }
-    }
+
+        static void Main(string[] args)
+        {
+            ArrayList Lista = new ArrayList() { "item1", "boleta123.xml" };
+            Task.Run(() => SubirSunatBoleta(args, Lista)).Wait();
+        }
+    } 
 }
 

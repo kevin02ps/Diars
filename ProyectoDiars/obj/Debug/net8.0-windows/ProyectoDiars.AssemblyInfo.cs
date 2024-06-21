@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoDiars")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eb394402e5f87f862550bf0e2d12e43baa7a227")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ee3e2e19b269d451f53df36837e6f66d74f6d39")]
->>>>>>> e60c34fae220a59d3d5b6c220c13374889d46cf5
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc354744a888c0eefb45902b24fb4c813f17d675")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoDiars")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoDiars")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

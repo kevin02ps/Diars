@@ -7,6 +7,11 @@ using System.Collections.Generic;
 using System.Data;
 using System.Windows;
 using static Mysqlx.Crud.Order.Types;
+using System;
+using System.Threading.Tasks;
+using RestSharp;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace InversionesHermanos.Conexion
 {
@@ -941,6 +946,126 @@ namespace InversionesHermanos.Conexion
 
             return estado;
 
+        }
+
+        public void VerificarTablas()
+        {
+            try
+            {
+                connection.Open();
+
+                // Llamar al procedimiento VerificarYCrearTablas
+                using (MySqlCommand command = new MySqlCommand("VerificarYCrearTablas", connection))
+                {
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show("Error al ejecutar el procedimiento VerificarYCrearTablas: " + ex.Message);
+            }
+            finally
+            {
+                if (connection.State == System.Data.ConnectionState.Open)
+                    connection.Close();
+            }
+
+            Console.ReadLine();
+        }
+
+
+        public static async Task EnviarFacturaDirecta()
+        {
+            try
+            {
+                var client = new RestClient("https://facturaciondirecta.com");
+
+                var request = new RestRequest("/API_SUNAT/post.php", RestSharp.Method.Post);
+                request.AddHeader("Content-Type", "application/json");
+
+                var body = @"
+            {
+                ""empresa"":
+                {
+                    ""ruc"":""20610265023"",
+                    ""razon_social"":""INVERSIONES HERMANOS M & R S.A.C."",
+                    ""nombre_comercial"":"" AQUA MARC"",
+                    ""domicilio_fiscal"":""URB. PALMERAS RINCONADA CAL. LAS CASUARINAS"",
+                    ""ubigeo"":""120101"",
+                    ""urbanizacion"":""PALMERAS RINCONADA"",
+                    ""distrito"":""TRUJILLO"",
+                    ""provincia"":""TRUJILLO"",
+                    ""departamento"":""LA LIBERTAD"",
+                    ""modo"":""0"",
+                    ""usu_secundario_produccion_user"":""MODDATOS"",
+                    ""usu_secundario_produccion_password"":""MODDATOS""
+                },
+                ""cliente"":
+                {
+                    ""razon_social_nombres"":""Hector De La Cruz"",
+                    ""numero_documento"":""10407086274"",
+                    ""codigo_tipo_entidad"":""6"",
+                    ""cliente_direccion"": ""Av. Morales Duarez 168""
+                },
+                ""venta"":
+                {
+                    ""serie"":""FF03"",
+                    ""numero"":""53953"",
+                    ""fecha_emision"":""2023-01-26"",
+                    ""hora_emision"":""10:02:49"",
+                    ""fecha_vencimiento"":"""",
+                    ""moneda_id"":""2"",
+                    ""forma_pago_id"":""1"",
+                    ""total_gravada"":""500"",
+                    ""total_igv"":""90"",
+                    ""total_exonerada"":"""",
+                    ""total_inafecta"":"""",
+                    ""tipo_documento_codigo"":""01"",
+                    ""nota"":""notas o comentarios""
+                },
+                ""items"":
+                [
+                    {
+                        ""producto"":""ALARMA PREMIUM 360 /AUTO C/ACC. 2 LLAV P/TY"",
+                        ""cantidad"":""1"",
+                        ""precio_base"":""100"",
+                        ""codigo_sunat"":""-"",
+                        ""codigo_producto"":""cc1"",
+                        ""codigo_unidad"":""ZZ"",
+                        ""tipo_igv_codigo"":""10""
+                    },
+                    {
+                        ""producto"":""CLAXON DE TRES CORNETAS PLASTICO ROJO 12V(600/765)"",
+                        ""cantidad"":""2"",
+                        ""precio_base"":""200"",
+                        ""codigo_sunat"":""46171606"",
+                        ""codigo_producto"":""H-003001981 22-10"",
+                        ""codigo_unidad"":""NIU"",
+                        ""tipo_igv_codigo"":""10""
+                    }
+                ]
+            }";
+
+                request.AddParameter("application/json", body, ParameterType.RequestBody);
+
+                var response = await client.ExecuteAsync(request);
+
+                if (response.IsSuccessful)
+                {
+                    Console.WriteLine("Respuesta recibida del servidor:");
+                    Console.WriteLine(response.Content);
+                }
+                else
+                {
+                    Console.WriteLine("Error en la solicitud:");
+                    Console.WriteLine(response.ErrorMessage);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al enviar la factura: {ex.Message}");
+            }
         }
     }
 }

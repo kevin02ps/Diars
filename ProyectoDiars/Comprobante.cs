@@ -164,9 +164,9 @@ namespace InversionesHermanos
 
             // Ruta donde se guardará el archivo PDF
             string ruta = "";
-            string ubi = Configuracion.UbiComprobante.Replace('\\', '/');
-            if (Configuracion.UbiComprobante != "")
+            if (Configuracion.UbiComprobante != null)
             {
+                string ubi = Configuracion.UbiComprobante.Replace('\\', '/');
                 ruta = ubi + "/Comprobante" + this.id_pedido + ".pdf";
             }
             else

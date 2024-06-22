@@ -140,6 +140,7 @@ namespace InversionesHermanos
                             }
 
                             fila.Cells[2].Value = Convert.ToInt32(fila.Cells[2].Value) + Convert.ToInt32(txtCantidadAgregar.Text); // Agregamos la cantidad
+                            fila.Cells[4].Value = Convert.ToInt32(fila.Cells[2].Value) * Convert.ToInt32(fila.Cells[3].Value);
                             existe = true;
                             break;
                         }

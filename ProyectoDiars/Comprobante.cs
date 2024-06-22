@@ -307,15 +307,16 @@ namespace InversionesHermanos
                     MessageBox.Show("" + elementoString);
                 }
 
-                foreach (DataRow fila in dt.Columns)
+                foreach (DataRow fila in dt.Rows)
                 {
-                    foreach (DataColumn columna in dt.Rows)
+                    foreach (DataColumn columna in dt.Columns)
                     {
                         // Acceder al valor de la celda actual
                         object valor = fila[columna];
+                        string elementoString = Convert.ToString(valor);
 
                         // Mostrar el valor de la celda formateado según tus necesidades
-                        MessageBox.Show("" + valor.ToString());
+                        MessageBox.Show("" + elementoString);
                     }
                 }
                 

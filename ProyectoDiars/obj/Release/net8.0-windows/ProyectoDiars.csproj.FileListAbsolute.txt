@@ -47,7 +47,6 @@ C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\P
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\ProyectoDiars.dll.config
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\ProyectoDiars.deps.json
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\ProyectoDiars.runtimeconfig.json
-C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\ProyectoDiars.pdb
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\BouncyCastle.Crypto.dll
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\DevExpress.XtraCharts.v24.1.dll
@@ -265,4 +264,5 @@ C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Release\net8.0-windows\P
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Release\net8.0-windows\refint\ProyectoDiars.dll
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Release\net8.0-windows\ProyectoDiars.pdb
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Release\net8.0-windows\ProyectoDiars.genruntimeconfig.cache
+C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\bin\Release\net8.0-windows\ProyectoDiars.pdb
 C:\Users\KEVIN\Documents\GitHub\Diars\ProyectoDiars\obj\Release\net8.0-windows\ref\ProyectoDiars.dll

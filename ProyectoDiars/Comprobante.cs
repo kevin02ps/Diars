@@ -15,6 +15,8 @@ using System.Xml.Linq;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.Runtime.InteropServices;
+using RestSharp;
+using Humanizer;
 
 namespace InversionesHermanos
 {
@@ -28,7 +30,7 @@ namespace InversionesHermanos
         int id_pedido { get; set; }
         private Point _mouseStartPoint;
         int alto {  get; set; }
-
+        string NombreCliente;
         int XPDF = 500;
         int YPDF = 300;
 
@@ -40,6 +42,7 @@ namespace InversionesHermanos
             this.pedido = pedido;
             this.Login = login;
             CargarDatos();
+            ObtenerDatosComprobanteSunat();
         }
 
         private string consultarClientePorDni(string dni)
@@ -52,6 +55,7 @@ namespace InversionesHermanos
                     lblRuc.Text = "Ruc: " + dni;
                     lblFoB.Text = "FACTURA";
                     lblNumeroFactura.Text = "Factura: ";
+                    NombreCliente = respuesta.razonSocial.ToString();
                     return respuesta.razonSocial.ToString();
                 }
                 else if (dni.Length == 8)
@@ -60,6 +64,7 @@ namespace InversionesHermanos
                     lblRuc.Text = "Dni: " + dni;
                     lblFoB.Text = "BOLETA";
                     lblNumeroFactura.Text = "Boleta: ";
+                    NombreCliente = respuesta.nombres.ToString() + " " + respuesta.apellidoPaterno.ToString() + " " + respuesta.apellidoMaterno.ToString();
                     return respuesta.nombres.ToString() + " " + respuesta.apellidoPaterno.ToString() + " " + respuesta.apellidoMaterno.ToString();
                 }
                 return null;
@@ -245,5 +250,288 @@ namespace InversionesHermanos
         {
             this.Close();
         }
+
+        public void ObtenerDatosComprobanteSunat()
+        {
+            if (Login.dni.Length == 8)
+            {
+                ArrayList Lista = new ArrayList();
+                double igv = 0.18;
+                Lista.Add("20610265023-03-B001-" + id_pedido.ToString("D8")); // Lista[0]
+                Lista.Add("B001-" + id_pedido.ToString("D8")); // Lista[1]
+                Lista.Add(DateTime.Now.ToString("yyyy-MM-dd")); // Lista[2]
+                Lista.Add("0101"); // Lista[3]
+                Lista.Add(ConvertirNumeroATexto(23)); // Lista[4]
+                Lista.Add(Login.dni); // Lista[5]
+                Lista.Add(NombreCliente); // Lista[6]
+                Lista.Add("Trujillo"); // Lista[7]
+                Lista.Add(igv); // Lista[8]
+                Lista.Add(MontoTotal); // Lista[9]
+                Lista.Add(MontoTotal * igv); // Lista[10]
+                
+                Lista.Add(pedido.tabla.Rows.Count.ToString()); // Lista[10]
+                                                               // Crear una nueva tabla DataTable
+                DataTable dt = new DataTable();
+
+                // Definir las columnas de la tabla DataTable
+                dt.Columns.Add("IdProducto", typeof(int));
+                dt.Columns.Add("CantidadP", typeof(int));
+                dt.Columns.Add("OperacionGravadaP", typeof(int));
+                dt.Columns.Add("PriceAmountP", typeof(string));
+                dt.Columns.Add("igvP", typeof(int));
+                dt.Columns.Add("NombreProducto", typeof(string));
+                dt.Columns.Add("Precio", typeof(int));
+
+                // Iterar a través de cada fila en la tabla 'pedido' y agregar a 'dt'
+                foreach (DataRow fila in pedido.tabla.Rows)
+                {
+                    // Crear una nueva fila para la tabla 'dt'
+                    DataRow nuevaFila = dt.NewRow();
+
+                    // Asignar los valores de la fila actual de 'pedido' a la nueva fila de 'dt'
+                    nuevaFila["IdProducto"] = fila[0]; // IdProducto
+                    nuevaFila["CantidadP"] = fila[2]; // CantidadP
+                    nuevaFila["OperacionGravadaP"] = Convert.ToDouble(fila[3]) * igv + Convert.ToDouble(fila[3]); // OperacionGravadaP
+                    nuevaFila["PriceAmountP"] = fila[4]; // PriceAmountP
+                    nuevaFila["igvP"] = Convert.ToDouble(fila[3]) * igv; // igvP
+                    nuevaFila["NombreProducto"] = fila[1]; // NombreProducto
+                    nuevaFila["Precio"] = fila[3]; // Precio
+
+                    // Agregar la nueva fila a la tabla 'dt'
+                    dt.Rows.Add(nuevaFila);
+                }
+                
+                foreach (object elemento in Lista)
+                {
+                    string elementoString = Convert.ToString(elemento);
+                    MessageBox.Show("" + elementoString);
+                }
+
+                foreach (DataRow fila in dt.Columns)
+                {
+                    foreach (DataColumn columna in dt.Rows)
+                    {
+                        // Acceder al valor de la celda actual
+                        object valor = fila[columna];
+
+                        // Mostrar el valor de la celda formateado según tus necesidades
+                        MessageBox.Show("" + valor.ToString());
+                    }
+                }
+                
+                //SubirSunatBoleta(Lista, dt);
+            }
+        }
+
+        public  async Task SubirSunatBoleta(ArrayList Lista, DataTable tablaItem)
+        {
+            string filename = Convert.ToString(Lista[0]);
+            string id = Convert.ToString(Lista[1]);
+            string fecha = Convert.ToString(Lista[2]);
+            string TypeCode_ListID = Convert.ToString(Lista[3]);
+            string NoteText = Convert.ToString(Lista[4]);
+            string DniCliente = Convert.ToString(Lista[5]);
+            string NombreCliente = Convert.ToString(Lista[6]);
+            string DireccionCliente = Convert.ToString(Lista[7]);
+            string IgvT = Convert.ToString(Lista[8]);
+            string OperacionGravadaT = Convert.ToString(Lista[9]);
+            string ImporteTotalT = Convert.ToString(Lista[10]);
+
+            int CantidadItems = Convert.ToInt32(Lista[11]);
+
+            string[] idP = Lista[12] as string[];
+            string[] CantidadP = Lista[13] as string[];
+            string[] OperacionGravadaP = Lista[14] as string[];
+            string[] PriceAmountP = Lista[15] as string[];
+            string[] igvP = Lista[16] as string[];
+            string[] NombreProducto = Lista[17] as string[];
+            string[] Precio = Lista[18] as string[];
+
+            var client = new RestClient("https://back.apisunat.com");
+            var request = new RestRequest("/personas/v1/sendBill", Method.Post);
+            request.AddHeader("Content-Type", "application/json");
+
+            var body = @"{
+            ""personaId"": ""6675be15cc112b0015cbe8bb"",
+            ""personaToken"": ""DEV_1vfTqfNwz5kGttXOCUS0Y4N9JCEDLoSDfedHORQ1ooOVs4lj8s0YGbKjfAxOu8Ht"",
+            ""fileName"": """ + Lista[1] + @""", //RUC  -  03  - B001 - N°BOLETA 
+            ""documentBody"": {
+                ""cbc:UBLVersionID"": { ""_text"": ""2.1"" },
+                ""cbc:CustomizationID"": { ""_text"": ""2.0"" },
+                ""cbc:ID"": { ""_text"": ""B001-00000001"" },
+                ""cbc:IssueDate"": { ""_text"": ""2024-06-21"" },
+                ""cbc:IssueTime"": { ""_text"": ""12:56:34"" },
+                ""cbc:InvoiceTypeCode"": {
+                    ""_attributes"": { ""listID"": ""0101"" },
+                    ""_text"": ""03""
+                },
+                ""cbc:Note"": [
+                    {
+                        ""_text"": ""SIETE CON 08/100 SOLES"",
+                        ""_attributes"": { ""languageLocaleID"": ""1000"" }
+                    }
+                ],
+                ""cbc:DocumentCurrencyCode"": { ""_text"": ""PEN"" },
+                ""cac:AccountingSupplierParty"": {
+                    ""cac:Party"": {
+                        ""cac:PartyIdentification"": {
+                            ""cbc:ID"": {
+                                ""_attributes"": { ""schemeID"": ""6"" },
+                                ""_text"": ""20610265023""
+                            }
+                        },
+                        ""cac:PartyLegalEntity"": {
+                            ""cbc:RegistrationName"": { ""_text"": ""INVERSIONES HERMANOS M & R S.A.C."" },
+                            ""cac:RegistrationAddress"": {
+                                ""cbc:AddressTypeCode"": { ""_text"": ""0000"" },
+                                ""cac:AddressLine"": {
+                                    ""cbc:Line"": { ""_text"": ""CAL. LAS CASUARINAS MZ. A LT. 11 URB. PALMERAS RINCONADA TRUJILLO TRUJILLO LA LIBERTAD"" }
+                                }
+                            }
+                        }
+                    }
+                },
+                ""cac:AccountingCustomerParty"": {
+                    ""cac:Party"": {
+                        ""cac:PartyIdentification"": {
+                            ""cbc:ID"": {
+                                ""_attributes"": { ""schemeID"": ""1"" },
+                                ""_text"": ""74706258""
+                            }
+                        },
+                        ""cac:PartyLegalEntity"": {
+                            ""cbc:RegistrationName"": { ""_text"": ""KEVIN WILLIAMS GARCIA ALVAREZ"" },
+                            ""cac:RegistrationAddress"": {
+                                ""cac:AddressLine"": {
+                                    ""cbc:Line"": { ""_text"": ""AV. B SECTOR BARRIO VI A MZ. P LT. 10 EL PORVENIR TRUJILLO LA LIBERTAD"" }
+                                }
+                            }
+                        }
+                    }
+                },
+                ""cac:TaxTotal"": {
+                    ""cbc:TaxAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 1.08
+                    },
+                    ""cac:TaxSubtotal"": [
+                        {
+                            ""cbc:TaxableAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 6
+                            },
+                            ""cbc:TaxAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 1.08
+                            },
+                            ""cac:TaxCategory"": {
+                                ""cac:TaxScheme"": {
+                                    ""cbc:ID"": { ""_text"": ""1000"" },
+                                    ""cbc:Name"": { ""_text"": ""IGV"" },
+                                    ""cbc:TaxTypeCode"": { ""_text"": ""VAT"" }
+                                }
+                            }
+                        }
+                    ]
+                },
+                ""cac:LegalMonetaryTotal"": {
+                    ""cbc:LineExtensionAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 6
+                    },
+                    ""cbc:TaxInclusiveAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 7.08
+                    },
+                    ""cbc:PayableAmount"": {
+                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                        ""_text"": 7.08
+                    }
+                },
+                ""cac:InvoiceLine"": [
+                    {
+                        ""cbc:ID"": { ""_text"": 1 },
+                        ""cbc:InvoicedQuantity"": {
+                            ""_attributes"": { ""unitCode"": ""NIU"" },
+                            ""_text"": 2
+                        },
+                        ""cbc:LineExtensionAmount"": {
+                            ""_attributes"": { ""currencyID"": ""PEN"" },
+                            ""_text"": 6
+                        },
+                        ""cac:PricingReference"": {
+                            ""cac:AlternativeConditionPrice"": {
+                                ""cbc:PriceAmount"": {
+                                    ""_attributes"": { ""currencyID"": ""PEN"" },
+                                    ""_text"": 3.54
+                                },
+                                ""cbc:PriceTypeCode"": { ""_text"": ""01"" }
+                            }
+                        },
+                        ""cac:TaxTotal"": {
+                            ""cbc:TaxAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 1.08
+                            },
+                            ""cac:TaxSubtotal"": [
+                                {
+                                    ""cbc:TaxableAmount"": {
+                                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                                        ""_text"": 6
+                                    },
+                                    ""cbc:TaxAmount"": {
+                                        ""_attributes"": { ""currencyID"": ""PEN"" },
+                                        ""_text"": 1.08
+                                    },
+                                    ""cac:TaxCategory"": {
+                                        ""cbc:Percent"": { ""_text"": 18 },
+                                        ""cbc:TaxExemptionReasonCode"": { ""_text"": ""10"" },
+                                        ""cac:TaxScheme"": {
+                                            ""cbc:ID"": { ""_text"": ""1000"" },
+                                            ""cbc:Name"": { ""_text"": ""IGV"" },
+                                            ""cbc:TaxTypeCode"": { ""_text"": ""VAT"" }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        ""cac:Item"": {
+                            ""cbc:Description"": { ""_text"": ""Agua"" }
+                        },
+                        ""cac:Price"": {
+                            ""cbc:PriceAmount"": {
+                                ""_attributes"": { ""currencyID"": ""PEN"" },
+                                ""_text"": 3
+                            }
+                        }
+                    }
+                ]
+            }
+        }";
+
+            request.AddStringBody(body, RestSharp.DataFormat.Json);
+            RestResponse response = await client.ExecuteAsync(request);
+            Console.WriteLine(response.Content);
+        }
+
+        public static string ConvertirNumeroATexto(double numero)
+        {
+            // Convertimos el número a decimal para evitar problemas de precisión con double
+            decimal numeroDecimal = (decimal)numero;
+
+            // Separamos la parte entera y la parte decimal
+            long parteEntera = (long)numeroDecimal;
+            int parteDecimal = (int)((numeroDecimal - parteEntera) * 100);
+
+            // Convertimos la parte entera a texto
+            string textoParteEntera = parteEntera.ToWords(new System.Globalization.CultureInfo("es")).ToUpper();
+
+            // Formateamos la parte decimal
+            string textoParteDecimal = parteDecimal.ToString("00");
+
+            // Componemos el resultado final
+            return $"{textoParteEntera} CON {textoParteDecimal}/100 SOLES";
+        }
+
     }
 }

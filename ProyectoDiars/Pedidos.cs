@@ -127,7 +127,7 @@ namespace InversionesHermanos
                     bool existe = false;
                     string ID = txtIdProducto.Text;
                     int cantidad = Convert.ToInt32(txtCantidadAgregar.Text);
-                    int precio = Convert.ToInt32(txtPrecioAgregar.Text);
+                    double precio = Convert.ToDouble(txtPrecioAgregar.Text);
 
                     foreach (DataGridViewRow fila in dataGridView.Rows)
                     {

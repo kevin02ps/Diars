@@ -19,6 +19,9 @@ using RestSharp;
 using Humanizer;
 using static System.Windows.Forms.Design.AxImporter;
 using System.IO;
+using Newtonsoft.Json.Linq;
+using System.Diagnostics;
+using DevExpress.CodeParser;
 
 namespace InversionesHermanos
 {
@@ -154,9 +157,16 @@ namespace InversionesHermanos
 
             buttonConfirmar.Visible = false;
             btnCerrar.Visible = false;
-            ObtenerDatosComprobanteSunat();
-            ObtenerPdf();
-
+            try
+            {
+                ObtenerDatosComprobanteSunat();
+                ObtenerPdf();
+                MessageBox.Show("Datos subidos y guardados correctamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
             btnCerrar.Visible = true;
         }
 
@@ -269,7 +279,6 @@ namespace InversionesHermanos
                 Lista.Add(MontoTotal * igv); // Lista[8] 
                 Lista.Add(Lista.Add(MontoTotal * igv + MontoTotal)); // Lista[9]
                 Lista.Add(MontoTotal); // Lista[10]
-                MessageBox.Show("" + MontoTotal);
                 Lista.Add(pedido.tabla.Rows.Count.ToString()); // Lista[11]
                                                                // Crear una nueva tabla DataTable
                 DataTable dt = new DataTable();
@@ -301,25 +310,6 @@ namespace InversionesHermanos
                     // Agregar la nueva fila a la tabla 'dt'
                     dt.Rows.Add(nuevaFila);
                 }
-                /*
-                foreach (object elemento in Lista)
-                {
-                    string elementoString = Convert.ToString(elemento);
-                    MessageBox.Show("" + elementoString);
-                }
-
-                foreach (DataRow fila in dt.Rows)
-                {
-                    foreach (DataColumn columna in dt.Columns)
-                    {
-                        // Acceder al valor de la celda actual
-                        object valor = fila[columna];
-                        string elementoString = Convert.ToString(valor);
-
-                        // Mostrar el valor de la celda formateado según tus necesidades
-                        MessageBox.Show("" + elementoString);
-                    }
-                }*/
                 
                 SubirSunatBoleta(Lista, dt);
             }
@@ -341,7 +331,6 @@ namespace InversionesHermanos
                 string OperacionGravadaT = Convert.ToString(Lista[9]);
                 string ImporteTotalT = Convert.ToString(MontoTotal);
 
-                MessageBox.Show(ImporteTotalT);
                 int CantidadItems = Convert.ToInt32(Lista[11]);
 
                 var client = new RestClient("https://back.apisunat.com");
@@ -461,8 +450,8 @@ namespace InversionesHermanos
                 }
 
                 var body = @"{
-                ""personaId"": ""6675be15cc112b0015cbe8bb"",
-                ""personaToken"": ""DEV_1vfTqfNwz5kGttXOCUS0Y4N9JCEDLoSDfedHORQ1ooOVs4lj8s0YGbKjfAxOu8Ht"",
+                ""personaId"": ""6678573bbc2b5f0015d403e6"",
+                ""personaToken"": ""DEV_3QFwGACMqADtfEOmjPlLErYP1LCFKX14nP24ELudaBlVkBAbQ6UGns8FlZxEOsBX"",
                 ""fileName"": """ + filename + @""",
                 ""documentBody"": {
                     ""cbc:UBLVersionID"": {
@@ -600,25 +589,44 @@ namespace InversionesHermanos
                 }
             }";
 
-
-                string rutaArchivo = @"C:/archivo.txt";
-
+                // Ruta donde se guardará el archivo PDF
+                string rutaArchivo = "";
+                if (Configuracion.UbiComprobante != null)
+                {
+                    string ubi = Configuracion.UbiComprobante.Replace('\\', '/');
+                    rutaArchivo = ubi + "/XML" + filename + ".pdf";
+                }
+                else
+                {
+                    rutaArchivo = "C:/XML" + filename + ".pdf";
+                }
+                request.AddStringBody(body, DataFormat.Json);
+                RestResponse response = await client.ExecuteAsync(request);
+                string jsonS = response.Content;
+                JObject jsonObject = JObject.Parse(jsonS);
+                string documentId = (string)jsonObject["documentId"];
                 try
                 {
-                    // Crear un StreamWriter para escribir en el archivo
                     using (StreamWriter writer = new StreamWriter(rutaArchivo))
                     {
-                        // Escribir el texto en el archivo
-                        writer.WriteLine(body);
+                        writer.WriteLine(response.Content);
                     }
                 }
                 catch (IOException e)
                 {
                     MessageBox.Show($"Error al escribir en el archivo: {e.Message}");
                 }
-                request.AddStringBody(body, DataFormat.Json);
-                RestResponse response = await client.ExecuteAsync(request);
-                Console.WriteLine(response.Content);
+                string url = "https://apisunat.com/api/documents/" + documentId + "/getPDF/ticket58mm/" + filename + ".pdf";
+
+                try
+                {
+                    Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                    Console.WriteLine("La URL se ha abierto en el navegador predeterminado.");
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error al abrir la URL: " + e.Message);
+                }
             }
             catch (Exception e) {
                 MessageBox.Show("Error: ", e.Message);
@@ -626,8 +634,7 @@ namespace InversionesHermanos
 
         }
     
-
-    public static string ConvertirNumeroATexto(double numero)
+        public static string ConvertirNumeroATexto(double numero)
         {
             // Convertimos el número a decimal para evitar problemas de precisión con double
             decimal numeroDecimal = (decimal)numero;

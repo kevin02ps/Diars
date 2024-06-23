@@ -15,10 +15,16 @@ namespace InversionesHermanos
     {
         Conexion.Conexion conexion = new Conexion.Conexion();
 
-        public Clientes()
+        public Clientes(Login login)
         {
             InitializeComponent();
             cargar_tabla();
+            switch (login.cargo)
+            {
+                case "VENDEDOR":
+                    btnEliminar.Enabled = false;
+                    break;
+            }
         }
 
         private void cargar_tabla()

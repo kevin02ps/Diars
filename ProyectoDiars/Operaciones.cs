@@ -53,7 +53,18 @@ namespace InversionesHermanos
             //Preferencias segun cargo 
             switch (login.cargo)
             {
-                //case "admin":
+                case "GERENTE":
+                    break;
+                case "ADMINISTRADOR":
+                    btnVentas.Enabled = false;
+                    break;
+                case "VENDEDOR":
+                    btnProducto.Enabled = false;
+                    btnProveedores.Enabled = false;
+                    btnVentas.Enabled = false;  
+                    break;
+                case "admin":
+                    break;
             }
         }
 
@@ -126,7 +137,7 @@ namespace InversionesHermanos
         private void btonClientes_Click(object sender, EventArgs e)
         {
             panel.Controls.Clear(); //limpiamos el panel
-            Clientes productos = new Clientes();
+            Clientes productos = new Clientes(Login);
             productos.TopLevel = false;
             panel.Controls.Add(productos);
             productos.Show();

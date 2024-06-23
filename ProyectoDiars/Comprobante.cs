@@ -38,6 +38,7 @@ namespace InversionesHermanos
         string NombreCliente;
         int XPDF = 500;
         int YPDF = 300;
+        ArrayList cliente = new ArrayList();
 
         private Pedidos pedido;
         private Login Login;
@@ -81,7 +82,7 @@ namespace InversionesHermanos
 
         public void CargarDatos( )
         {
-            ArrayList cliente = conexion.ObtenerClientePorId(pedido.id_cliente);
+            this.cliente = conexion.ObtenerClientePorId(pedido.id_cliente);
             lblCliente.Text = "Cliente:  " + consultarClientePorDni(Convert.ToString(cliente[0]));
             lblFecha.Text = "Fecha: " + DateTime.Today.ToString("dddd dd 'de' MMMM 'del' yyyy");
             lblTipoPago.Text = "Tipo de pago: " + pedido.TipoPagoText;
@@ -140,7 +141,7 @@ namespace InversionesHermanos
             string fecha = DateTime.Today.ToString("yyyy-MM-dd");
 
             //Agregar Pedido
-            this.id_pedido =  conexion.AgregarNuevoPedido(pedido.id_cliente, fecha, Login.id_empleado, this.MontoTotal, pedido.TipoPago);
+            this.id_pedido =  conexion.AgregarNuevoPedido(pedido.id_cliente, fecha, Login.id_empleado, Convert.ToDouble(this.MontoTotal), pedido.TipoPago);
             conexion.InsertarBoleta(fecha, true, this.id_pedido);
 
             //Agregar DetallePedido
@@ -150,7 +151,7 @@ namespace InversionesHermanos
                 int cantidad = Convert.ToInt32(fila[02]);
                 int precio = Convert.ToInt32(fila[3]);
                 int precioT = Convert.ToInt32(fila[4]);
-                conexion.AgregarNuevoDetallePedido(this.id_pedido, idProducto, cantidad, precio, precio * cantidad);
+                conexion.AgregarNuevoDetallePedido(this.id_pedido, idProducto, cantidad, Convert.ToDouble(precio), Convert.ToDouble(precio * cantidad));
                 conexion.RetirarProductos(idProducto, cantidad);
             }
             lblNumeroFactura.Text += " 0000" + this.id_pedido;
@@ -275,9 +276,9 @@ namespace InversionesHermanos
                 Lista.Add(ConvertirNumeroATexto(MontoTotal)); // Lista[4]
                 Lista.Add(Login.dni); // Lista[5]
                 Lista.Add(NombreCliente); // Lista[6]
-                Lista.Add("Trujillo"); // Lista[7]
-                Lista.Add(MontoTotal * igv); // Lista[8] 
-                Lista.Add(Lista.Add(MontoTotal * igv + MontoTotal)); // Lista[9]
+                Lista.Add(cliente[1]); // Lista[7]
+                Lista.Add(Math.Round((MontoTotal * igv),2)); // Lista[8] 
+                Lista.Add(Math.Round((MontoTotal * igv + MontoTotal), 2)); // Lista[9]
                 Lista.Add(MontoTotal); // Lista[10]
                 Lista.Add(pedido.tabla.Rows.Count.ToString()); // Lista[11]
                                                                // Crear una nueva tabla DataTable
@@ -301,9 +302,9 @@ namespace InversionesHermanos
                     // Asignar los valores de la fila actual de 'pedido' a la nueva fila de 'dt'
                     nuevaFila["IdProducto"] = fila[0]; // IdProducto
                     nuevaFila["CantidadP"] = fila[2]; // CantidadP
-                    nuevaFila["OperacionGravadaP"] = Convert.ToDouble(fila[4]); // OperacionGravadaP
-                    nuevaFila["PriceAmountP"] = Convert.ToDouble(fila[3]) * igv + Convert.ToDouble(fila[3]); // PriceAmountP
-                    nuevaFila["igvP"] = Convert.ToDouble(fila[4]) * igv; // igvP
+                    nuevaFila["OperacionGravadaP"] = Math.Round((Convert.ToDouble(fila[4])), 2); // OperacionGravadaP
+                    nuevaFila["PriceAmountP"] = Math.Round((Convert.ToDouble(fila[3]) * igv + Convert.ToDouble(fila[3])),2); // PriceAmountP
+                    nuevaFila["igvP"] = Math.Round((Convert.ToDouble(fila[4]) * igv), 2); // igvP
                     nuevaFila["NombreProducto"] = fila[1]; // NombreProducto
                     nuevaFila["Precio"] = fila[3]; // Precio
 
@@ -329,7 +330,7 @@ namespace InversionesHermanos
                 string DireccionCliente = Convert.ToString(Lista[7]);
                 string IgvT = Convert.ToString(Lista[8]);
                 string OperacionGravadaT = Convert.ToString(Lista[9]);
-                string ImporteTotalT = Convert.ToString(MontoTotal);
+                string ImporteTotalT = Convert.ToString(Lista[10]);
 
                 int CantidadItems = Convert.ToInt32(Lista[11]);
 

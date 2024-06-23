@@ -31,7 +31,7 @@ namespace InversionesHermanos
 
         ApiDni_Ruc ApisPeru = new ApiDni_Ruc();
 
-        int MontoTotal { get; set; }
+        double MontoTotal { get; set; }
         int id_pedido { get; set; }
         private Point _mouseStartPoint;
         int alto {  get; set; }

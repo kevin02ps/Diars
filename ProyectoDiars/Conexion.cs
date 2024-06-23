@@ -568,7 +568,7 @@ namespace InversionesHermanos.Conexion
         }
 
         //Metodos para Pedido
-        public int AgregarNuevoPedido(int id_cliente, string Fecha, int id_empleado, int MontoTotal, int Id_TipoPago)
+        public int AgregarNuevoPedido(int id_cliente, string Fecha, int id_empleado, double MontoTotal, int Id_TipoPago)
         {
             connection.Open();
             int ultimoNumero = 0;
@@ -610,7 +610,7 @@ namespace InversionesHermanos.Conexion
             connection.Close();
             return ultimoNumero;
         }
-        public void AgregarNuevoDetallePedido(int id_pedido, int id_producto, int Cantidad, int PrecioUnitario, int PrecioTotal)
+        public void AgregarNuevoDetallePedido(int id_pedido, int id_producto, int Cantidad, double PrecioUnitario, double PrecioTotal)
         {
             connection.Open();
             try

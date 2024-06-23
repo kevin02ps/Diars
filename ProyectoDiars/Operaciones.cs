@@ -49,6 +49,12 @@ namespace InversionesHermanos
             /////tal vez no tenga efecto
             this.Padding = new Padding(borderSize);//Border size
             this.BackColor = Color.FromArgb(98, 102, 244);//Border color
+
+            //Preferencias segun cargo 
+            switch (login.cargo)
+            {
+                //case "admin":
+            }
         }
 
         public void TimerCallback(object state)

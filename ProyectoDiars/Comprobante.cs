@@ -21,7 +21,7 @@ using static System.Windows.Forms.Design.AxImporter;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
-using DevExpress.CodeParser;
+
 
 namespace InversionesHermanos
 {
@@ -594,11 +594,11 @@ namespace InversionesHermanos
                 if (Configuracion.UbiComprobante != null)
                 {
                     string ubi = Configuracion.UbiComprobante.Replace('\\', '/');
-                    rutaArchivo = ubi + "/XML" + filename + ".pdf";
+                    rutaArchivo = ubi + "/XML" + filename + ".txt";
                 }
                 else
                 {
-                    rutaArchivo = "C:/XML" + filename + ".pdf";
+                    rutaArchivo = "C:/XML" + filename + ".txt";
                 }
                 request.AddStringBody(body, DataFormat.Json);
                 RestResponse response = await client.ExecuteAsync(request);
